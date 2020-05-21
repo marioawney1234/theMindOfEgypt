@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:background="@drawable/background"
+    tools:context=".BohiricLetterDisplayActivity">
+
+        <View
+            android:id="@+id/topview"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/colorTitleText"
+            android:focusable="true" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/bottomview"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        tools:layout_editor_absoluteX="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/cabital_letter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Ⲁ"
+                    android:textSize="150sp" />
+
+                <TextView
+                    android:id="@+id/small_letter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ⲁ"
+                    android:textSize="150sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Ⲫ̀ⲣⲁⲛ ⲙ̀ⲡⲓⲕⲁⲡ"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="اسم الحرف"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/letter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ⲁⲗⲫⲁ"
+                android:textSize="35sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="ⲡ̀ⲑⲟ ⲙ̀ⲡⲓⲕⲁⲡ"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="نوع الحرف"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/letter_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="متحرك"
+                android:textSize="35sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorText" />
+
+            <include
+                android:id="@+id/general"
+                layout="@layout/sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/acadimic_bohiric"
+                layout="@layout/sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/late_bohiric"
+                layout="@layout/sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/new_bohiric"
+                layout="@layout/sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/xx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="ⲡ̀ⲑⲟ ⲙ̀ⲡⲓⲕⲁⲡ"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/yy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="تعليق"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorTitleText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

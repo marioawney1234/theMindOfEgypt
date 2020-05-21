@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="1dp"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/ipa_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="nameTV"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="IPA:"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/ipa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="IPA:  "
+            android:textSize="27sp" />
+
+        <ImageButton
+            android:id="@+id/btn_letter_sound"
+            style="@style/main_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_sound" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/arabic_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="nameTV"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/english_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="nameTV"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTitleText"
+        android:layout_marginHorizontal="25dp"/>
+
+</LinearLayout>

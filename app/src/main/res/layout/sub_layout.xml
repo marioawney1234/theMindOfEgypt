@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        style="@style/main_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/coptic_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="ϫⲓⲛⲧⲁⲟⲩⲟ"
+            android:textColor="@color/colorTitleText"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/translated_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:gravity="right"
+            android:text="النطق"
+            android:textColor="@color/colorTitleText"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_layout"
+        app:el_duration="1000"
+        app:el_expanded="true"
+        app:el_parallax="0.5">
+    <com.remmarees.themindofegypt.customViews.customListView
+        android:id="@+id/general_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false" />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>
