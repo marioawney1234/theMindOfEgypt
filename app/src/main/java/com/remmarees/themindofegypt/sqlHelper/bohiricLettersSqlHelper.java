@@ -116,7 +116,7 @@ public class bohiricLettersSqlHelper extends SQLiteOpenHelper {
         cursor = mDatabase.rawQuery("select * from bohiric_letters ORDER BY id", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-             module= new LetterModule(cursor.getString(cursor.getColumnIndex("letter")),cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")));
+             module= new LetterModule(cursor.getString(cursor.getColumnIndex("letter")),cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")), cursor.getString(cursor.getColumnIndex("comments")));
             list.add(module);
             cursor.moveToNext();
         }
@@ -153,7 +153,7 @@ public class bohiricLettersSqlHelper extends SQLiteOpenHelper {
         cursor = mDatabase.rawQuery("select * from sahidic_letters ORDER BY id", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            module= new LetterModule(cursor.getString(cursor.getColumnIndex("letter")),cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")));
+            module= new LetterModule(cursor.getString(cursor.getColumnIndex("letter")),cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")),"-");
             list.add(module);
             cursor.moveToNext();
         }

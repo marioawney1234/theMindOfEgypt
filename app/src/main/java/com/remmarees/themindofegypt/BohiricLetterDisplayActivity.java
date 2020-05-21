@@ -31,6 +31,7 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         final TextView Small_letter= findViewById(R.id.small_letter);
         final TextView letter_type= findViewById(R.id.letter_type);
         final TextView letter_name= findViewById(R.id.letter_name);
+        final TextView letter_comment= findViewById(R.id.letter_comment);
         final String[] types= getResources().getStringArray(R.array.letters_type);
         //final ScrollView scrollView=findViewById(R.id.scrollview);
 
@@ -39,6 +40,7 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         Small_letter.setText(DataContainer.bohiricLetterModuleList.get(position).getLetter());
         letter_type.setText(types[DataContainer.bohiricLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.bohiricLetterModuleList.get(position).getName());
+        letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getComment());
 
         DataContainer.generalBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(),"g");
         DataContainer.acadimicBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(),"a");

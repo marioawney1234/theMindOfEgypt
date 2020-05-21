@@ -195,7 +195,14 @@
                     android:textColor="@color/colorTitleText"
                     android:textSize="23sp" />
             </LinearLayout>
-
+            <TextView
+                android:id="@+id/letter_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="تعليق"
+                android:textSize="21sp" />
 
         </LinearLayout>
 
