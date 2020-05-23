@@ -28,11 +28,9 @@ public class Splash extends AppCompatActivity {
         Thread background = new Thread() {
             public void run() {
                 Intent i = null;
-                Log.d("TAG", "bohiricLettersSqlHelper: 2");
 
                 // database
                 mDbHelper = new bohiricLettersSqlHelper(context);
-                Log.d("TAG", "bohiricLettersSqlHelper: 3");
 
                 try {
                     mDbHelper.createDataBase();

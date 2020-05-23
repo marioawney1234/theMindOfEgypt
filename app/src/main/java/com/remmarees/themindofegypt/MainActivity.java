@@ -16,11 +16,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final Context context = this;
 
+        final Button Btnintroduction=findViewById(R.id.btn_introduction);
+        Btnintroduction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, IntroductionActivity.class);
+                startActivity(intent);
+            }
+        });
+
         final Button BtnAlphabet=findViewById(R.id.btn_alphabet);
         BtnAlphabet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, DialictsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button BtnReference=findViewById(R.id.btn_references);
+        BtnReference.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, ReferencesActivity.class);
                 startActivity(intent);
             }
         });

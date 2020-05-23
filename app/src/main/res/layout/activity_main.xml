@@ -45,6 +45,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <Button
+                    style="@style/main_Button"
+                    android:id="@+id/btn_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ⲟⲩⲱⲛⲥⲁϫⲓ \n تقديم "
+                    android:drawableLeft="@drawable/ic_action_alpha"
+                    android:drawableRight="@drawable/ic_action_alpha"/>
+
                 <Button
                     style="@style/main_Button"
                     android:id="@+id/btn_alphabet"
@@ -88,6 +98,15 @@
                     android:drawableRight="@drawable/ic_action_alpha"
                     android:enabled="false"
                     android:textColor="@color/colorDisabled"/>
+                <Button
+                    style="@style/main_Button"
+                    android:id="@+id/btn_references"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ϩⲁⲛϫⲱⲙ \n المراجع "
+                    android:drawableLeft="@drawable/ic_action_alpha"
+                    android:drawableRight="@drawable/ic_action_alpha"/>
+
 
                 <Button
                     style="@style/main_Button"

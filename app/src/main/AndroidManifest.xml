@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/app_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".BohiricLetterDisplayActivity"/>
-        <activity android:name=".SahidicLetterDisplayActivity"/>
+        <activity android:name=".IntroductionActivity"></activity>
+        <activity android:name=".ReferencesActivity" />
+        <activity android:name=".BohiricLetterDisplayActivity" />
+        <activity android:name=".SahidicLetterDisplayActivity" />
         <activity android:name=".TTsActivity" />
         <activity android:name=".BohiricLettersListActivity" />
-        <activity android:name=".SahidicLettersListActivity"/>
+        <activity android:name=".SahidicLettersListActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DialictsActivity" />
-
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

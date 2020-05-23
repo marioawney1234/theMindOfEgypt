@@ -6,7 +6,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -33,7 +33,6 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         final TextView letter_name= findViewById(R.id.letter_name);
         final TextView letter_comment= findViewById(R.id.letter_comment);
         final String[] types= getResources().getStringArray(R.array.letters_type);
-        //final ScrollView scrollView=findViewById(R.id.scrollview);
 
 
         Capital_letter.setText(DataContainer.bohiricLetterModuleList.get(position).getCapital());
@@ -51,6 +50,12 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         setLayoutContents(context,findViewById(R.id.new_bohiric),"Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲃⲉⲣⲓ","النطق البحيري الحديث (الكنسي)",DataContainer.newBohiricPronouncation);
         setLayoutContents(context,findViewById(R.id.late_bohiric),"Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲡⲓϧⲁⲉ̀ ","النطق البحيري المتاخر (المتوارث)",DataContainer.lateBohiricPronouncation);
 
+        if(!DataContainer.bohiricLetterModuleList.get(position).getComment().equals("-")){
+            findViewById(R.id.comment_layout).setVisibility(View.VISIBLE);
+            findViewById(R.id.comment_viewline).setVisibility(View.VISIBLE);
+            findViewById(R.id.expandable_layout).setVisibility(View.VISIBLE);
+        }
+        expand_coolapse((ExpandableLayout) findViewById(R.id.expandable_comment),findViewById(R.id.comment_layout),(ImageView) findViewById(R.id.expand_image1));
         /*scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
@@ -65,7 +70,6 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
             view.setVisibility(View.GONE);
             return;
         }
-        final ScrollView scrollView=findViewById(R.id.scrollview);
         TextView copticTitleText= view.findViewById(R.id.coptic_title);
         TextView translatedTitleText= view.findViewById(R.id.translated_title);
         copticTitleText.setText(copticTitle);
@@ -75,9 +79,13 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         ListView listView = view.findViewById(R.id.general_list);
         listView.setAdapter(adapter);
         listView.setEnabled(false);
+        expand_coolapse((ExpandableLayout) view.findViewById(R.id.expandable_layout),view.findViewById(R.id.button_layout),(ImageView) view.findViewById(R.id.expand_image));
 
-        final LinearLayout expand_button= view.findViewById(R.id.button_layout);
-        final ExpandableLayout expandableLayout = view.findViewById(R.id.expandable_layout);
+    }
+
+    private void expand_coolapse(final ExpandableLayout expandableLayout, final View expand_button, final ImageView image){
+        final ScrollView scrollView=findViewById(R.id.scrollview);
+
         expandableLayout.setOnExpansionUpdateListener(new ExpandableLayout.OnExpansionUpdateListener() {
             @Override
             public void onExpansionUpdate(float expansionFraction, int state) {
@@ -90,13 +98,14 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (expandableLayout.isExpanded()) {
                     expandableLayout.collapse();
+                    image.setImageResource(R.drawable.ic_action_expand);
                     //scrollView.fullScroll(ScrollView.FOCUS_UP);
                 } else {
                     expandableLayout.expand();
+                    image.setImageResource(R.drawable.ic_action_collapse);
                     scrollView.smoothScrollTo(0,scrollView.getScrollY()+120);
                 }
             }
         });
     }
-
 }
