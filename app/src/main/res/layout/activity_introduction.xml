@@ -5,41 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:padding="6dp"
     tools:context=".IntroductionActivity">
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorTitleText"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="تقديم"
-        android:textSize="30sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="تقديم"
+            android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="ⲟⲩⲱⲛⲥⲁϫⲓ"
-        android:textSize="30sp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ⲟⲩⲱⲛⲥⲁϫⲓ"
+            android:textSize="30sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorText"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:background="@color/colorText" />
 
         <TextView
+            android:id="@+id/text_introduction"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="start"
-            android:textSize="21sp"
-            android:text="تقديم التطبيق"/>
+            android:fontFamily="sans-serif-black"
+            android:scrollbars="vertical"
+            android:text="@string/introduction"
+            android:textSize="18sp" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorTitleText"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

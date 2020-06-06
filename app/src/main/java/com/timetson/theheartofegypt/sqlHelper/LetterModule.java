@@ -1,4 +1,4 @@
-package com.remmarees.themindofegypt.sqlHelper;
+package com.timetson.theheartofegypt.sqlHelper;
 
 import androidx.annotation.NonNull;
 
@@ -36,11 +36,13 @@ public class LetterModule {
         return type;
     }
 
-    public String getComment() {return comment;}
+    public String getComment() {
+        return comment;
+    }
 
     @NonNull
     @Override
     public String toString() {
-        return this.capital+" "+ this.letter+ "   "+this.name;
+        return this.capital + " " + this.letter + "   " + this.name;
     }
 }

@@ -1,4 +1,4 @@
-package com.remmarees.themindofegypt.customViews;
+package com.timetson.theheartofegypt.customViews;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,15 +7,15 @@ import android.widget.ListView;
 
 public class customListView extends ListView {
 
-    public customListView  (Context context, AttributeSet attrs) {
+    public customListView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public customListView  (Context context) {
+    public customListView(Context context) {
         super(context);
     }
 
-    public customListView  (Context context, AttributeSet attrs, int defStyle) {
+    public customListView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

@@ -1,4 +1,4 @@
-package com.remmarees.themindofegypt.sqlHelper;
+package com.timetson.theheartofegypt.sqlHelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,24 +14,24 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 
-public class BohiricLettersDbHelper extends SQLiteOpenHelper{
+public class BohiricLettersDbHelper extends SQLiteOpenHelper {
 
-    private Context context;
     private static final String ASSETS_PATH = "databases";
     private static final String DATABASE_NAME = "letters.db";
     private static final int DATABASE_VERSION = 1;
-    private SharedPreferences preferences= context.getSharedPreferences("${context.packageName}.database_versions",Context.MODE_PRIVATE);
+    private Context context;
+    private SharedPreferences preferences = context.getSharedPreferences("${context.packageName}.database_versions", Context.MODE_PRIVATE);
 
     public BohiricLettersDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    private Boolean installedDatabaseIsOutdated(){
+    private Boolean installedDatabaseIsOutdated() {
         return preferences.getInt(DATABASE_NAME, 0) < DATABASE_VERSION;
     }
 
     private void writeDatabaseVersionInPreferences() {
-        SharedPreferences.Editor edit=preferences.edit();
+        SharedPreferences.Editor edit = preferences.edit();
         edit.putInt(DATABASE_NAME, DATABASE_VERSION);
         edit.apply();
     }
@@ -68,7 +68,7 @@ public class BohiricLettersDbHelper extends SQLiteOpenHelper{
     }
 
     @Override
-    public SQLiteDatabase  getReadableDatabase() {
+    public SQLiteDatabase getReadableDatabase() {
         installOrUpdateIfNecessary();
         return super.getReadableDatabase();
     }

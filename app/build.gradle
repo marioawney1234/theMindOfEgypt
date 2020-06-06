@@ -5,7 +5,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion '29.0.2'
     defaultConfig {
-        applicationId "com.remmarees.themindofegypt"
+        applicationId "com.timetson.theheartofegypt"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1

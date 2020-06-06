@@ -1,4 +1,4 @@
-package com.remmarees.themindofegypt.sqlHelper;
+package com.timetson.theheartofegypt.sqlHelper;
 
 public class PronounceModule {
     int id;
@@ -10,11 +10,11 @@ public class PronounceModule {
     String IPA_name;
     String audio;
 
-    public PronounceModule(int id, String letter, String IPA, String type, String arabicDescription, String englishDescription, String IPA_name ,String audio) {
+    public PronounceModule(int id, String letter, String IPA, String type, String arabicDescription, String englishDescription, String IPA_name, String audio) {
         this.id = id;
         this.letter = letter;
         this.IPA = IPA;
-        this.audio= audio;
+        this.audio = audio;
         this.type = type;
         this.arabicDescription = arabicDescription;
         this.englishDescription = englishDescription;
@@ -23,6 +23,10 @@ public class PronounceModule {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLetter() {
@@ -47,9 +51,5 @@ public class PronounceModule {
 
     public String getIPA_name() {
         return IPA_name;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

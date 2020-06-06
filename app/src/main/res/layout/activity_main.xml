@@ -4,119 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="6dp"
     android:background="@drawable/background"
+    android:padding="6dp"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/topview"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginHorizontal="10dp"
         android:background="@color/colorTitleText"
-        android:focusable="true" />
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        app:layout_constraintTop_toBottomOf="@id/topview"
-        app:layout_constraintBottom_toTopOf="@id/bottomview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/calenderview"
+        app:layout_constraintTop_toBottomOf="@id/topview">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Ⲡ̀ϩⲏⲧ ⲛ̀ⲭⲏⲙⲓ"
-            android:textSize="35dp"
-            android:gravity="center"/>
+            android:textSize="35dp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorText"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:background="@color/colorText" />
 
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <Button
-                    style="@style/main_Button"
                     android:id="@+id/btn_introduction"
+                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ⲟⲩⲱⲛⲥⲁϫⲓ \n تقديم "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"/>
+                    android:drawableLeft="@drawable/ic_action_lotus"
+                    android:drawableRight="@drawable/ic_action_lotus"
+                    android:text="ⲟⲩⲱⲛⲥⲁϫⲓ \n تقديم " />
 
                 <Button
-                    style="@style/main_Button"
                     android:id="@+id/btn_alphabet"
+                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲛ̀ⲭⲏⲙⲓ \n الابجديه القبطيه "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"/>
+                    android:drawableLeft="@drawable/ic_action_lotus"
+                    android:drawableRight="@drawable/ic_action_lotus"
+                    android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲛ̀ⲭⲏⲙⲓ \n الابجديه القبطيه " />
 
 
                 <Button
-                    style="@style/main_Button"
-                    android:id="@+id/btn_names"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ⲛⲉⲛⲣⲁⲛ ⲛ̀ⲛⲓⲣⲉⲙⲛ̀ⲭⲏⲙⲓ \n الاسماء القبطيه "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"
-                    android:enabled="false"
-                    android:textColor="@color/colorDisabled"/>
-
-                <Button
-                    style="@style/main_Button"
-                    android:id="@+id/btn_garmmers"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="garmmers\n قواعد اللغه القبطيه "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"
-                    android:enabled="false"
-                    android:textColor="@color/colorDisabled"/>
-
-
-                <Button
-                    style="@style/main_Button"
-                    android:id="@+id/btn_dictionary"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ⲡⲓⲁⲛⲥⲁϫⲓ \n القاموس "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"
-                    android:enabled="false"
-                    android:textColor="@color/colorDisabled"/>
-                <Button
-                    style="@style/main_Button"
                     android:id="@+id/btn_references"
+                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ϩⲁⲛϫⲱⲙ \n المراجع "
-                    android:drawableLeft="@drawable/ic_action_alpha"
-                    android:drawableRight="@drawable/ic_action_alpha"/>
+                    android:drawableLeft="@drawable/ic_action_lotus"
+                    android:drawableRight="@drawable/ic_action_lotus"
+                    android:text="ϩⲁⲛϫⲱⲙ \n المراجع " />
 
 
                 <Button
-                    style="@style/main_Button"
                     android:id="@+id/btn_tts"
+                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Text To Speech"
                     android:enabled="false"
+                    android:text="Text To Speech"
                     android:textColor="@color/colorDisabled"
-                    />
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorText" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="التحديثات القادمه" />
+
+                <Button
+                    android:id="@+id/btn_dictionary"
+                    style="@style/main_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_lotus"
+                    android:drawableRight="@drawable/ic_action_lotus"
+                    android:enabled="false"
+                    android:text="ⲡⲓⲁⲛⲭⲁϫⲓ\n قاموس ناطق"
+                    android:textColor="@color/colorDisabled" />
+
+                <Button
+                    android:id="@+id/btn_garmmers"
+                    style="@style/main_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_lotus"
+                    android:drawableRight="@drawable/ic_action_lotus"
+                    android:enabled="false"
+                    android:text="ϩⲁⲛⲱϣ ⲛϯⲙⲉⲧⲣⲉⲙⲛⲭⲏⲙⲓ \n دروس اللغه القبطيه "
+                    android:textColor="@color/colorDisabled" />
             </LinearLayout>
         </ScrollView>
 
@@ -127,26 +130,52 @@
         android:layout_width="30dp"
         android:layout_height="50dp"
         android:layout_margin="5dp"
+        android:background="@android:color/transparent"
         android:src="@drawable/logo"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf= "@id/topview"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintTop_toBottomOf="@id/topview" />
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="50dp"
         android:layout_margin="5dp"
+        android:background="@android:color/transparent"
         android:src="@drawable/logo"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf= "@id/topview"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintTop_toBottomOf="@id/topview" />
 
     <View
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/calenderview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@id/calendertext" />
+
+    <TextView
+        android:id="@+id/calendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 tot 1922"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/bottomview"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_action_settings"
+        app:layout_constraintBottom_toTopOf="@id/bottomview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calenderview" />
+
+    <View
         android:id="@+id/bottomview"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginHorizontal="10dp"
-        android:background="@color/colorTitleText" />
+        android:background="@color/colorTitleText"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

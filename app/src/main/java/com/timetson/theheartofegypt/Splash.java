@@ -1,14 +1,12 @@
-package com.remmarees.themindofegypt;
+package com.timetson.theheartofegypt;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.remmarees.themindofegypt.sqlHelper.bohiricLettersSqlHelper;
+import com.timetson.theheartofegypt.sqlHelper.bohiricLettersSqlHelper;
 
 import java.io.IOException;
 
@@ -24,7 +22,7 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.splash);
         ///////////////////////////////////////////////
         //SharedPreferences set = getSharedPreferences("${context.packageName}.database_versions",Context.MODE_PRIVATE);
-         /* ***** Create Thread that will sleep for 3 seconds ************ */
+        /* ***** Create Thread that will sleep for 3 seconds ************ */
         Thread background = new Thread() {
             public void run() {
                 Intent i = null;

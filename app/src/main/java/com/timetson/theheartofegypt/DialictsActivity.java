@@ -1,4 +1,4 @@
-package com.remmarees.themindofegypt;
+package com.timetson.theheartofegypt;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,7 @@ public class DialictsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dialicts);
         final Context context = this;
 
-        final Button BtnBohiric=findViewById(R.id.btn_bohiric);
+        final Button BtnBohiric = findViewById(R.id.btn_bohiric);
         BtnBohiric.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -25,7 +25,7 @@ public class DialictsActivity extends AppCompatActivity {
             }
         });
 
-        final Button BtnSahidic=findViewById(R.id.btn_sahidic);
+        final Button BtnSahidic = findViewById(R.id.btn_sahidic);
         BtnSahidic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

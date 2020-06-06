@@ -1,12 +1,13 @@
-package com.remmarees.themindofegypt;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.timetson.theheartofegypt;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final Context context = this;
 
-        final Button Btnintroduction=findViewById(R.id.btn_introduction);
+        final Button Btnintroduction = findViewById(R.id.btn_introduction);
         Btnintroduction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button BtnAlphabet=findViewById(R.id.btn_alphabet);
+        final Button BtnAlphabet = findViewById(R.id.btn_alphabet);
         BtnAlphabet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button BtnReference=findViewById(R.id.btn_references);
+        final Button BtnReference = findViewById(R.id.btn_references);
         BtnReference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button BtnTTS=findViewById(R.id.btn_tts);
+        final Button BtnTTS = findViewById(R.id.btn_tts);
         BtnTTS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ((TextView) findViewById(R.id.calendertext)).setText(copticCalender.get_calender());
 
     }
 }
