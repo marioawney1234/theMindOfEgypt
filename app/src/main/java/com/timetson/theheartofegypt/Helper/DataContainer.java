@@ -1,4 +1,4 @@
-package com.timetson.theheartofegypt.sqlHelper;
+package com.timetson.theheartofegypt.Helper;
 
 import android.media.MediaPlayer;
 

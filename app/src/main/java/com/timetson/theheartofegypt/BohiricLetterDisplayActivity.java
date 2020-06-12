@@ -11,9 +11,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.sqlHelper.DataContainer;
-import com.timetson.theheartofegypt.sqlHelper.PronounceModule;
-import com.timetson.theheartofegypt.sqlHelper.bohiricLettersSqlHelper;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.timetson.theheartofegypt.Helper.DataContainer;
+import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
+import com.timetson.theheartofegypt.Helper.PronounceModule;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
 
@@ -25,6 +30,18 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter_display);
+
+        // adds code
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        // end ads code
+
         final Context context = this;
         final int position = getIntent().getIntExtra("POSITION", 0);
         final TextView Capital_letter = findViewById(R.id.cabital_letter);
@@ -34,17 +51,16 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         final TextView letter_comment = findViewById(R.id.letter_comment);
         final String[] types = getResources().getStringArray(R.array.letters_type);
 
-
         Capital_letter.setText(DataContainer.bohiricLetterModuleList.get(position).getCapital());
         Small_letter.setText(DataContainer.bohiricLetterModuleList.get(position).getLetter());
         letter_type.setText(types[DataContainer.bohiricLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.bohiricLetterModuleList.get(position).getName());
         letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getComment());
 
-        DataContainer.generalBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "g");
-        DataContainer.acadimicBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "a");
-        DataContainer.newBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "n");
-        DataContainer.lateBohiricPronouncation = new bohiricLettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "l");
+        DataContainer.generalBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "g");
+        DataContainer.acadimicBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "a");
+        DataContainer.newBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "n");
+        DataContainer.lateBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "l");
         setLayoutContents(context, findViewById(R.id.general), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ", "النطق البحيري", DataContainer.generalBohiricPronouncation);
         setLayoutContents(context, findViewById(R.id.acadimic_bohiric), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲛ̀ⲁⲡⲁⲥ", "النطق البحيري الاكاديمي (القديم)", DataContainer.acadimicBohiricPronouncation);
         setLayoutContents(context, findViewById(R.id.new_bohiric), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲃⲉⲣⲓ", "النطق البحيري الحديث (الكنسي)", DataContainer.newBohiricPronouncation);

@@ -20,11 +20,11 @@
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:focusable="false"
         android:overScrollMode="never"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@id/bottomview"
+        app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintTop_toBottomOf="@id/topview"
         tools:layout_editor_absoluteX="6dp">
 
@@ -271,5 +271,17 @@
         android:layout_marginHorizontal="10dp"
         android:background="@color/colorTitleText"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:layout_constraintBottom_toTopOf="@id/bottomview"
+        android:layout_marginBottom="5dp"
+        ads:adUnitId="@string/ad_banner_id"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

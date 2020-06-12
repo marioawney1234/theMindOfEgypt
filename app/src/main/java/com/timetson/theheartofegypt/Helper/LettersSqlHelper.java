@@ -1,4 +1,4 @@
-package com.timetson.theheartofegypt.sqlHelper;
+package com.timetson.theheartofegypt.Helper;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -18,7 +18,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class bohiricLettersSqlHelper extends SQLiteOpenHelper {
+public class LettersSqlHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "letters.db";
     public static final int DB_VERSION = 1;
@@ -28,16 +28,16 @@ public class bohiricLettersSqlHelper extends SQLiteOpenHelper {
     private SQLiteDatabase mDatabase;
     //private SharedPreferences preferences= mContext.getSharedPreferences("${context.packageName}.database_versions",Context.MODE_PRIVATE);
 
-    public bohiricLettersSqlHelper(Context context) {
+    public LettersSqlHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
-        Log.d("TAG", "bohiricLettersSqlHelper: 0");
+        Log.d("TAG", "LettersSqlHelper: 0");
         DB_Location = context.getApplicationInfo().dataDir + "/databases/";
         this.mContext = context;
     }
 
     public String createDataBase() throws IOException {
         String error = XmlPullParser.NO_NAMESPACE;
-        Log.d("TAG", "bohiricLettersSqlHelper: 1");
+        Log.d("TAG", "LettersSqlHelper: 1");
         if (!checkDataBase()) {
             getReadableDatabase();
             close();

@@ -48,32 +48,32 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_introduction"
+                    android:id="@+id/main_button_introduction"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_action_lotus"
                     android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="ⲟⲩⲱⲛⲥⲁϫⲓ \n تقديم " />
+                    android:text="@string/string_main_introduction"/>
 
                 <Button
-                    android:id="@+id/btn_alphabet"
+                    android:id="@+id/main_button_alphabet"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_action_lotus"
                     android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲛ̀ⲭⲏⲙⲓ \n الابجديه القبطيه " />
+                    android:text="@string/string_main_alphabet"/>
 
 
                 <Button
-                    android:id="@+id/btn_references"
+                    android:id="@+id/main_button_references"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_action_lotus"
                     android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="ϩⲁⲛϫⲱⲙ \n المراجع " />
+                    android:text="@string/string_main_references"/>
 
 
                 <Button
@@ -94,31 +94,31 @@
                     android:background="@color/colorText" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/main_text_updates"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="التحديثات القادمه" />
+                    android:text="@string/string_main_updates" />
 
                 <Button
-                    android:id="@+id/btn_dictionary"
+                    android:id="@+id/id.main_button_dictionary"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_action_lotus"
                     android:drawableRight="@drawable/ic_action_lotus"
                     android:enabled="false"
-                    android:text="ⲡⲓⲁⲛⲭⲁϫⲓ\n قاموس ناطق"
+                    android:text="@string/string_main_dictionary"
                     android:textColor="@color/colorDisabled" />
 
                 <Button
-                    android:id="@+id/btn_garmmers"
+                    android:id="@+id/main_button_lessons"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_action_lotus"
                     android:drawableRight="@drawable/ic_action_lotus"
                     android:enabled="false"
-                    android:text="ϩⲁⲛⲱϣ ⲛϯⲙⲉⲧⲣⲉⲙⲛⲭⲏⲙⲓ \n دروس اللغه القبطيه "
+                    android:text="@string/string_main_lessons"
                     android:textColor="@color/colorDisabled" />
             </LinearLayout>
         </ScrollView>
@@ -150,10 +150,10 @@
         android:layout_height="1dp"
         android:layout_margin="10dp"
         android:background="@color/colorText"
-        app:layout_constraintBottom_toTopOf="@id/calendertext" />
+        app:layout_constraintBottom_toTopOf="@id/main_calender_text" />
 
     <TextView
-        android:id="@+id/calendertext"
+        android:id="@+id/main_calender_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="15 tot 1922"
@@ -162,13 +162,15 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
+        style="@style/main_Button"
+        android:id="@+id/main_settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:src="@drawable/ic_action_settings"
         app:layout_constraintBottom_toTopOf="@id/bottomview"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calenderview" />
+        app:layout_constraintTop_toBottomOf="@id/calenderview"/>
 
     <View
         android:id="@+id/bottomview"

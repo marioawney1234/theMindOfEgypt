@@ -9,8 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.timetson.theheartofegypt.sqlHelper.DataContainer;
-import com.timetson.theheartofegypt.sqlHelper.PronounceModule;
+import com.timetson.theheartofegypt.Helper.DataContainer;
+import com.timetson.theheartofegypt.Helper.PronounceModule;
 
 import java.util.List;
 

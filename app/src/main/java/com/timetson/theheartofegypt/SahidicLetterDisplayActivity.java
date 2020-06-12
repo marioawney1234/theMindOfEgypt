@@ -10,9 +10,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.sqlHelper.DataContainer;
-import com.timetson.theheartofegypt.sqlHelper.PronounceModule;
-import com.timetson.theheartofegypt.sqlHelper.bohiricLettersSqlHelper;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.timetson.theheartofegypt.Helper.DataContainer;
+import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
+import com.timetson.theheartofegypt.Helper.PronounceModule;
 
 import java.util.List;
 
@@ -22,6 +27,18 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter_display);
+
+        // adds code
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        // end ads code
+
         final Context context = this;
         final int position = getIntent().getIntExtra("POSITION", 0);
         final TextView Capital_letter = findViewById(R.id.cabital_letter);
@@ -37,7 +54,7 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         letter_type.setText(types[DataContainer.sahidicLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.sahidicLetterModuleList.get(position).getName());
 
-        DataContainer.SahidicPronouncation = new bohiricLettersSqlHelper(context).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
+        DataContainer.SahidicPronouncation = new LettersSqlHelper(context).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
         setLayoutContents(context, findViewById(R.id.general), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲣⲏⲥ", "النطق الصعيدي", DataContainer.SahidicPronouncation);
         scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override

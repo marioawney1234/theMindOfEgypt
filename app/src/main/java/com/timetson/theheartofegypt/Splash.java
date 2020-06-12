@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.sqlHelper.bohiricLettersSqlHelper;
+import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
 
 import java.io.IOException;
 
@@ -14,21 +14,21 @@ import java.io.IOException;
 public class Splash extends AppCompatActivity {
 
     public final Context context = this;
-    private bohiricLettersSqlHelper mDbHelper;
+    private LettersSqlHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.splash);
         ///////////////////////////////////////////////
-        //SharedPreferences set = getSharedPreferences("${context.packageName}.database_versions",Context.MODE_PRIVATE);
         /* ***** Create Thread that will sleep for 3 seconds ************ */
         Thread background = new Thread() {
             public void run() {
                 Intent i = null;
 
                 // database
-                mDbHelper = new bohiricLettersSqlHelper(context);
+                mDbHelper = new LettersSqlHelper(context);
 
                 try {
                     mDbHelper.createDataBase();
