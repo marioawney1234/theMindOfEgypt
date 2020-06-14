@@ -28,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Ⲡ̀ϩⲏⲧ ⲛ̀ⲭⲏⲙⲓ"
-            android:textSize="35dp" />
+            android:text="@string/app_name"
+            android:textSize="35sp" />
 
         <View
             android:layout_width="match_parent"
@@ -48,32 +48,33 @@
                 android:orientation="vertical">
 
                 <Button
+                    style="@style/menu_button"
                     android:id="@+id/main_button_introduction"
-                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
                     android:text="@string/string_main_introduction"/>
 
                 <Button
+                    style="@style/menu_button"
                     android:id="@+id/main_button_alphabet"
-                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="@string/string_main_alphabet"/>
+                    android:text="@string/string_main_alphabet" />
 
 
                 <Button
+                    style="@style/menu_button"
                     android:id="@+id/main_button_references"
-                    style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
                     android:text="@string/string_main_references"/>
+
+                <Button
+                    style="@style/menu_button"
+                    android:id="@+id/main_button_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_main_about"/>
 
 
                 <Button
@@ -97,26 +98,24 @@
                     android:id="@+id/main_text_updates"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_updates" />
+                    android:text="@string/string_main_updates"
+                    android:fontFamily="@font/antinoou"/>
 
                 <Button
                     android:id="@+id/id.main_button_dictionary"
-                    style="@style/main_Button"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
                     android:enabled="false"
                     android:text="@string/string_main_dictionary"
                     android:textColor="@color/colorDisabled" />
 
                 <Button
                     android:id="@+id/main_button_lessons"
-                    style="@style/main_Button"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
+
                     android:enabled="false"
                     android:text="@string/string_main_lessons"
                     android:textColor="@color/colorDisabled" />
@@ -156,7 +155,7 @@
         android:id="@+id/main_calender_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="15 tot 1922"
+        android:text="15 ⲡⲁⲱⲛⲓ 1922"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@id/bottomview"
         app:layout_constraintRight_toRightOf="parent" />
@@ -166,7 +165,7 @@
         android:id="@+id/main_settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:src="@drawable/ic_action_settings"
         app:layout_constraintBottom_toTopOf="@id/bottomview"
         app:layout_constraintLeft_toLeftOf="parent"

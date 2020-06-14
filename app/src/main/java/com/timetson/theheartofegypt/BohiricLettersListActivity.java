@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -24,13 +26,47 @@ import java.util.List;
 
 public class BohiricLettersListActivity extends AppCompatActivity {
 
-    final Context context = this;
+    ////////// assign views ////////
     List<LetterModule> moduleList;
+    private TextView textViewTitleCoptic;
+    private TextView textViewTitle;
+    ////////////////////////////////
+
+    ////////////for Language Setting///////////////////
+    private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+    }
+
+    @Override
+    protected void onRestart() {
+        recreate();
+        super.onRestart();
+    }
+    private void setLanguage(Context context, String languageCode) {
+        if (languageCode.equals("en")) {
+            textViewTitle.setText(context.getResources().getString(R.string.letter_list_title_bohiric_en));
+        } else if (languageCode.equals("ar")) {
+            textViewTitle.setText(context.getResources().getString(R.string.letter_list_title_bohiric_ar));
+        }
+    }
+    ////////////////////////////////////////////////////
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letters_list);
+
+        ////////initialization///////////
+        final Context context = this;
+        textViewTitle = findViewById(R.id.letters_list_title);
+        textViewTitleCoptic = findViewById(R.id.letters_list_title_coptic);
+        ///////////////////////////////
+        ///////set language///////////
+        setLanguage(context, LanguageCode);
+        //////////////////////////
 
         // adds code
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -42,9 +78,7 @@ public class BohiricLettersListActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         // end ads code
-
-        ((TextView) findViewById(R.id.title_text_coptic)).setText("ⲁⲗⲫⲁⲃⲏⲧⲟⲛ ⲛⲣⲉⲙⲉⲙϩⲓⲧ");
-        ((TextView) findViewById(R.id.title_text_arabic)).setText("الابجديه القبطيه البحيريه");
+        textViewTitleCoptic.setText(context.getResources().getString(R.string.letter_list_title_bohiric_co));
         ListView lettersListView = findViewById(R.id.lettersListView);
         moduleList = new LettersSqlHelper(context).getBohiricLetters();
         DataContainer.bohiricLetterModuleList = moduleList;

@@ -11,13 +11,15 @@ public class LetterModule {
     private String name;
     private int type;
     private String comment;
+    private String englishComment;
 
-    public LetterModule(String letter, String capital, String name, int type, String comment) {
+    public LetterModule(String letter, String capital, String name, int type, String comment, String englishComment) {
         this.letter = letter;
         this.capital = capital;
         this.name = name;
         this.type = type;
         this.comment = comment;
+        this.englishComment = englishComment;
     }
 
     public String getLetter() {
@@ -39,6 +41,7 @@ public class LetterModule {
     public String getComment() {
         return comment;
     }
+    public String getEnglishComment(){return englishComment;}
 
     @NonNull
     @Override

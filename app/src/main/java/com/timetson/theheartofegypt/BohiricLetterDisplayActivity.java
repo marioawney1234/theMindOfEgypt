@@ -10,6 +10,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -26,10 +27,70 @@ import java.util.List;
 
 public class BohiricLetterDisplayActivity extends AppCompatActivity {
 
+    ////////// assign views ////////
+    private TextView textViewName;
+    private TextView textViewType;
+    private TextView textViewCommentTitle;
+    private TextView textViewCommentAlert;
+    private String titleGeneral;
+    private String titleAcadimic;
+    private String titleLate;
+    private String titlemodern;
+    ////////////////////////////////
+
+    ////////////for Language Setting///////////////////
+    private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+    }
+
+    @Override
+    protected void onRestart() {
+        recreate();
+        super.onRestart();
+    }
+    private void setLanguage(Context context, String languageCode) {
+        if (languageCode.equals("en")) {
+            textViewName.setText(context.getResources().getString(R.string.letter_display_name_en));
+            textViewType.setText(context.getResources().getString(R.string.letter_display_type_en));
+            textViewCommentTitle.setText(context.getResources().getString(R.string.letter_display_comment_en));
+            textViewCommentAlert.setText(context.getResources().getString(R.string.letter_display_comment_alert_en));
+            titleGeneral=context.getResources().getString(R.string.letter_display_general_title_en);
+            titleAcadimic=context.getResources().getString(R.string.letter_display_acadimic_title_en);
+            titleLate=context.getResources().getString(R.string.letter_display_late_title_en);
+            titlemodern=context.getResources().getString(R.string.letter_display_modern_title_en);
+        } else if (languageCode.equals("ar")) {
+            textViewName.setText(context.getResources().getString(R.string.letter_display_name_ar));
+            textViewType.setText(context.getResources().getString(R.string.letter_display_type_ar));
+            textViewCommentTitle.setText(context.getResources().getString(R.string.letter_display_comment_ar));
+            textViewCommentAlert.setText(context.getResources().getString(R.string.letter_display_comment_alert_ar));
+            titleGeneral=context.getResources().getString(R.string.letter_display_general_title_ar);
+            titleAcadimic=context.getResources().getString(R.string.letter_display_acadimic_title_ar);
+            titleLate=context.getResources().getString(R.string.letter_display_late_title_ar);
+            titlemodern=context.getResources().getString(R.string.letter_display_modern_title_ar);
+        }
+    }
+    ////////////////////////////////////////////////////
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter_display);
+
+        ////////initialization///////////
+        final Context context = this;
+        textViewName = findViewById(R.id.letter_name_title);
+        textViewType = findViewById(R.id.letter_type_title);
+        textViewCommentTitle = findViewById(R.id.comment_title);
+        textViewCommentAlert = findViewById(R.id.comment_alert);
+        ///////////////////////////////
+
+        ///////set language///////////
+        setLanguage(context, LanguageCode);
+        //////////////////////////
 
         // adds code
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -42,7 +103,6 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
         // end ads code
 
-        final Context context = this;
         final int position = getIntent().getIntExtra("POSITION", 0);
         final TextView Capital_letter = findViewById(R.id.cabital_letter);
         final TextView Small_letter = findViewById(R.id.small_letter);
@@ -55,16 +115,21 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         Small_letter.setText(DataContainer.bohiricLetterModuleList.get(position).getLetter());
         letter_type.setText(types[DataContainer.bohiricLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.bohiricLetterModuleList.get(position).getName());
-        letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getComment());
+        if (LanguageCode.equals("ar")) {
+            letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getComment());
+        }else{
+            letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getEnglishComment());
+
+        }
 
         DataContainer.generalBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "g");
         DataContainer.acadimicBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "a");
         DataContainer.newBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "n");
         DataContainer.lateBohiricPronouncation = new LettersSqlHelper(context).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "l");
-        setLayoutContents(context, findViewById(R.id.general), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ", "النطق البحيري", DataContainer.generalBohiricPronouncation);
-        setLayoutContents(context, findViewById(R.id.acadimic_bohiric), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲛ̀ⲁⲡⲁⲥ", "النطق البحيري الاكاديمي (القديم)", DataContainer.acadimicBohiricPronouncation);
-        setLayoutContents(context, findViewById(R.id.new_bohiric), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲃⲉⲣⲓ", "النطق البحيري الحديث (الكنسي)", DataContainer.newBohiricPronouncation);
-        setLayoutContents(context, findViewById(R.id.late_bohiric), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲡⲓϧⲁⲉ̀ ", "النطق البحيري المتاخر (المتوارث)", DataContainer.lateBohiricPronouncation);
+        setLayoutContents(context, findViewById(R.id.general), context.getResources().getString(R.string.letter_display_general_title_co), titleGeneral, DataContainer.generalBohiricPronouncation);
+        setLayoutContents(context, findViewById(R.id.acadimic_bohiric), context.getResources().getString(R.string.letter_display_acadimic_title_co), titleAcadimic, DataContainer.acadimicBohiricPronouncation);
+        setLayoutContents(context, findViewById(R.id.new_bohiric), context.getResources().getString(R.string.letter_display_modern_title_co), titlemodern, DataContainer.newBohiricPronouncation);
+        setLayoutContents(context, findViewById(R.id.late_bohiric), context.getResources().getString(R.string.letter_display_late_title_co), titleLate, DataContainer.lateBohiricPronouncation);
 
         if (!DataContainer.bohiricLetterModuleList.get(position).getComment().equals("-")) {
             findViewById(R.id.comment_layout).setVisibility(View.VISIBLE);
@@ -95,7 +160,11 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         ListView listView = view.findViewById(R.id.general_list);
         listView.setAdapter(adapter);
         listView.setEnabled(false);
-        expand_coolapse((ExpandableLayout) view.findViewById(R.id.expandable_layout), view.findViewById(R.id.button_layout), (ImageView) view.findViewById(R.id.expand_image));
+        if(copticTitle.equals(context.getResources().getString(R.string.letter_display_general_title_co))) {
+            ((ExpandableLayout) view.findViewById(R.id.expandable_layout)).expand();
+        }else {
+            expand_coolapse((ExpandableLayout) view.findViewById(R.id.expandable_layout), view.findViewById(R.id.button_layout), (ImageView) view.findViewById(R.id.expand_image));
+        }
 
     }
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_dialict_bohiric_ar">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲉⲙϩⲓⲧ \n الابجدية القبطيه البحيرية</string>
+    <string name="string_dialict_bohiric_en">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲉⲙϩⲓⲧ \n Bohiric alphabet</string>
+    <string name="string_dialict_sahidic_ar">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲣⲏⲥ \n الابجدية القبطيه الصعيدية</string>
+    <string name="string_dialict_sahidic_en">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲣⲏⲥ \n Sahidic alphabet</string>
+</resources>

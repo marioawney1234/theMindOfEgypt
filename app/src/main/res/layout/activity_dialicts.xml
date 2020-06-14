@@ -28,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Ⲡ̀ϩⲏⲧ ⲛ̀ⲭⲏⲙⲓ"
-            android:textSize="35dp" />
+            android:text="@string/app_name"
+            android:textSize="35sp" />
 
         <View
             android:layout_width="match_parent"
@@ -48,22 +48,22 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_bohiric"
+                    android:id="@+id/button_bohiric"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ \n الابجديه القبطيه البحيريه " />
+                    android:drawableStart="@drawable/ic_action_lotus"
+                    android:drawableEnd="@drawable/ic_action_lotus"
+                    android:text="@string/string_dialict_bohiric_ar" />
 
                 <Button
-                    android:id="@+id/btn_sahidic"
+                    android:id="@+id/button_sahidic"
                     style="@style/main_Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_lotus"
-                    android:drawableRight="@drawable/ic_action_lotus"
-                    android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲣⲏⲥ \n الابجديه القبطيه الصعيديه " />
+                    android:drawableStart="@drawable/ic_action_lotus"
+                    android:drawableEnd="@drawable/ic_action_lotus"
+                    android:text="@string/string_dialict_sahidic_ar"/>
 
             </LinearLayout>
         </ScrollView>

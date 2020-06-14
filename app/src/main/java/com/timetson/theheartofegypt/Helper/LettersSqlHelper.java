@@ -1,6 +1,7 @@
 package com.timetson.theheartofegypt.Helper;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,6 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.preference.PreferenceManager;
+
+import com.timetson.theheartofegypt.TheHeartOfEgypt;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -21,15 +25,15 @@ import java.util.List;
 public class LettersSqlHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "letters.db";
-    public static final int DB_VERSION = 1;
+    public static final int DB_CURRENT_VERSION = 1;
     private static final String ASSETS_PATH = "databases";
     public static String DB_Location;
     private Context mContext;
     private SQLiteDatabase mDatabase;
-    //private SharedPreferences preferences= mContext.getSharedPreferences("${context.packageName}.database_versions",Context.MODE_PRIVATE);
+
 
     public LettersSqlHelper(Context context) {
-        super(context, DB_NAME, null, DB_VERSION);
+        super(context, DB_NAME, null, DB_CURRENT_VERSION);
         Log.d("TAG", "LettersSqlHelper: 0");
         DB_Location = context.getApplicationInfo().dataDir + "/databases/";
         this.mContext = context;
@@ -43,6 +47,7 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
             close();
             try {
                 copyDataBase();
+                Log.d("TAG", "createDataBase: DB copied");
             } catch (IOException mIOException) {
                 return error + mIOException.getStackTrace().toString();
             }
@@ -61,7 +66,12 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
             checkDB.close();
         }
         boolean check = checkDB != null;
-        return check;//preferences.getInt(DB_NAME, 0)  != DB_VERSION;
+
+        int DB_Version = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getInt(DB_NAME, 0);
+        if (DB_Version!=DB_CURRENT_VERSION)
+            check=false;
+
+        return check;
     }
 
     private void copyDataBase() throws IOException {
@@ -76,9 +86,9 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
                 myOutput.flush();
                 myOutput.close();
                 myInput.close();
-                //SharedPreferences.Editor edit=preferences.edit();
-                //edit.putInt(DB_NAME, DB_VERSION);
-                //edit.apply();
+                SharedPreferences.Editor edit=PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).edit();
+                edit.putInt(DB_NAME, DB_CURRENT_VERSION);
+                edit.apply();
                 return;
             }
         }
@@ -116,7 +126,7 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
         cursor = mDatabase.rawQuery("select * from bohiric_letters ORDER BY id", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            module = new LetterModule(cursor.getString(cursor.getColumnIndex("letter")), cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")), cursor.getString(cursor.getColumnIndex("comments")));
+            module = new LetterModule(cursor.getString(cursor.getColumnIndex("letter")), cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")), cursor.getString(cursor.getColumnIndex("comments")) , cursor.getString(cursor.getColumnIndex("english_comment")));
             list.add(module);
             cursor.moveToNext();
         }
@@ -153,7 +163,7 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
         cursor = mDatabase.rawQuery("select * from sahidic_letters ORDER BY id", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            module = new LetterModule(cursor.getString(cursor.getColumnIndex("letter")), cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")), "-");
+            module = new LetterModule(cursor.getString(cursor.getColumnIndex("letter")), cursor.getString(cursor.getColumnIndex("capital")), cursor.getString(cursor.getColumnIndex("name")), cursor.getInt(cursor.getColumnIndex("type")), "-","-");
             list.add(module);
             cursor.moveToNext();
         }

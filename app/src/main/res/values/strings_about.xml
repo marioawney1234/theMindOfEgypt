@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_facebook">http://facebook.com/ⲡϩⲏⲧ_ⲛⲭⲏⲙⲓ</string>
+
+    <string name="about_version_ar">اصدار 1.0.0</string>
+    <string name="about_share_ar">شارك تطبيقنا مع اصدقائك</string>
+    <string name="about_plan_ar">التطبيق مهتم بالهويه المصريه عامتا و اللغه المصريه (القبطيه) خاصتا و يهدف التطبيق لاستكمال مشروع دروس للغه القبطيه و قاموس ناطق يتم اضافه الكلمات المعروفه الاصليه و استحداث الكلمات التي ليس لها مقابل في القبطيه نتيجه توقف الكلام بها من العاميه المصريه و الاشاره لاستحداثها و لكن ينقص فريق العمل المعرفه التامه للغه و نحتاج لدارسين للغه لاستمرار المشروع </string>
+    <string name="about_team_ar">تصميم واعداد و برمجه\nفريق ϯⲙⲉⲧⲥⲟⲛ\n\nاعضاء الفريق\nرفيق عوني انور\nماريو عوني انور\nد/ مينا فايق زكي</string>
+    <string name="about_caution_ar">القائمين علي العمل مبتدئين في اللغه القبطيه و غير متخصصين بها لذلك وجب التنويه عن امكانيه وجود بعد الاخطاء او المعلومات الغير مكتمله و فريق العمل يرحب بدارسين اللغه المهتمين باستكمال العمل بالتواصل علي صفحه الفيس بوك الخاصه بنا</string>
+
+    <string name="about_version_en">Version 1.0.0</string>
+    <string name="about_share_en">Share our APP with your friends</string>
+    <string name="about_plan_en">translation pending</string>
+    <string name="about_team_en">prepared and designed\nby\nϯⲙⲉⲧⲥⲟⲛ team\n\nTeam members\nRafik Awney Anwer\nMario Awney Anwer\nDr: Mina Fayek Zaki</string>
+    <string name="about_caution_en">translation pending</string>
+
+</resources>

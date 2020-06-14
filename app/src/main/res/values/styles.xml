@@ -9,7 +9,8 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:textColorPrimary">@color/colorText</item>
-        <item name="android:fontFamily">@font/arial_coptic</item>
+        <item name="android:fontFamily">@font/antinoou</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColorSecondary">@color/colorText</item>
         <item name="android:textColor">@color/colorText</item>
         <item name="android:textViewStyle">@style/TransparentTextView</item>
@@ -21,7 +22,12 @@
 
     <style name="main_Button" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/dejavusans_bold</item>
+        <item name="android:fontFamily">@font/antinoou</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="menu_button" parent="main_Button">
+        <item name="android:drawableStart">@drawable/ic_action_lotus</item>
+        <item name="android:drawableEnd">@drawable/ic_action_lotus</item>
     </style>
 
 </resources>

@@ -25,21 +25,21 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_text_coptic"
+            android:id="@+id/letters_list_title_coptic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ⲣⲉⲙⲛ̀ⲭⲏⲙⲓ"
-            android:textSize="30sp" />
+            android:text="@string/letter_list_title_bohiric_co"
+            android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/title_text_arabic"
+            android:id="@+id/letters_list_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="@string/string_main_alphabet"
-            android:textSize="30sp" />
+            android:text="@string/letter_list_title_bohiric_ar"
+            android:textSize="25sp" />
 
         <View
             android:layout_width="match_parent"

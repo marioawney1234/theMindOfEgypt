@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonDictionary;
     private Button buttonLessons;
     private TextView textViewUpdates;
+    private Button buttonAbout;
 
     ////////////for Language Setting///////////////////
     private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         buttonReference = findViewById(R.id.main_button_references);
         buttonDictionary = findViewById(R.id.id_main_button_dictionary);
         buttonLessons = findViewById(R.id.main_button_lessons);
+        buttonAbout=findViewById(R.id.main_button_about);
         textViewUpdates = findViewById(R.id.main_text_updates);
 
         ImageView buttonSettings = findViewById(R.id.main_settings_button);
@@ -97,6 +99,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, AboutActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ((TextView) findViewById(R.id.main_calender_text)).setText(copticCalender.get_calender());
     }
 
@@ -107,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
             buttonReference.setText(context.getResources().getString(R.string.string_main_references));
             buttonDictionary.setText(context.getResources().getString(R.string.string_main_dictionary));
             buttonLessons.setText(context.getResources().getString(R.string.string_main_lessons));
+            buttonAbout.setText(context.getResources().getString(R.string.string_main_about));
             textViewUpdates.setText(context.getResources().getString(R.string.string_main_updates));
         } else if (languageCode.equals("ar")) {
             buttonIntroduction.setText(context.getResources().getString(R.string.string_main_introduction_ar));
@@ -114,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
             buttonReference.setText(getResources().getString(R.string.string_main_references_ar));
             buttonDictionary.setText(getResources().getString(R.string.string_main_dictionary_ar));
             buttonLessons.setText(getResources().getString(R.string.string_main_lessons_ar));
+            buttonAbout.setText(context.getResources().getString(R.string.string_main_about_ar));
             textViewUpdates.setText(getResources().getString(R.string.string_main_updatese_ar));
         }
     }

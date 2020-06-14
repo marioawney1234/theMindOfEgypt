@@ -4,11 +4,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -23,10 +25,53 @@ import java.util.List;
 
 public class SahidicLetterDisplayActivity extends AppCompatActivity {
 
+    ////////// assign views ////////
+    private TextView textViewName;
+    private TextView textViewType;
+    private String title;
+    ////////////////////////////////
+
+    ////////////for Language Setting///////////////////
+    private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+    }
+
+    @Override
+    protected void onRestart() {
+        recreate();
+        super.onRestart();
+    }
+    private void setLanguage(Context context, String languageCode) {
+        if (languageCode.equals("en")) {
+            textViewName.setText(context.getResources().getString(R.string.letter_display_name_en));
+            textViewType.setText(context.getResources().getString(R.string.letter_display_type_en));
+            title=context.getResources().getString(R.string.letter_display_sahidic_title_en);
+        } else if (languageCode.equals("ar")) {
+            textViewName.setText(context.getResources().getString(R.string.letter_display_name_ar));
+            textViewType.setText(context.getResources().getString(R.string.letter_display_type_ar));
+            title=context.getResources().getString(R.string.letter_display_sahidic_title_ar);
+        }
+    }
+    ////////////////////////////////////////////////////
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter_display);
+
+        ////////initialization///////////
+        final Context context = this;
+        textViewName = findViewById(R.id.letter_name_title);
+        textViewType = findViewById(R.id.letter_type_title);
+        ///////////////////////////////
+
+        ///////set language///////////
+        setLanguage(context, LanguageCode);
+        //////////////////////////
 
         // adds code
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -39,7 +84,6 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
         // end ads code
 
-        final Context context = this;
         final int position = getIntent().getIntExtra("POSITION", 0);
         final TextView Capital_letter = findViewById(R.id.cabital_letter);
         final TextView Small_letter = findViewById(R.id.small_letter);
@@ -55,7 +99,7 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         letter_name.setText(DataContainer.sahidicLetterModuleList.get(position).getName());
 
         DataContainer.SahidicPronouncation = new LettersSqlHelper(context).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
-        setLayoutContents(context, findViewById(R.id.general), "Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲣⲏⲥ", "النطق الصعيدي", DataContainer.SahidicPronouncation);
+        setLayoutContents(context, findViewById(R.id.general), context.getResources().getString(R.string.letter_display_sahidic_title_co), title, DataContainer.SahidicPronouncation);
         scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
