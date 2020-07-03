@@ -7,15 +7,18 @@
     <string name="string_main_updates">Next planned updates</string>
     <string name="string_main_lessons">Ϩⲁⲛⲱϣ ⲛϯⲙⲉⲧⲣⲉⲙⲛⲭⲏⲙⲓ\nCoptic language lessons </string>
     <string name="string_main_dictionary">Ⲡⲓⲁⲛⲥⲁϫⲓ\nDictionary</string>
-    <string name="string_main_about">About us</string>
+    <string name="string_main_about">Ϧⲁ\nAbout us</string>
+    <string name="string_main_word">ⲟⲩⲥⲁϫⲓ ⲙⲫⲟⲟⲩ\ntoday\'s word</string>
 
     <!-- Arabic strings -->
     <string name="string_main_introduction_ar">Ⲡⲓⲟⲩⲱⲛⲥⲁϫⲓ\nالمقدمة</string>
-    <string name="string_main_alphabet_ar">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ\nالابجديه القبطية</string>
+    <string name="string_main_alphabet_ar">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ\nالأبجديه القبطية</string>
     <string name="string_main_references_ar">Ⲛⲓⲣⲉϥⲙⲓⲥⲓ\nالمصادر</string>
     <string name="string_main_updatese_ar">التحديثات القادمة</string>
     <string name="string_main_lessons_ar">Ϩⲁⲛⲱϣ ⲛϯⲙⲉⲧⲣⲉⲙⲛⲭⲏⲙⲓ\nدروس اللغه القبطيه</string>
-    <string name="string_main_dictionary_ar">Ⲡⲓⲁⲛⲥⲁϫⲓ\nقاموس ناطق</string>
-    <string name="string_main_about_ar">عن التطبيق</string>
+    <string name="string_main_dictionary_ar">Ⲡⲓⲁⲛⲥⲁϫⲓ\nقاموس</string>
+    <string name="string_main_about_ar">Ϧⲁ\nعن التطبيق</string>
+    <string name="string_main_word_ar">ⲟⲩⲥⲁϫⲓ ⲙⲫⲟⲟⲩ\nكلمة اليوم</string>
+
 
 </resources>

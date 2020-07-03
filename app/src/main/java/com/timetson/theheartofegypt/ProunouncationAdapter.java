@@ -58,26 +58,10 @@ public class ProunouncationAdapter extends BaseAdapter {
         if (moduleList.get(position).getAudio().contains("-")) playButton.setVisibility(View.GONE);
         playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                playSound(mcontext, "letters_sounds/" + moduleList.get(position).getAudio() + ".mp3");
+                DataContainer.playSound(mcontext, "letters_sounds/" + moduleList.get(position).getAudio() + ".mp3");
             }
         });
         return v;
     }
 
-    public void playSound(Context context, String file_name) {
-        try {
-            DataContainer.audioPlayer.stop();
-            DataContainer.audioPlayer.reset();
-            AssetFileDescriptor descriptor = context.getAssets().openFd(file_name);
-            DataContainer.audioPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
-            descriptor.close();
-
-            DataContainer.audioPlayer.prepare();
-            DataContainer.audioPlayer.setVolume(1f, 1f);
-            DataContainer.audioPlayer.setLooping(false);
-            DataContainer.audioPlayer.start();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

@@ -11,6 +11,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonReference;
     private Button buttonDictionary;
     private Button buttonLessons;
+    private Button buttonWord;
     private TextView textViewUpdates;
     private Button buttonAbout;
 
@@ -43,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ////////ADs intialization ////////////
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        ///////////////////////////////////////
+
         ////////initialization///////////
         final Context context = this;
         buttonIntroduction = findViewById(R.id.main_button_introduction);
@@ -50,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         buttonReference = findViewById(R.id.main_button_references);
         buttonDictionary = findViewById(R.id.id_main_button_dictionary);
         buttonLessons = findViewById(R.id.main_button_lessons);
+        buttonWord = findViewById(R.id.main_button_word);
         buttonAbout=findViewById(R.id.main_button_about);
         textViewUpdates = findViewById(R.id.main_text_updates);
 
@@ -107,6 +121,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonWord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, WordActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ((TextView) findViewById(R.id.main_calender_text)).setText(copticCalender.get_calender());
     }
 
@@ -118,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
             buttonDictionary.setText(context.getResources().getString(R.string.string_main_dictionary));
             buttonLessons.setText(context.getResources().getString(R.string.string_main_lessons));
             buttonAbout.setText(context.getResources().getString(R.string.string_main_about));
+            buttonWord.setText(context.getResources().getString(R.string.string_main_word));
             textViewUpdates.setText(context.getResources().getString(R.string.string_main_updates));
         } else if (languageCode.equals("ar")) {
             buttonIntroduction.setText(context.getResources().getString(R.string.string_main_introduction_ar));
@@ -126,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
             buttonDictionary.setText(getResources().getString(R.string.string_main_dictionary_ar));
             buttonLessons.setText(getResources().getString(R.string.string_main_lessons_ar));
             buttonAbout.setText(context.getResources().getString(R.string.string_main_about_ar));
+            buttonWord.setText(context.getResources().getString(R.string.string_main_word_ar));
             textViewUpdates.setText(getResources().getString(R.string.string_main_updatese_ar));
         }
     }

@@ -7,14 +7,10 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.preference.PreferenceManager;
-
 import com.timetson.theheartofegypt.TheHeartOfEgypt;
-
 import org.xmlpull.v1.XmlPullParser;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,7 +20,7 @@ import java.util.List;
 
 public class LettersSqlHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "letters.db";
+    public static final String DB_NAME = "ⲁⲗⲫⲁⲃⲏⲧⲟⲛ.db";
     public static final int DB_CURRENT_VERSION = 1;
     private static final String ASSETS_PATH = "databases";
     public static String DB_Location;

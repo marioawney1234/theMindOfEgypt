@@ -32,11 +32,6 @@ public class DialictsActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             buttonBohiric.setText(context.getResources().getString(R.string.string_dialict_bohiric_en));

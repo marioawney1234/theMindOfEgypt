@@ -61,6 +61,13 @@
                     android:layout_height="wrap_content"
                     android:text="@string/string_main_alphabet" />
 
+                <Button
+                    style="@style/menu_button"
+                    android:id="@+id/main_button_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_main_word" />
+
 
                 <Button
                     style="@style/menu_button"

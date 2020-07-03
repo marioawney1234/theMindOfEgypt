@@ -1,4 +1,40 @@
 <resources>
-    <!-- Reply Preference -->
+    <!-- references names-->
+    <array name="References">
+        <item>
+            \"صاجي نمان\" الجزء الاول - دكتور: إميل ماهر (القس شنوده ماهر)
+        </item>
+        <item>
+            \"صاجي نمان\" الجزء الثاني - دكتور: إميل ماهر (القس شنوده ماهر)
+        </item>
 
+        <item>
+            \"قواعد اللغه القبطيه اللهجه الصعيديه\" الجزء الاول - بيتر سمير دانيال
+        </item>
+
+        <item>
+            \"اللغه المصريه القديمه -الخط القبطي (اللهجه الصعيديه)\" - دكتور: عبد الحليم نور الدين
+        </item>
+
+        <item>
+            \"قواعد اللغه القبطيه\" الجزء الاول - الراهب أندرياس المقاري
+        </item>
+
+        <item>
+            \"Ancient Egyptian - A linguistic introduction\" - Antonio Loprieno
+        </item>
+        <item>
+            حلقات دكتور : كمال فريد إسحق عن اللهجه البحيريه في القرن الثاني الميلادي
+        </item>
+        <item>
+            \"قاموس قبطي عربي لكلمات اللهجه البحيريه المستخدمه في الصلوات الكنسيه و النصوص الأبائيه\" - الراهب أندرياس المقاري
+        </item>
+    </array>
+
+    // array of letter types
+    <string-array name="letters_type">
+        <item>حرف متحرك Vowel</item>
+        <item>Constant حرف ساكن</item>
+        <item> --- </item>
+    </string-array>
 </resources>

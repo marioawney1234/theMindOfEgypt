@@ -39,11 +39,6 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             textViewName.setText(context.getResources().getString(R.string.letter_display_name_en));
@@ -112,6 +107,7 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         findViewById(R.id.acadimic_bohiric).setVisibility(View.GONE);
         findViewById(R.id.new_bohiric).setVisibility(View.GONE);
         findViewById(R.id.late_bohiric).setVisibility(View.GONE);
+        findViewById(R.id.letter_name_sounds).setVisibility(View.GONE);
     }
 
     private void setLayoutContents(Context context, View view, String copticTitle, String title, List<PronounceModule> list) {

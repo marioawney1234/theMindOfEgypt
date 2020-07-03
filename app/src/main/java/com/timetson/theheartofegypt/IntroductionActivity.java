@@ -28,11 +28,6 @@ public class IntroductionActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     //////////////////////////////////////////////////////////
 
     @Override
@@ -67,7 +62,7 @@ public class IntroductionActivity extends AppCompatActivity {
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             introductionTitleText.setText(context.getResources().getString(R.string.string_introduction_title_en));
-            introductionText.setText(context.getResources().getString(R.string.string_introduction_en));
+            introductionText.setText("*We are sorry, English translation not available yet.*\n"+context.getResources().getString(R.string.string_introduction_ar));
         } else if (languageCode.equals("ar")) {
             introductionTitleText.setText(context.getResources().getString(R.string.string_introduction_title_ar));
             introductionText.setText(context.getResources().getString(R.string.string_introduction_ar));

@@ -4,7 +4,7 @@
     <string name="letter_display_name_ar">اسم الحرف</string>
     <string name="letter_display_name_en">letter name</string>
 
-    <string name="letter_display_type_co">ⲡ̀ⲑⲟ ⲙ̀ⲡⲓⲕⲁⲡ</string>
+    <string name="letter_display_type_co">Ⲧ̀ⲙⲓⲛⲓ ⲙ̀ⲡⲓⲕⲁⲡ</string>
     <string name="letter_display_type_ar">نوع الحرف</string>
     <string name="letter_display_type_en">letter type</string>
 
@@ -16,23 +16,23 @@
     <string name="letter_display_general_title_ar">النطق البحيري</string>
     <string name="letter_display_general_title_en">Bohiric pronunciation</string>
 
-    <string name="letter_display_acadimic_title_co">Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲛ̀ⲁⲡⲁⲥ</string>
-    <string name="letter_display_acadimic_title_ar">النطق البحيري الاكاديمي (القديم)</string>
-    <string name="letter_display_acadimic_title_en">Acadimic bohiric pronunciation (old)</string>
+    <string name="letter_display_acadimic_title_co">Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲛ̀ⲣⲉⲙⲥ̀ⲃⲱ</string>
+    <string name="letter_display_acadimic_title_ar">النطق البحيري الاكاديمي</string>
+    <string name="letter_display_acadimic_title_en">Acadimic bohiric pronunciation</string>
 
-    <string name="letter_display_late_title_co">Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲡⲓϧⲁⲉ̀</string>
+    <string name="letter_display_late_title_co">Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲛ̀ⲁⲡⲁⲥ</string>
     <string name="letter_display_late_title_ar">النطق البحيري المتاخر (المتوارث)</string>
     <string name="letter_display_late_title_en">Late bohiric pronunciation</string>
 
     <string name="letter_display_modern_title_co">Ⲡⲓϫⲓⲛⲧⲁⲟⲩⲟ ⲛ̀ⲣⲉⲙⲉⲙϩⲓⲧ ⲙ̀ⲃⲉⲣⲓ</string>
     <string name="letter_display_modern_title_ar">النطق البحيري الحديث (الكنسي)</string>
-    <string name="letter_display_modern_title_en">Modern bohiric pronunciation (Greco-Coptic)</string>
+    <string name="letter_display_modern_title_en">Reformed bohiric pronunciation (Greco-Coptic)</string>
 
     <string name="letter_display_comment_co">Ⲟⲩⲥϧⲓ</string>
     <string name="letter_display_comment_ar">تعليق</string>
     <string name="letter_display_comment_en">comment</string>
 
-    <string name="letter_display_comment_alert_ar"> هذا التعليق راي شخصي يعبر عن وجهه نظر و استنتاجات في محاوله ضبط و توحيد النطق و لا يعبر عن دراسه علميه او يعتبر كمصدر موثوق</string>
+    <string name="letter_display_comment_alert_ar"> هذا التعليق راي شخصي يعبر عن وجهه نظر في محاوله ضبط و توحيد النطق و لا يعبر عن دراسه علميه او يعتبر كمصدر موثوق</string>
     <string name="letter_display_comment_alert_en">this is personal effort comment and doesn\'t represent any official study or considered as a trusted reference</string>
 
 </resources>

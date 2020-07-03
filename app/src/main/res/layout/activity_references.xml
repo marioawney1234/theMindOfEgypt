@@ -74,6 +74,6 @@
         ads:adSize="BANNER"
         ads:layout_constraintBottom_toTopOf="@id/bottomview"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_id"/>
+        ads:adUnitId="@string/ad_banner_references"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

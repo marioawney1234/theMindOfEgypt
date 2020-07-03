@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
+import com.timetson.theheartofegypt.Helper.WordsSqlHelper;
 
 import java.io.IOException;
 
@@ -14,7 +15,8 @@ import java.io.IOException;
 public class Splash extends AppCompatActivity {
 
     public final Context context = this;
-    private LettersSqlHelper mDbHelper;
+    private LettersSqlHelper lettersDbHelper;
+    private WordsSqlHelper wordsDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +30,12 @@ public class Splash extends AppCompatActivity {
                 Intent i = null;
 
                 // database
-                mDbHelper = new LettersSqlHelper(context);
+                lettersDbHelper = new LettersSqlHelper(context);
+                wordsDbHelper = new WordsSqlHelper(context);
 
                 try {
-                    mDbHelper.createDataBase();
+                    lettersDbHelper.createDataBase();
+                    wordsDbHelper.createDataBase();
                 } catch (IOException mIOException) {
                     throw new Error("UnableToCreateDatabase");
                 }

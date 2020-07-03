@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -46,11 +47,6 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             textViewName.setText(context.getResources().getString(R.string.letter_display_name_en));
@@ -118,7 +114,7 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
         if (LanguageCode.equals("ar")) {
             letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getComment());
         }else{
-            letter_comment.setText(DataContainer.bohiricLetterModuleList.get(position).getEnglishComment());
+            letter_comment.setText("*we are sorry english translation not available yet*\n"+DataContainer.bohiricLetterModuleList.get(position).getComment());//getEnglishComment());
 
         }
 
@@ -137,6 +133,27 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
             findViewById(R.id.expandable_layout).setVisibility(View.VISIBLE);
         }
         expand_coolapse((ExpandableLayout) findViewById(R.id.expandable_comment), findViewById(R.id.comment_layout), (ImageView) findViewById(R.id.expand_image1));
+
+        Button button_letter_name_acadimic= findViewById(R.id.letter_name_acadimic);
+        button_letter_name_acadimic.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                DataContainer.playSound(context, "letters_names/" + DataContainer.bohiricLetterModuleList.get(position).getLetter() +"/"+DataContainer.bohiricLetterModuleList.get(position).getLetter() + "ⲁ.mp3");
+            }
+        });
+
+        Button button_letter_name_late= findViewById(R.id.letter_name_late);
+        button_letter_name_late.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                DataContainer.playSound(context, "letters_names/" + DataContainer.bohiricLetterModuleList.get(position).getLetter() +"/"+DataContainer.bohiricLetterModuleList.get(position).getLetter() + "ϧ.mp3");
+            }
+        });
+
+        Button button_letter_name_modern= findViewById(R.id.letter_name_modern);
+        button_letter_name_modern.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                DataContainer.playSound(context, "letters_names/" + DataContainer.bohiricLetterModuleList.get(position).getLetter() +"/"+DataContainer.bohiricLetterModuleList.get(position).getLetter() + "ⲃ.mp3");
+            }
+        });
         /*scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {

@@ -5,9 +5,10 @@ import androidx.preference.PreferenceManager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -35,11 +36,6 @@ public class AboutActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             textViewTeam.setText(context.getResources().getString(R.string.about_team_en));
@@ -90,7 +86,8 @@ public class AboutActivity extends AppCompatActivity {
         facebookPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                //To do code
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://facebook.com/theheartofkeami"));//("fb://page/110853817349569"));//("https://facebook.com/theheartofkemi"));
+                startActivity(browserIntent);
             }
         });
 
@@ -98,9 +95,10 @@ public class AboutActivity extends AppCompatActivity {
         shareApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
+                PackageManager packageManager = context.getPackageManager();
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "download \"Ⲡϩⲏⲧ ⲛⲭⲏⲙⲓ\" from below link \n" + "https://play.google.com/store/apps/details?id=" +
+                String shareBody = "يمكنك تنزيل تطبيق \"Ⲡϩⲏⲧ ⲛⲭⲏⲙⲓ\" من الرابط التالي : \nYou can download \"Ⲡϩⲏⲧ ⲛⲭⲏⲙⲓ\" APP from below link :\n" + "https://play.google.com/store/apps/details?id=" +
                         getPackageName();
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Ⲡϩⲏⲧ ⲛⲭⲏⲙⲓ");
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
@@ -108,4 +106,5 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
     }
+
 }

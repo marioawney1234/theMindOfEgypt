@@ -2,9 +2,16 @@
 <resources>
     <string name="letter_list_title_bohiric_co">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲉⲙϩⲓⲧ</string>
     <string name="letter_list_title_bohiric_ar">الابجدية القبطيه البحيرية</string>
-    <string name="letter_list_title_bohiric_en">Bohiric alphabet</string>bohiric
-    `
+    <string name="letter_list_title_bohiric_en">Bohiric alphabet</string>
+
+    <string name="letter_list_about_bohiric_ar">عن اللهجه البحيرية</string>
+    <string name="letter_list_about_bohiric_en">About bohiric dialict</string>
+
     <string name="letter_list_title_sahidic_co">ⲀⲗⲫⲁⲂⲏⲧⲟⲛ ⲛ̀ϯⲙⲉⲧⲣⲉⲙⲣⲏⲥ</string>
     <string name="letter_list_title_sahidic_ar">الابجدية القبطيه الصعيدية</string>
     <string name="letter_list_title_sahidic_en">Sahidic alphabet</string>
+
+
+    <string name="letter_list_about_sahidic_ar">عن اللهجه الصعيدية</string>
+    <string name="letter_list_about_sahidic_en">about sahidic dialict</string>
 </resources>

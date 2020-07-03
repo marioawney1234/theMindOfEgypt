@@ -29,12 +29,6 @@ public class ReferencesActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_references);

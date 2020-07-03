@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     android:padding="6dp"
     tools:context=".AboutActivity">
+
     <View
         android:id="@+id/topview"
         android:layout_width="match_parent"
@@ -91,20 +92,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/caution"
+                android:src="@drawable/plan_logo"
                 android:background="@android:color/transparent"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 />
             <TextView
-                android:id="@+id/about_caution_text"
+                android:id="@+id/about_plan_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:text="@string/about_caution_ar"
+                android:text="@string/about_plan_ar"
                 android:gravity="center"
                 android:textSize="18sp"/>
         </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"
@@ -161,20 +163,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/plan_logo"
+                android:src="@drawable/caution"
                 android:background="@android:color/transparent"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 />
             <TextView
-                android:id="@+id/about_plan_text"
+                android:id="@+id/about_caution_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:text="@string/about_plan_ar"
+                android:text="@string/about_caution_ar"
                 android:gravity="center"
                 android:textSize="18sp"/>
         </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"
@@ -213,6 +216,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     </ScrollView>
 
     <View
@@ -233,6 +237,6 @@
         ads:adSize="BANNER"
         ads:layout_constraintBottom_toTopOf="@id/bottomview"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_id"/>
+        ads:adUnitId="@string/ad_banner_about"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

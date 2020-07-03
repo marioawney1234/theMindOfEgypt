@@ -93,6 +93,44 @@
                 android:gravity="center"
                 android:text="Ⲁⲗⲫⲁ"
                 android:textSize="35sp" />
+            <LinearLayout
+                android:id="@+id/letter_name_sounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <Button
+                    android:id="@+id/letter_name_acadimic"
+                    style="@style/main_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ⲟⲩⲣⲉⲙⲥ̀ⲃⲱ\nأكاديمي"
+                    android:textColor="@color/acadimic_color"
+                    android:drawableStart="@drawable/ic_action_sound_acadimic"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/letter_name_late"
+                    style="@style/main_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ⲟⲩⲁⲡⲁⲥ\nمتأخر"
+                    android:textColor="@color/late_color"
+                    android:drawableStart="@drawable/ic_action_sound_late"/>
+
+                <Button
+                    android:id="@+id/letter_name_modern"
+                    style="@style/main_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ⲟⲩⲃⲉⲣⲓ\nكنسي"
+                    android:textColor="@color/modern_color"
+                    android:drawableStart="@drawable/ic_action_sound_modern"/>
+
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -282,6 +320,6 @@
         ads:adSize="BANNER"
         ads:layout_constraintBottom_toTopOf="@id/bottomview"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_id"/>
+        ads:adUnitId="@string/ad_banner_display"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

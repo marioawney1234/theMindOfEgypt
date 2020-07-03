@@ -30,6 +30,7 @@ public class BohiricLettersListActivity extends AppCompatActivity {
     List<LetterModule> moduleList;
     private TextView textViewTitleCoptic;
     private TextView textViewTitle;
+    private Button buttonAboutDialect;
     ////////////////////////////////
 
     ////////////for Language Setting///////////////////
@@ -40,16 +41,13 @@ public class BohiricLettersListActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
     private void setLanguage(Context context, String languageCode) {
         if (languageCode.equals("en")) {
             textViewTitle.setText(context.getResources().getString(R.string.letter_list_title_bohiric_en));
+            buttonAboutDialect.setText(context.getResources().getString(R.string.letter_list_about_bohiric_en));
         } else if (languageCode.equals("ar")) {
             textViewTitle.setText(context.getResources().getString(R.string.letter_list_title_bohiric_ar));
+            buttonAboutDialect.setText(context.getResources().getString(R.string.letter_list_about_bohiric_ar));
         }
     }
     ////////////////////////////////////////////////////
@@ -63,6 +61,7 @@ public class BohiricLettersListActivity extends AppCompatActivity {
         final Context context = this;
         textViewTitle = findViewById(R.id.letters_list_title);
         textViewTitleCoptic = findViewById(R.id.letters_list_title_coptic);
+        buttonAboutDialect=findViewById(R.id.letter_list_button_about_dialict);
         ///////////////////////////////
         ///////set language///////////
         setLanguage(context, LanguageCode);
@@ -96,5 +95,13 @@ public class BohiricLettersListActivity extends AppCompatActivity {
             }
         };
         lettersListView.setOnItemClickListener(aa);
+
+        buttonAboutDialect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, BohiricAboutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
