@@ -7,10 +7,16 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.preference.PreferenceManager;
+
 import com.timetson.theheartofegypt.TheHeartOfEgypt;
+import com.timetson.theheartofegypt.modules.LetterModule;
+import com.timetson.theheartofegypt.modules.PronounceModule;
+
 import org.xmlpull.v1.XmlPullParser;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -150,6 +156,8 @@ public class LettersSqlHelper extends SQLiteOpenHelper {
         close();
         return list;
     }
+
+    ///////////////////////////////////////////////////////////////////////
 
     public List<LetterModule> getSahidicLetters() {
         LetterModule module = null;

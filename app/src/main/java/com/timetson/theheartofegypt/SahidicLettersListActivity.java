@@ -13,14 +13,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.timetson.theheartofegypt.Helper.DataContainer;
-import com.timetson.theheartofegypt.Helper.LetterModule;
 import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
+import com.timetson.theheartofegypt.modules.DataContainer;
+import com.timetson.theheartofegypt.modules.LetterModule;
 
 import java.util.List;
 
@@ -64,20 +59,14 @@ public class SahidicLettersListActivity extends AppCompatActivity {
         textViewTitleCoptic = findViewById(R.id.letters_list_title_coptic);
         buttonAboutDialect=findViewById(R.id.letter_list_button_about_dialict);
         ///////////////////////////////
+
         ///////set language///////////
         setLanguage(context, LanguageCode);
         //////////////////////////
 
-        // adds code
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        // end ads code
+        // Ads code
+        DataContainer.AdmobLoad(this,context,R.id.adView);
+        // end Ads code
 
 
         textViewTitleCoptic.setText(context.getResources().getString(R.string.letter_list_title_sahidic_co));

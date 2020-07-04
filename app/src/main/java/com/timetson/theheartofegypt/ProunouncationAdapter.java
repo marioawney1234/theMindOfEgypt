@@ -1,7 +1,6 @@
 package com.timetson.theheartofegypt;
 
 import android.content.Context;
-import android.content.res.AssetFileDescriptor;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,8 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.timetson.theheartofegypt.Helper.DataContainer;
-import com.timetson.theheartofegypt.Helper.PronounceModule;
+import com.timetson.theheartofegypt.modules.DataContainer;
+import com.timetson.theheartofegypt.modules.PronounceModule;
 
 import java.util.List;
 

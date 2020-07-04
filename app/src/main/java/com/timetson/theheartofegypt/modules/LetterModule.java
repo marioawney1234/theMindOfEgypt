@@ -1,10 +1,7 @@
-package com.timetson.theheartofegypt.Helper;
+package com.timetson.theheartofegypt.modules;
 
 import androidx.annotation.NonNull;
 
-/**
- * Created by rifo on 10/11/16.
- */
 public class LetterModule {
     private String letter;
     private String capital;

@@ -9,11 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.timetson.theheartofegypt.modules.DataContainer;
 
 public class ReferencesActivity extends AppCompatActivity {
 
@@ -42,16 +38,9 @@ public class ReferencesActivity extends AppCompatActivity {
         setLanguage(context, LanguageCode);
         //////////////////////////
 
-        // adds code
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        // end ads code
+        // Ads code
+        DataContainer.AdmobLoad(this,context,R.id.adView);
+        // end Ads code
 
         ((ListView) findViewById(R.id.references_list)).setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.References)));
     }

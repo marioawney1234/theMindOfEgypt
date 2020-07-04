@@ -1,4 +1,4 @@
-package com.timetson.theheartofegypt.Helper;
+package com.timetson.theheartofegypt.modules;
 
 public class PronounceModule {
     int id;

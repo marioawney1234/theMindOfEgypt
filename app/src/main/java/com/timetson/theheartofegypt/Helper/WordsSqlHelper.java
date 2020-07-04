@@ -12,6 +12,8 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.preference.PreferenceManager;
 
 import com.timetson.theheartofegypt.TheHeartOfEgypt;
+import com.timetson.theheartofegypt.copticCalender;
+import com.timetson.theheartofegypt.modules.LetterModule;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -19,8 +21,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class WordsSqlHelper extends SQLiteOpenHelper {
 
@@ -118,12 +119,13 @@ public class WordsSqlHelper extends SQLiteOpenHelper {
 
     ///////////////////////////////////////////////////////////////////////
 
-    public String[] getWord(int id) {
+    public String[] getWord() {
+        long today= (copticCalender.dayOfYear()%255)+1;
         LetterModule module = null;
         String[] list ={"","",""};
         openDataBase();
         Cursor cursor = null;
-        cursor = mDatabase.rawQuery("select * from 'words' Where word_id=\"" + id +"\"", null);
+        cursor = mDatabase.rawQuery("select * from 'words' Where word_id=\"" + today +"\"", null);
         cursor.moveToFirst();
         if (!cursor.isAfterLast()) {
             list[0]=cursor.getString(cursor.getColumnIndex("coptic"));

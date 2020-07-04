@@ -1,12 +1,21 @@
-package com.timetson.theheartofegypt.Helper;
+package com.timetson.theheartofegypt.modules;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.List;
 
 public class DataContainer {
+
+    //public data needed in different places in the APP
     public static List<LetterModule> bohiricLetterModuleList = null;
     public static List<LetterModule> sahidicLetterModuleList = null;
     public static List<PronounceModule> generalBohiricPronouncation = null;
@@ -17,6 +26,7 @@ public class DataContainer {
     public static int letter_sound = 0;
     public static MediaPlayer audioPlayer = new MediaPlayer();
 
+    //media player to play sound allover the APP
     public static void playSound(Context context, String file_name) {
         try {
             DataContainer.audioPlayer.stop();
@@ -32,5 +42,17 @@ public class DataContainer {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    //AdMob intialization and load
+    public static void AdmobLoad(Activity activity, Context context, int view_id) {
+        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        AdView mAdView = activity.findViewById(view_id);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 }

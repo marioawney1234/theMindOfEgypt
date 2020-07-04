@@ -18,8 +18,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.timetson.theheartofegypt.Helper.DataContainer;
-import com.timetson.theheartofegypt.Helper.LetterModule;
+import com.timetson.theheartofegypt.modules.DataContainer;
+import com.timetson.theheartofegypt.modules.LetterModule;
 import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
 
 import java.util.List;
@@ -67,16 +67,10 @@ public class BohiricLettersListActivity extends AppCompatActivity {
         setLanguage(context, LanguageCode);
         //////////////////////////
 
-        // adds code
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        // end ads code
+        // Ads code
+        DataContainer.AdmobLoad(this,context,R.id.adView);
+        // end Ads code
+
         textViewTitleCoptic.setText(context.getResources().getString(R.string.letter_list_title_bohiric_co));
         ListView lettersListView = findViewById(R.id.lettersListView);
         moduleList = new LettersSqlHelper(context).getBohiricLetters();

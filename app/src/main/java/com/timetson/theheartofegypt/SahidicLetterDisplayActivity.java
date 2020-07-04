@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -12,14 +11,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.timetson.theheartofegypt.Helper.DataContainer;
 import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
-import com.timetson.theheartofegypt.Helper.PronounceModule;
+import com.timetson.theheartofegypt.modules.DataContainer;
+import com.timetson.theheartofegypt.modules.PronounceModule;
 
 import java.util.List;
 
@@ -68,16 +62,9 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         setLanguage(context, LanguageCode);
         //////////////////////////
 
-        // adds code
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        // end ads code
+        // Ads code
+        DataContainer.AdmobLoad(this,context,R.id.adView);
+        // end Ads code
 
         final int position = getIntent().getIntExtra("POSITION", 0);
         final TextView Capital_letter = findViewById(R.id.cabital_letter);

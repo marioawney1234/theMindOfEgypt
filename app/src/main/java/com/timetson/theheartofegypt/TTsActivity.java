@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.Helper.DataContainer;
+import com.timetson.theheartofegypt.modules.DataContainer;
 
 import java.util.Locale;
 
