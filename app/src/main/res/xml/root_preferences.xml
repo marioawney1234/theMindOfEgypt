@@ -7,6 +7,6 @@
             app:entryValues="@array/language_values"
             app:key="lang_code"
             app:title="@string/language_title"
-            app:useSimpleSummaryProvider="true"/>
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 </PreferenceScreen>

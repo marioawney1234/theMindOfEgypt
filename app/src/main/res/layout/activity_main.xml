@@ -48,40 +48,40 @@
                 android:orientation="vertical">
 
                 <Button
-                    style="@style/menu_button"
                     android:id="@+id/main_button_introduction"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_introduction"/>
+                    android:text="@string/main_introduction" />
 
                 <Button
+                    android:id="@+id/main_button_dialicts"
                     style="@style/menu_button"
-                    android:id="@+id/main_button_alphabet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_alphabet" />
+                    android:text="@string/main_dialects" />
 
                 <Button
-                    style="@style/menu_button"
                     android:id="@+id/main_button_word"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_word" />
+                    android:text="@string/main_word" />
 
 
                 <Button
-                    style="@style/menu_button"
                     android:id="@+id/main_button_references"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_references"/>
+                    android:text="@string/main_references" />
 
                 <Button
-                    style="@style/menu_button"
                     android:id="@+id/main_button_about"
+                    style="@style/menu_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_main_about"/>
+                    android:text="@string/main_about" />
 
 
                 <Button
@@ -94,38 +94,6 @@
                     android:textColor="@color/colorDisabled"
                     android:visibility="gone" />
 
-                <View
-                    android:id="@+id/view"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/colorText" />
-
-                <TextView
-                    android:id="@+id/main_text_updates"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/string_main_updates"
-                    android:fontFamily="@font/antinoou"/>
-
-                <Button
-                    android:id="@+id/id.main_button_dictionary"
-                    style="@style/menu_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:text="@string/string_main_dictionary"
-                    android:textColor="@color/colorDisabled" />
-
-                <Button
-                    android:id="@+id/main_button_lessons"
-                    style="@style/menu_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:enabled="false"
-                    android:text="@string/string_main_lessons"
-                    android:textColor="@color/colorDisabled" />
             </LinearLayout>
         </ScrollView>
 
@@ -168,15 +136,15 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
-        style="@style/main_Button"
         android:id="@+id/main_settings_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:src="@drawable/ic_action_settings"
         app:layout_constraintBottom_toTopOf="@id/bottomview"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calenderview"/>
+        app:layout_constraintTop_toBottomOf="@id/calenderview" />
 
     <View
         android:id="@+id/bottomview"

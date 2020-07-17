@@ -1,5 +1,15 @@
 <resources>
-    <!-- references names-->
+    <!-- Arrays for settings Activity -->
+    <string-array name="language_entries">
+        <item>القبطيه بمساعده عربية</item>
+        <item>Coptic with English help</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>ar</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- arrays for about -->
     <array name="References">
         <item>
             \"صاجي نمان\" الجزء الاول - دكتور: إميل ماهر (القس شنوده ماهر)
@@ -27,14 +37,16 @@
             حلقات دكتور : كمال فريد إسحق عن اللهجه البحيريه في القرن الثاني الميلادي
         </item>
         <item>
-            \"قاموس قبطي عربي لكلمات اللهجه البحيريه المستخدمه في الصلوات الكنسيه و النصوص الأبائيه\" - الراهب أندرياس المقاري
+            \"قاموس قبطي عربي لكلمات اللهجه البحيريه المستخدمه في الصلوات الكنسيه و النصوص
+            الأبائيه\" - الراهب أندرياس المقاري
         </item>
     </array>
 
-    // array of letter types
+    <!-- array of letter types -->
     <string-array name="letters_type">
         <item>حرف متحرك Vowel</item>
         <item>Constant حرف ساكن</item>
         <item> --- </item>
     </string-array>
+
 </resources>

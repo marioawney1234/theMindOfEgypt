@@ -38,7 +38,10 @@ public class LetterModule {
     public String getComment() {
         return comment;
     }
-    public String getEnglishComment(){return englishComment;}
+
+    public String getEnglishComment() {
+        return englishComment;
+    }
 
     @NonNull
     @Override

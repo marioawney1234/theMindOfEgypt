@@ -2,6 +2,7 @@ package com.timetson.theheartofegypt;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,80 +12,52 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
+import com.timetson.theheartofegypt.helpers.localeHelper;
+import com.timetson.theheartofegypt.modules.DataContainer;
+import com.timetson.theheartofegypt.modules.copticCalender;
 
 public class MainActivity extends AppCompatActivity {
 
-    ////////// assign views ////////
+    ////////// Declare used views ////////
     private Button buttonIntroduction;
-    private Button buttonAlphabet;
+    private Button buttonDialects;
     private Button buttonReference;
-    private Button buttonDictionary;
-    private Button buttonLessons;
     private Button buttonWord;
-    private TextView textViewUpdates;
     private Button buttonAbout;
-
-    ////////////for Language Setting///////////////////
-    private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(newBase);
-    }
-
-    @Override
-    protected void onRestart() {
-        recreate();
-        super.onRestart();
-    }
-    //////////////////////////////////////////////////////////
+    private ImageView buttonSettings;
+    private TextView copticCalenderText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ////////ADs intialization ////////////
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        ///////////////////////////////////////
-
-        ////////initialization///////////
-        final Context context = this;
+        ////////// intialization ///////////
+        final Context mContext = this;
+        DataContainer.LanguageCode = PreferenceManager.getDefaultSharedPreferences(mContext).getString("lang_code", "ar");
         buttonIntroduction = findViewById(R.id.main_button_introduction);
-        buttonAlphabet = findViewById(R.id.main_button_alphabet);
+        buttonDialects = findViewById(R.id.main_button_dialicts);
         buttonReference = findViewById(R.id.main_button_references);
-        buttonDictionary = findViewById(R.id.id_main_button_dictionary);
-        buttonLessons = findViewById(R.id.main_button_lessons);
         buttonWord = findViewById(R.id.main_button_word);
-        buttonAbout=findViewById(R.id.main_button_about);
-        textViewUpdates = findViewById(R.id.main_text_updates);
+        buttonAbout = findViewById(R.id.main_button_about);
+        buttonSettings = findViewById(R.id.main_settings_button);
+        copticCalenderText = findViewById(R.id.main_calender_text);
+        /////////////////////////////////////////
+        /////// Update selected language ////////
+        updateLanguage(mContext, DataContainer.LanguageCode);
+        ////////////////////////////////////////
 
-        ImageView buttonSettings = findViewById(R.id.main_settings_button);
-        Button btnTTS = findViewById(R.id.btn_tts);
-
-        ///////set language///////////
-        setLanguage(context, LanguageCode);
-        //////////////////////////
         buttonIntroduction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, IntroductionActivity.class);
+                Intent intent = new Intent(mContext, IntroductionActivity.class);
                 startActivity(intent);
             }
         });
 
-        buttonAlphabet.setOnClickListener(new View.OnClickListener() {
+        buttonDialects.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, DialictsActivity.class);
+                Intent intent = new Intent(mContext, DialectsActivity.class);
                 startActivity(intent);
             }
         });
@@ -92,15 +65,7 @@ public class MainActivity extends AppCompatActivity {
         buttonReference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, ReferencesActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnTTS.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, TTsActivity.class);
+                Intent intent = new Intent(mContext, ReferencesActivity.class);
                 startActivity(intent);
             }
         });
@@ -108,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, SettingsActivity.class);
+                Intent intent = new Intent(mContext, SettingsActivity.class);
                 startActivity(intent);
             }
         });
@@ -116,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, AboutActivity.class);
+                Intent intent = new Intent(mContext, AboutActivity.class);
                 startActivity(intent);
             }
         });
@@ -124,35 +89,26 @@ public class MainActivity extends AppCompatActivity {
         buttonWord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, WordActivity.class);
+                Intent intent = new Intent(mContext, WordActivity.class);
                 startActivity(intent);
             }
         });
 
-        ((TextView) findViewById(R.id.main_calender_text)).setText(copticCalender.get_calender());
+        copticCalenderText.setText(copticCalender.get_calender());
     }
 
-    private void setLanguage(Context context, String languageCode) {
-        if (languageCode.equals("en")) {
-            buttonIntroduction.setText(context.getResources().getString(R.string.string_main_introduction));
-            buttonAlphabet.setText(context.getResources().getString(R.string.string_main_alphabet));
-            buttonReference.setText(context.getResources().getString(R.string.string_main_references));
-            buttonDictionary.setText(context.getResources().getString(R.string.string_main_dictionary));
-            buttonLessons.setText(context.getResources().getString(R.string.string_main_lessons));
-            buttonAbout.setText(context.getResources().getString(R.string.string_main_about));
-            buttonWord.setText(context.getResources().getString(R.string.string_main_word));
-            textViewUpdates.setText(context.getResources().getString(R.string.string_main_updates));
-        } else if (languageCode.equals("ar")) {
-            buttonIntroduction.setText(context.getResources().getString(R.string.string_main_introduction_ar));
-            buttonAlphabet.setText(getResources().getString(R.string.string_main_alphabet_ar));
-            buttonReference.setText(getResources().getString(R.string.string_main_references_ar));
-            buttonDictionary.setText(getResources().getString(R.string.string_main_dictionary_ar));
-            buttonLessons.setText(getResources().getString(R.string.string_main_lessons_ar));
-            buttonAbout.setText(context.getResources().getString(R.string.string_main_about_ar));
-            buttonWord.setText(context.getResources().getString(R.string.string_main_word_ar));
-            textViewUpdates.setText(getResources().getString(R.string.string_main_updatese_ar));
-        }
+    @Override
+    protected void onRestart() {
+        recreate();
+        super.onRestart();
     }
 
-
+    void updateLanguage(Context context, String language) {
+        Resources resources = localeHelper.getLocalizedResources(context, language);
+        buttonIntroduction.setText(resources.getString(R.string.main_introduction));
+        buttonDialects.setText(resources.getString(R.string.main_dialects));
+        buttonReference.setText(resources.getString(R.string.main_references));
+        buttonWord.setText(resources.getString(R.string.main_word));
+        buttonAbout.setText(resources.getString(R.string.main_about));
+    }
 }

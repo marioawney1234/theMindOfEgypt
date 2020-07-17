@@ -5,9 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
-import com.timetson.theheartofegypt.Helper.LettersSqlHelper;
-import com.timetson.theheartofegypt.Helper.WordsSqlHelper;
+import com.timetson.theheartofegypt.helpers.LettersSqlHelper;
+import com.timetson.theheartofegypt.helpers.WordsSqlHelper;
 
 import java.io.IOException;
 
@@ -21,15 +22,16 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.splash);
-        ///////////////////////////////////////////////
+
+        //Disable Night mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         /* ***** Create Thread that will sleep for 3 seconds ************ */
         Thread background = new Thread() {
             public void run() {
                 Intent i = null;
-
-                // database
+                // databases
                 lettersDbHelper = new LettersSqlHelper(context);
                 wordsDbHelper = new WordsSqlHelper(context);
 

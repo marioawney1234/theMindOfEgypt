@@ -20,58 +20,49 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/topview"
-        app:layout_constraintBottom_toTopOf="@id/adView">
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintTop_toBottomOf="@id/topview">
 
         <TextView
             android:id="@+id/letters_list_title_coptic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:gravity="center"
-            android:text="@string/letter_list_title_bohiric_co"
-            android:textSize="25sp"
-            android:layout_alignParentTop="true"/>
+            android:text="@string/letter_list_title_bohiric_coptic"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/letters_list_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/letters_list_title_coptic"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="@string/letter_list_title_bohiric_ar"
-            android:textSize="25sp"
-            android:layout_below="@id/letters_list_title_coptic"/>
+            android:text="@string/letter_list_title_bohiric"
+            android:textSize="25sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_below="@id/letters_list_title"
             android:layout_marginHorizontal="10dp"
-            android:background="@color/colorText"
-            android:layout_below="@id/letters_list_title"/>
+            android:background="@color/colorText" />
 
         <ListView
             android:id="@+id/lettersListView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginVertical="3dp"
             android:layout_below="@id/letters_list_title"
-            android:layout_above="@id/letter_list_button_about_dialict"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="3dp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_below="@id/lettersListView"
             android:layout_marginHorizontal="10dp"
-            android:background="@color/colorText"
-            android:layout_below="@id/lettersListView"/>
-
-        <Button
-            android:id="@+id/letter_list_button_about_dialict"
-            style="@style/menu_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="عن اللهجه"
-            android:textColor="@color/colorTitleText"
-            android:layout_alignParentBottom="true"/>
+            android:background="@color/colorText" />
 
         <View
             android:id="@+id/view2"
@@ -91,17 +82,16 @@
         android:background="@color/colorTitleText"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:layout_constraintBottom_toTopOf="@id/bottomview"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_letters_list"/>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_letters_list"
+        ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

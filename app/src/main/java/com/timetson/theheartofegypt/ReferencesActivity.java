@@ -1,28 +1,23 @@
 package com.timetson.theheartofegypt;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.PreferenceManager;
 
+import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 
 public class ReferencesActivity extends AppCompatActivity {
 
-    ////////// assign views ////////
+    ////////// Declare views //////////
     private TextView referenceTitleText;
-
-    ////////////for Language Setting///////////////////
-    private String LanguageCode = PreferenceManager.getDefaultSharedPreferences(TheHeartOfEgypt.getAppContext()).getString("lang_code", "ar");
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(newBase);
-    }
+    private ListView referencesListView;
+    ///////////////////////////////////
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,26 +25,26 @@ public class ReferencesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_references);
 
         ////////initialization///////////
-        final Context context = this;
+        final Context mContext = this;
         referenceTitleText = findViewById(R.id.references_title);
+        referencesListView = findViewById(R.id.references_list);
         ////////////////////////////////
 
         ///////set language///////////
-        setLanguage(context, LanguageCode);
+        updateLanguage(mContext, DataContainer.LanguageCode);
         //////////////////////////
 
         // Ads code
-        DataContainer.AdmobLoad(this,context,R.id.adView);
+        DataContainer.AdmobLoad(this, mContext, R.id.adView);
         // end Ads code
 
-        ((ListView) findViewById(R.id.references_list)).setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.References)));
+        referencesListView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.References)));
+
     }
 
-    private void setLanguage(Context context, String languageCode) {
-        if (languageCode.equals("en")) {
-            referenceTitleText.setText(context.getResources().getString(R.string.string_references_title_en));
-        } else if (languageCode.equals("ar")) {
-            referenceTitleText.setText(context.getResources().getString(R.string.string_references_title_ar));
-        }
+
+    private void updateLanguage(Context context, String language) {
+        Resources resources = localeHelper.getLocalizedResources(context, language);
+        referenceTitleText.setText(resources.getString(R.string.references_title));
     }
 }

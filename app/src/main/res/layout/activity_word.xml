@@ -20,9 +20,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/adView"
-        app:layout_constraintTop_toBottomOf="@id/topview"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@id/topview">
 
 
         <TextView
@@ -30,16 +30,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/string_word_title_co"
+            android:text="@string/string_word_title_coptic"
             android:textSize="30sp" />
 
         <TextView
             android:id="@+id/word_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/string_word_title_ar"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/string_word_title"
             android:textSize="30sp" />
 
         <View
@@ -53,12 +53,13 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/word_coptic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="ⲕⲟⲡⲧⲭ"
+                android:text="ⲟⲩⲣⲉⲙⲛⲭⲏⲙⲓ"
                 android:textSize="45sp" />
 
             <TextView
@@ -80,7 +81,6 @@
         </LinearLayout>
 
 
-
     </LinearLayout>
 
     <View
@@ -91,16 +91,15 @@
         android:background="@color/colorTitleText"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:layout_constraintBottom_toTopOf="@id/bottomview"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_word"/>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_word"
+        ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

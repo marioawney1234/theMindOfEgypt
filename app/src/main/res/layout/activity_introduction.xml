@@ -20,27 +20,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/topview"
-        app:layout_constraintBottom_toTopOf="@id/adView"
         android:layout_height="0dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintTop_toBottomOf="@id/topview">
 
         <TextView
             android:id="@+id/intoduction_title_text_co"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/string_introduction_title_co"
+            android:text="@string/string_introduction_title_coptic"
             android:textSize="30sp" />
 
         <TextView
             android:id="@+id/intoduction_title_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="@string/string_introduction_title_ar"
-            android:textSize="30sp"
-            android:fontFamily="sans-serif-black" />
+            android:text="@string/string_introduction_title"
+            android:textSize="30sp" />
 
         <View
             android:layout_width="match_parent"
@@ -50,12 +50,12 @@
 
         <TextView
             android:id="@+id/introduction_text"
-            android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
             android:scrollbars="vertical"
-            android:text="@string/string_introduction_ar"
+            android:text="@string/string_introduction"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -67,17 +67,16 @@
         android:background="@color/colorTitleText"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:layout_constraintBottom_toTopOf="@id/bottomview"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_introduction"/>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_introduction"
+        ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

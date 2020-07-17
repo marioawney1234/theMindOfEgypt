@@ -7,44 +7,46 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+
     <application
-        android:name=".TheHeartOfEgypt"
+        android:name=".modules.TheHeartOfEgypt"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/app_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/app_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".SahidicAboutActivity"/>
-        <activity android:name=".BohiricAboutActivity"/>
-        <activity android:name=".WordActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-6579187224300708~7033040652" />
 
-        <activity android:name=".IntroductionActivity" />
-        <activity android:name=".ReferencesActivity" />
-        <activity android:name=".BohiricLetterDisplayActivity" />
-        <activity android:name=".SahidicLetterDisplayActivity" />
-        <activity android:name=".TTsActivity" />
-        <activity android:name=".BohiricLettersListActivity" />
-        <activity android:name=".SahidicLettersListActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DialictsActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
                     android:launchMode="singleInstance" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WordActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".DialectsActivity" />
+        <activity android:name=".ReferencesActivity" />
+        <activity android:name=".BohiricMenuActivity" />
+        <activity android:name=".SahidicMenuActivity" />
+        <activity android:name=".BohiricAboutActivity" />
+        <activity android:name=".SahidicAboutActivity" />
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".BohiricLettersListActivity" />
+        <activity android:name=".SahidicLettersListActivity" />
+        <activity android:name=".BohiricLetterDisplayActivity" />
+        <activity android:name=".SahidicLetterDisplayActivity" />
     </application>
 
 </manifest>

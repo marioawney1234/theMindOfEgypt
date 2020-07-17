@@ -44,9 +44,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/arial_coptic"
                     android:gravity="center"
                     android:text="Ⲁ"
-                    android:fontFamily="@font/arial_coptic"
                     android:textSize="150sp" />
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="@string/letter_display_name_co"
+                    android:text="@string/letter_display_name_coptic"
                     android:textColor="@color/colorTitleText"
                     android:textSize="23sp" />
 
@@ -93,44 +93,54 @@
                 android:gravity="center"
                 android:text="Ⲁⲗⲫⲁ"
                 android:textSize="35sp" />
-            <LinearLayout
+
+            <RelativeLayout
                 android:id="@+id/letter_name_sounds"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:id="@+id/fakeView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true" />
+
                 <Button
                     android:id="@+id/letter_name_acadimic"
                     style="@style/main_Button"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ⲟⲩⲣⲉⲙⲥ̀ⲃⲱ\nأكاديمي"
-                    android:textColor="@color/acadimic_color"
+                    android:layout_alignRight="@id/fakeView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:drawableStart="@drawable/ic_action_sound_acadimic"
-                    android:textSize="16sp"/>
+                    android:text="@string/acadimic"
+                    android:textColor="@color/acadimic_color" />
 
                 <Button
                     android:id="@+id/letter_name_late"
                     style="@style/main_Button"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ⲟⲩⲁⲡⲁⲥ\nمتأخر"
-                    android:textColor="@color/late_color"
-                    android:drawableStart="@drawable/ic_action_sound_late"/>
+                    android:layout_alignLeft="@id/fakeView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableStart="@drawable/ic_action_sound_late"
+                    android:text="@string/late"
+                    android:textColor="@color/late_color" />
 
                 <Button
-                    android:id="@+id/letter_name_modern"
+                    android:id="@+id/letter_name_reformed"
                     style="@style/main_Button"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ⲟⲩⲃⲉⲣⲓ\nكنسي"
-                    android:textColor="@color/modern_color"
-                    android:drawableStart="@drawable/ic_action_sound_modern"/>
+                    android:layout_below="@id/letter_name_acadimic"
+                    android:layout_centerHorizontal="true"
+                    android:drawableStart="@drawable/ic_action_sound_modern"
+                    android:text="@string/reformed"
+                    android:textColor="@color/modern_color" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -149,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="@string/letter_display_type_co"
+                    android:text="@string/letter_display_type_coptic"
                     android:textColor="@color/colorTitleText"
                     android:textSize="23sp" />
 
@@ -236,7 +246,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="@string/letter_display_comment_co"
+                    android:text="@string/letter_display_comment_coptic"
                     android:textColor="@color/colorTitleText"
                     android:textSize="23sp" />
 
@@ -310,16 +320,15 @@
         android:background="@color/colorTitleText"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:layout_constraintBottom_toTopOf="@id/bottomview"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        ads:adUnitId="@string/ad_banner_display"/>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_display"
+        ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
