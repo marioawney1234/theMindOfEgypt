@@ -25,7 +25,7 @@ import java.io.OutputStream;
 public class WordsSqlHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "ϩⲁⲛcⲁϫⲓ.db";
-    public static final int DB_CURRENT_VERSION = 1;
+    public static final int DB_CURRENT_VERSION = 2;
     private static final String ASSETS_PATH = "databases";
     public static String DB_Location;
     private Context mContext;

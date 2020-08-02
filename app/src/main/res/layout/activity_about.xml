@@ -219,6 +219,40 @@
                     android:textSize="25sp" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorText" />
+
+            <LinearLayout
+                android:id="@+id/about_contrbution_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/contrbution_logo" />
+
+                <TextView
+                    android:id="@+id/about_contrbution_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="@string/about_contrbution"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
@@ -239,7 +273,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_banner_about"
+        ads:adUnitId="@string/ad_banner_extras"
         ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

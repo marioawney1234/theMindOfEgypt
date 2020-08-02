@@ -44,7 +44,7 @@ public class ProunouncationAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
-        View v = View.inflate(mcontext, R.layout.pronouncation_item, null);
+        View v = View.inflate(mcontext, R.layout.item_pronouncation, null);
         TextView englishDescription = v.findViewById(R.id.english_description);
         TextView arabicDescription = v.findViewById(R.id.arabic_description);
         TextView IPA = v.findViewById(R.id.ipa);

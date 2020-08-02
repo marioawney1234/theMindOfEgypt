@@ -4,7 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,6 +25,7 @@ public class AboutActivity extends AppCompatActivity {
     private TextView textViewCaution;
     private TextView textViewPlan;
     private TextView textViewShare;
+    private TextView textViewContrbution;
     ////////////////////////////////
 
     @Override
@@ -36,6 +40,8 @@ public class AboutActivity extends AppCompatActivity {
         textViewCaution = findViewById(R.id.about_caution_text);
         textViewPlan = findViewById(R.id.about_plan_text);
         textViewShare = findViewById(R.id.about_share_text);
+        textViewContrbution = findViewById(R.id.about_contrbution_text);
+
         ///////////////////////////////
 
         // update language
@@ -67,6 +73,7 @@ public class AboutActivity extends AppCompatActivity {
                 startActivity(Intent.createChooser(sharingIntent, "Share APP"));
             }
         });
+
     }
 
     void updateLanguage(Context context, String language) {
@@ -76,6 +83,12 @@ public class AboutActivity extends AppCompatActivity {
         textViewCaution.setText(resources.getString(R.string.about_caution));
         textViewPlan.setText(resources.getString(R.string.about_plan));
         textViewShare.setText(resources.getString(R.string.about_share));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            textViewContrbution.setText(Html.fromHtml(resources.getString(R.string.about_contrbution), Html.FROM_HTML_MODE_COMPACT));
+        } else {
+            textViewContrbution.setText(Html.fromHtml(resources.getString(R.string.about_contrbution)));
+        }
+        textViewContrbution.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
 }

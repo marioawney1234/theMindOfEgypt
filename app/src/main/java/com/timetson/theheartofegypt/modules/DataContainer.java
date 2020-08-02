@@ -22,10 +22,10 @@ public class DataContainer {
     public static List<PronounceModule> acadimicBohiricPronouncation = null;
     public static List<PronounceModule> lateBohiricPronouncation = null;
     public static List<PronounceModule> newBohiricPronouncation = null;
-    public static List<PronounceModule> SahidicPronouncation = null;
-    //public static int letter_sound = 0;
+    public static List<PronounceModule> SahidicPronounciation = null;
     public static MediaPlayer audioPlayer = new MediaPlayer();
     public static String LanguageCode = "ar";
+    public static String copticCalenderCode = "1";
 
     //media player to play sound allover the APP
     public static void playSound(Context context, String file_name) {

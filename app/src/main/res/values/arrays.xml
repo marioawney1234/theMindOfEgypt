@@ -9,6 +9,15 @@
         <item>en</item>
     </string-array>
 
+    <string-array name="coptic_calender_entries">
+        <item>⳥ (saints - للشهداء)</item>
+        <item>ⲟⲩⲣⲉⲙⲛ̀Ⲭⲏⲙⲓ (Egyptian - مصريه)</item>
+    </string-array>
+    <string-array name="coptic_calender_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
     <!-- arrays for about -->
     <array name="References">
         <item>
@@ -40,6 +49,18 @@
             \"قاموس قبطي عربي لكلمات اللهجه البحيريه المستخدمه في الصلوات الكنسيه و النصوص
             الأبائيه\" - الراهب أندرياس المقاري
         </item>
+    </array>
+
+    <!-- ⲛⲓⲉ̀ϩⲟⲟⲩ -->
+    <array name="days_of_week">
+        <item>unused</item>
+        <item>Ⲡⲓⲟⲩⲁⲓ</item>
+        <item>Ⲡⲓⲥ̀ⲛⲁⲩ</item>
+        <item>Ⲡⲓϣⲟⲙⲧ</item>
+        <item>Ⲡⲓϥⲧⲟⲟⲩ</item>
+        <item>Ⲡⲓⲧ̀ⲓⲟⲩ</item>
+        <item>Ⲡⲓⲥⲟⲟⲩ</item>
+        <item>Ⲡⲓϣⲁϣϥ</item>
     </array>
 
     <!-- array of letter types -->

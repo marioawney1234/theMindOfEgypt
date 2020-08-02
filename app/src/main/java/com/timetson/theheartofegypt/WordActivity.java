@@ -18,7 +18,7 @@ public class WordActivity extends AppCompatActivity {
     private TextView wordTitleText;
     private TextView wordCoptic;
     private TextView wordArabic;
-    private TextView wordEnglsh;
+    private TextView wordEnglish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class WordActivity extends AppCompatActivity {
         wordTitleText = findViewById(R.id.word_title);
         wordCoptic = findViewById(R.id.word_coptic);
         wordArabic = findViewById(R.id.word_arabic);
-        wordEnglsh = findViewById(R.id.word_english);
+        wordEnglish = findViewById(R.id.word_english);
         ////////////////////////////////
 
         ///////set language///////////
@@ -44,7 +44,7 @@ public class WordActivity extends AppCompatActivity {
         String[] wordsList = new WordsSqlHelper(mContext).getWord();
         wordCoptic.setText(wordsList[0]);
         wordArabic.setText(wordsList[1]);
-        wordEnglsh.setText(wordsList[2]);
+        wordEnglish.setText(wordsList[2]);
     }
 
     ////////////for Language Setting///////////////////

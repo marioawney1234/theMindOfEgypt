@@ -9,4 +9,14 @@
             app:title="@string/language_title"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
+
+    <PreferenceCategory app:title="Widgets">
+        <ListPreference
+            app:defaultValue="1"
+            app:entries="@array/coptic_calender_entries"
+            app:entryValues="@array/coptic_calender_values"
+            app:key="coptic_calender_code"
+            app:title="ϯⲣⲟⲙⲡⲓ ⲡⲓⲣⲉⲙⲛ̀Ⲭⲏⲙⲓ"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -70,8 +70,8 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         letter_type.setText(types[DataContainer.sahidicLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.sahidicLetterModuleList.get(position).getName());
 
-        DataContainer.SahidicPronouncation = new LettersSqlHelper(mContext).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
-        setLayoutContents(mContext, findViewById(R.id.general), mContext.getResources().getString(R.string.letter_display_sahidic_title_coptic), title, DataContainer.SahidicPronouncation);
+        DataContainer.SahidicPronounciation = new LettersSqlHelper(mContext).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
+        setLayoutContents(mContext, findViewById(R.id.general), mContext.getResources().getString(R.string.letter_display_sahidic_title_coptic), title, DataContainer.SahidicPronounciation);
         scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {

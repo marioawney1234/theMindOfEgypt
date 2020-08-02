@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
         android:name=".modules.TheHeartOfEgypt"
         android:allowBackup="true"
@@ -17,6 +16,30 @@
         android:roundIcon="@mipmap/app_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
+        <receiver
+            android:name=".widgets.EgyptianCalenderWidget"
+            android:label="Egyptian calender">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/egyptian_calender_widget_info" />
+        </receiver>
+
+
+        <receiver
+            android:name=".widgets.WordOfTheDayAppWidgetProvider"
+            android:label="@string/string_word_title_coptic">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/word_of_the_day_appwidget_info" />
+        </receiver>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -27,13 +50,16 @@
                 <action
                     android:name="android.intent.action.MAIN"
                     android:launchMode="singleInstance" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance" />
         <activity android:name=".WordActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".DialectsActivity" />

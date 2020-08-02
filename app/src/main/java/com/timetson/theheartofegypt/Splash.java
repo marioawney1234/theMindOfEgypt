@@ -24,7 +24,7 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        //Disable Night mode
+        //Force light Mode, Disable Night mode
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         /* ***** Create Thread that will sleep for 3 seconds ************ */

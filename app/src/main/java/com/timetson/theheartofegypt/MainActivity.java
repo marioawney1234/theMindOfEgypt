@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonAbout;
     private ImageView buttonSettings;
     private TextView copticCalenderText;
+    private TextView newsText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ////////// intialization ///////////
         final Context mContext = this;
         DataContainer.LanguageCode = PreferenceManager.getDefaultSharedPreferences(mContext).getString("lang_code", "ar");
+        DataContainer.copticCalenderCode = PreferenceManager.getDefaultSharedPreferences(mContext).getString("coptic_calender_code", "1");
         buttonIntroduction = findViewById(R.id.main_button_introduction);
         buttonDialects = findViewById(R.id.main_button_dialicts);
         buttonReference = findViewById(R.id.main_button_references);
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAbout = findViewById(R.id.main_button_about);
         buttonSettings = findViewById(R.id.main_settings_button);
         copticCalenderText = findViewById(R.id.main_calender_text);
+        newsText = findViewById(R.id.main_text_new);
         /////////////////////////////////////////
         /////// Update selected language ////////
         updateLanguage(mContext, DataContainer.LanguageCode);
@@ -94,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        copticCalenderText.setText(copticCalender.get_calender());
+        copticCalenderText.setText(copticCalender.get_calender(DataContainer.copticCalenderCode));
     }
 
     @Override
@@ -110,5 +113,6 @@ public class MainActivity extends AppCompatActivity {
         buttonReference.setText(resources.getString(R.string.main_references));
         buttonWord.setText(resources.getString(R.string.main_word));
         buttonAbout.setText(resources.getString(R.string.main_about));
+        newsText.setText(resources.getString(R.string.main_new));
     }
 }

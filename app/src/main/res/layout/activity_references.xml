@@ -72,7 +72,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_banner_references"
+        ads:adUnitId="@string/ad_banner_extras"
         ads:layout_constraintBottom_toTopOf="@id/bottomview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

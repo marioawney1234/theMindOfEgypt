@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="ad_banner_about" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_banner_about_dialict" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_banner_dialict" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_banner_display" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_banner_extras" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_banner_dialects" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="ad_banner_introduction" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_banner_letters_list" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_banner_references" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="ad_banner_word" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 
     <!--
-    <string name="ad_banner_about">ca-app-pub-6579187224300708/7904376413</string>
-    <string name="ad_banner_about_dialict">ca-app-pub-6579187224300708/9634785704</string>
-    <string name="ad_banner_dialict">ca-app-pub-6579187224300708/4410379180</string>
-    <string name="ad_banner_display">ca-app-pub-6579187224300708/6078684072</string>
-    <string name="ad_banner_introduction">ca-app-pub-6579187224300708/4406877311</string>
-    <string name="ad_banner_letters_list">ca-app-pub-6579187224300708/5148745787</string>
-    <string name="ad_banner_references">ca-app-pub-6579187224300708/5695540695</string>
-    <string name="ad_banner_word">ca-app-pub-6579187224300708/6343882739</string>
+    <string name="ad_banner_extras" translatable="false">ca-app-pub-6579187224300708/5148745787</string>
+    <string name="ad_banner_dialects" translatable="false">ca-app-pub-6579187224300708/6078684072</string>
+    <string name="ad_banner_introduction" translatable="false">ca-app-pub-6579187224300708/4406877311</string>
+    <string name="ad_banner_word" translatable="false">ca-app-pub-6579187224300708/6343882739</string>
     -->
 </resources>
