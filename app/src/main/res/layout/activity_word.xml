@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="عربي"
+                android:text="مصري"
                 android:textSize="45sp" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="english"
+                android:text="Egyptian"
                 android:textSize="45sp" />
 
         </LinearLayout>

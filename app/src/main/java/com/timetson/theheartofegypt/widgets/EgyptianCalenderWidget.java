@@ -1,8 +1,11 @@
 package com.timetson.theheartofegypt.widgets;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
+import android.provider.AlarmClock;
 import android.widget.RemoteViews;
 
 import androidx.preference.PreferenceManager;
@@ -31,6 +34,13 @@ public class EgyptianCalenderWidget extends AppWidgetProvider {
         views.setTextViewText(R.id.egyptian_calender_text, egyptianCalenderText);
         views.setTextViewText(R.id.today_name, todayName);
 
+        // open alarms application
+        Intent mClockIntent = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+        mClockIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        PendingIntent pendingIntent;
+        pendingIntent = PendingIntent.getActivity(context, 0, mClockIntent, 0);
+        views.setOnClickPendingIntent(R.id.time_mow, pendingIntent);
+
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
     }
@@ -52,5 +62,23 @@ public class EgyptianCalenderWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
     }
+/*
+    private static Intent getAlarmPackage(Context context) {
+        PackageManager manager = context.getPackageManager();
+        Intent intent = new Intent(Intent.ACTION_MAIN)
+                .addCategory(Intent.CATEGORY_LAUNCHER);
+
+        try {
+            ComponentName c = new ComponentName("com.sec.android.app.clockpackage",
+                    "com.android.deskclock.AlarmClock");
+            manager.getActivityInfo(c, PackageManager.GET_META_DATA);
+            intent.setComponent(c);
+        } catch (PackageManager.NameNotFoundException nf) {
+            Log.d("TAG", "Caught name not found exception!");
+        }
+
+        return intent;
+    }
+ */
 }
 
