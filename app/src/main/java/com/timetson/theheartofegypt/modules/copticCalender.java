@@ -8,13 +8,13 @@ public class copticCalender {
     public static long YEAR = 0;
     public static String[] months = {"Ⲑⲱⲟⲩⲧ", "Ⲡⲁⲱⲡⲉ", "Ϩⲁⲑⲱⲣ", "Ⲭⲟⲓⲁⲕ", "Ⲧⲱⲃⲓ", "Ⲙ̀ϣⲓⲣ", "Ⲡⲁⲣⲉⲙϩⲁⲧ", "Ⲡⲁⲣⲙⲟⲩⲧⲉ", "Ⲡⲁϣⲟⲛⲥ", "Ⲡⲁⲱⲛⲓ", "Ⲉⲡⲏⲡ", "Ⲙⲉⲥⲟⲩⲣⲏ", "ⲕⲟⲩϫⲓ"};
 
-    public static void days_count(String isCoptic) {
+    public static void days_count(String isEgyptian) {
         Calendar rightNow = Calendar.getInstance();
         long offset = rightNow.get(Calendar.ZONE_OFFSET) + rightNow.get(Calendar.DST_OFFSET);
         long timesInMillis = rightNow.getTimeInMillis() + offset;
         /////////////////////////
         long totaldays = (timesInMillis / 86400000) - 5367;
-        long yearsOfset = isCoptic.equals("0") ? 1701 : 6226;
+        long yearsOfset = isEgyptian.equals("0") ? 1701 : 6226;
         ///////////////////
         long years;
         if (((totaldays % 1461) / 365) > 2)
@@ -39,11 +39,11 @@ public class copticCalender {
 
     public static long dayOfYear() {
         days_count("1");
-        return ((MONTH - 1) * 30) + DAY;
+        return (MONTH * 30) + DAY;
     }
 
-    public static String get_calender(String isCoptic) {
-        days_count(isCoptic);
+    public static String get_calender(String isEgyptian) {
+        days_count(isEgyptian);
         return DAY + " " + months[(int) MONTH] + " " + YEAR;
     }
 }

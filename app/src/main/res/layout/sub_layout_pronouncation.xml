@@ -17,7 +17,7 @@
             android:id="@+id/expand_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_expand" />
+            app:srcCompat="@drawable/ic_action_expand" />
 
         <TextView
             android:id="@+id/coptic_title"

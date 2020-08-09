@@ -65,7 +65,7 @@
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
                     android:scaleType="centerInside"
-                    android:src="@drawable/logo" />
+                    app:srcCompat="@drawable/logo" />
 
                 <TextView
                     android:id="@+id/about_team_text"
@@ -99,7 +99,7 @@
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
                     android:scaleType="centerInside"
-                    android:src="@drawable/plan_logo" />
+                    app:srcCompat="@drawable/plan_logo" />
 
                 <TextView
                     android:id="@+id/about_plan_text"
@@ -136,7 +136,7 @@
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
                     android:scaleType="centerInside"
-                    android:src="@drawable/facebook_logo" />
+                    app:srcCompat="@drawable/facebook_logo" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -170,7 +170,7 @@
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
                     android:scaleType="centerInside"
-                    android:src="@drawable/caution" />
+                    app:srcCompat="@drawable/caution" />
 
                 <TextView
                     android:id="@+id/about_caution_text"
@@ -206,7 +206,7 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerInside"
-                    android:src="@drawable/share_logo" />
+                    app:srcCompat="@drawable/share_logo" />
 
                 <TextView
                     android:id="@+id/about_share_text"
@@ -241,7 +241,7 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerInside"
-                    android:src="@drawable/contrbution_logo" />
+                    app:srcCompat="@drawable/contrbution_logo" />
 
                 <TextView
                     android:id="@+id/about_contrbution_text"

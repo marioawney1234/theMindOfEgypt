@@ -1,9 +1,10 @@
 package com.timetson.theheartofegypt.modules;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -46,7 +47,7 @@ public class DataContainer {
     }
 
     //AdMob intialization and load
-    public static void AdmobLoad(Activity activity, Context context, int view_id) {
+    public static void AdmobLoad(AppCompatActivity activity, Context context, int view_id) {
         MobileAds.initialize(context, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
