@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.helpers.WordsSqlHelper;
+import com.timetson.theheartofegypt.helpers.WordsHelper;
 import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 
@@ -41,7 +41,7 @@ public class WordActivity extends AppCompatActivity {
         DataContainer.AdmobLoad(this, mContext, R.id.adView);
         // end Ads code
 
-        String[] wordsList = new WordsSqlHelper(mContext).getWord();
+        String[] wordsList = new WordsHelper(mContext).getWord();
         wordCoptic.setText(wordsList[0]);
         wordArabic.setText(wordsList[1]);
         wordEnglish.setText(wordsList[2]);

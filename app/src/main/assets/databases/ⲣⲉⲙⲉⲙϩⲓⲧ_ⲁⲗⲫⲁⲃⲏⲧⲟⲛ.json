@@ -1,0 +1,208 @@
+{
+  "letters": [
+    {
+      "letter": "ⲁ",
+      "capital": "Ⲁ",
+      "name": "ⲁⲗⲫⲁ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲃ",
+      "capital": "Ⲃ",
+      "name": "ⲃⲏⲧⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲅ",
+      "capital": "Ⲅ",
+      "name": "ⲅⲁⲙⲙⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲇ",
+      "capital": "Ⲇ",
+      "name": "ⲇⲉⲗⲧⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲉ",
+      "capital": "Ⲉ",
+      "name": "ⲉⲓⲉ, ⲉⲓ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲋ",
+      "capital": "ⲋ",
+      "name": "ⲥⲟⲟⲩ",
+      "type": "2"
+    },
+    {
+      "letter": "ⲍ",
+      "capital": "Ⲍ",
+      "name": "ⲍⲏⲧⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲏ",
+      "capital": "Ⲏ",
+      "name": "ϩⲏⲧⲁ, ⲏⲧⲁ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲑ",
+      "capital": "Ⲑ",
+      "name": "ⲑⲏⲧⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲓ",
+      "capital": "Ⲓ",
+      "name": "ⲓⲱⲧⲁ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲕ",
+      "capital": "Ⲕ",
+      "name": "ⲕⲁⲡⲡⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲗ",
+      "capital": "Ⲗ",
+      "name": "ⲗⲁⲩⲗⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲙ",
+      "capital": "Ⲙ",
+      "name": "ⲙⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲛ",
+      "capital": "Ⲛ",
+      "name": "ⲛⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲝ",
+      "capital": "Ⲝ",
+      "name": "Ⲝⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲟ",
+      "capital": "Ⲟ",
+      "name": "ⲟ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲡ",
+      "capital": "Ⲡ",
+      "name": "ⲡⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲣ",
+      "capital": "Ⲣ",
+      "name": "ⲣⲟ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲥ",
+      "capital": "Ⲥ",
+      "name": "ⲥⲓⲙⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲧ",
+      "capital": "Ⲧ",
+      "name": "ⲧⲁⲩ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲩ",
+      "capital": "Ⲩ",
+      "name": "ϩⲉ, ⲩⲯⲓⲗⲟⲛ",
+      "type": "0"
+    },
+    {
+      "letter": "ⲫ",
+      "capital": "Ⲫ",
+      "name": "ⲫⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲭ",
+      "capital": "Ⲭ",
+      "name": "ⲭⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲯ",
+      "capital": "Ⲯ",
+      "name": "ⲯⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ⲱ",
+      "capital": "Ⲱ",
+      "name": "Ⲱ",
+      "type": "0"
+    },
+    {
+      "letter": "ϣ",
+      "capital": "Ϣ",
+      "name": "ϣⲁⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ϥ",
+      "capital": "Ϥ",
+      "name": "ϥⲁⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ϧ",
+      "capital": "Ϧ",
+      "name": "ϧⲁⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ϩ",
+      "capital": "Ϩ",
+      "name": "ϩⲟⲣⲓ",
+      "type": "1"
+    },
+    {
+      "letter": "ϫ",
+      "capital": "Ϫ",
+      "name": "ϫⲁⲛϫⲁ, ϫⲉⲛϫⲉ",
+      "type": "1"
+    },
+    {
+      "letter": "ϭ",
+      "capital": "Ϭ",
+      "name": "ϭⲓⲙⲁ",
+      "type": "1"
+    },
+    {
+      "letter": "ϯ",
+      "capital": "Ϯ",
+      "name": "ϯ",
+      "type": "1"
+    },
+    {
+      "letter": " ̀",
+      "capital": " ̀",
+      "name": "ϫⲓⲛⲕⲓⲙ",
+      "type": "2"
+    },
+    {
+      "letter": " ̄",
+      "capital": " ̄",
+      "name": "no name recorded",
+      "type": "2"
+    }
+  ]
+}

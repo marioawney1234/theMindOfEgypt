@@ -9,7 +9,7 @@ import android.widget.RemoteViews;
 
 import com.timetson.theheartofegypt.R;
 import com.timetson.theheartofegypt.Splash;
-import com.timetson.theheartofegypt.helpers.WordsSqlHelper;
+import com.timetson.theheartofegypt.helpers.WordsHelper;
 import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 
@@ -19,7 +19,7 @@ public class WordOfTheDayAppWidgetProvider extends AppWidgetProvider {
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         for (int appWidgetId : appWidgetIds) {
             // Get word of the day.
-            String[] wordsList = new WordsSqlHelper(context).getWord();
+            String[] wordsList = new WordsHelper(context).getWord();
 
             // Choose auxiliary title language.
             String languageCode = DataContainer.LanguageCode;

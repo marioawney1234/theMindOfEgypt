@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.helpers.LettersSqlHelper;
+import com.timetson.theheartofegypt.helpers.LettersHelper;
 import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 import com.timetson.theheartofegypt.modules.PronounceModule;
@@ -102,10 +102,10 @@ public class BohiricLetterDisplayActivity extends AppCompatActivity {
 
         }
 
-        DataContainer.generalBohiricPronouncation = new LettersSqlHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "g");
-        DataContainer.acadimicBohiricPronouncation = new LettersSqlHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "a");
-        DataContainer.newBohiricPronouncation = new LettersSqlHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "n");
-        DataContainer.lateBohiricPronouncation = new LettersSqlHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "l");
+        DataContainer.generalBohiricPronouncation = new LettersHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "g");
+        DataContainer.acadimicBohiricPronouncation = new LettersHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "a");
+        DataContainer.newBohiricPronouncation = new LettersHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "n");
+        DataContainer.lateBohiricPronouncation = new LettersHelper(mContext).getBohiricPronouncation(DataContainer.bohiricLetterModuleList.get(position).getLetter(), "l");
         setLayoutContents(mContext, findViewById(R.id.general), mContext.getResources().getString(R.string.letter_display_general_title_coptic), titleGeneral, DataContainer.generalBohiricPronouncation);
         setLayoutContents(mContext, findViewById(R.id.acadimic_bohiric), mContext.getResources().getString(R.string.letter_display_acadimic_title_coptic), titleAcadimic, DataContainer.acadimicBohiricPronouncation);
         setLayoutContents(mContext, findViewById(R.id.new_bohiric), mContext.getResources().getString(R.string.letter_display_modern_title_coptic), titlemodern, DataContainer.newBohiricPronouncation);

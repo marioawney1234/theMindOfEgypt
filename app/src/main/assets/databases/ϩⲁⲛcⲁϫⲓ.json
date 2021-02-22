@@ -1,0 +1,1284 @@
+{
+  "ⲛⲓⲥⲁϫⲓ": [
+    {
+      "coptic": "ⲛⲟϥⲣⲓ ⲣⲟⲙⲡⲓ",
+      "arabic": "سنه سعيده",
+      "english": "happy year"
+    },
+    {
+      "coptic": "ⲓⲱⲧ",
+      "arabic": "اب",
+      "english": "father"
+    },
+    {
+      "coptic": "ⲙⲁⲩ",
+      "arabic": "ام",
+      "english": "mother"
+    },
+    {
+      "coptic": "ⲓⲟϩ",
+      "arabic": "قمر",
+      "english": "moon"
+    },
+    {
+      "coptic": "ⲕⲁϣ",
+      "arabic": "قلم",
+      "english": "pen"
+    },
+    {
+      "coptic": "ⲣⲱⲙⲓ",
+      "arabic": "رجل",
+      "english": "man"
+    },
+    {
+      "coptic": "ⲥⲓⲟⲩ",
+      "arabic": "نجم",
+      "english": "star"
+    },
+    {
+      "coptic": "ϣⲏⲣⲓ",
+      "arabic": "ابن",
+      "english": "son"
+    },
+    {
+      "coptic": "ϣⲓⲛⲓ",
+      "arabic": "سؤال",
+      "english": "question"
+    },
+    {
+      "coptic": "ϣ́ϣⲏⲛ",
+      "arabic": "شجرة",
+      "english": "tree"
+    },
+    {
+      "coptic": "ϫⲱⲙ",
+      "arabic": "كتاب",
+      "english": "book"
+    },
+    {
+      "coptic": "ⲫⲉ",
+      "arabic": "سماء",
+      "english": "sky"
+    },
+    {
+      "coptic": "ⲃⲁⲕⲓ",
+      "arabic": "مدينة",
+      "english": "city"
+    },
+    {
+      "coptic": "ⲣⲓ",
+      "arabic": "غرفة-حجرة",
+      "english": "room"
+    },
+    {
+      "coptic": "ϫⲓϫ",
+      "arabic": "يد",
+      "english": "hand"
+    },
+    {
+      "coptic": "ϭ́ⲣⲟⲙⲡⲓ",
+      "arabic": "حمامة",
+      "english": "dove"
+    },
+    {
+      "coptic": "ⲓⲁⲣⲟ",
+      "arabic": "نهر",
+      "english": "river"
+    },
+    {
+      "coptic": "ⲓⲟⲙ",
+      "arabic": "بحر",
+      "english": "sea"
+    },
+    {
+      "coptic": "ϣⲁϥⲉ",
+      "arabic": "صحراء",
+      "english": "desert"
+    },
+    {
+      "coptic": "ϧⲉⲗⲗⲟ",
+      "arabic": "شيخ-مُسِن",
+      "english": "aged"
+    },
+    {
+      "coptic": "ⲱⲓⲕ",
+      "arabic": "خبز",
+      "english": "bread"
+    },
+    {
+      "coptic": "ⲱⲛϧ",
+      "arabic": "حياة",
+      "english": "life"
+    },
+    {
+      "coptic": "ⲕⲁϩⲓ",
+      "arabic": "ارض",
+      "english": "land-Earth"
+    },
+    {
+      "coptic": "ⲏⲓ",
+      "arabic": "بيت-منزل",
+      "english": "home"
+    },
+    {
+      "coptic": "ⲙⲱⲟⲩ",
+      "arabic": "ماء",
+      "english": "water"
+    },
+    {
+      "coptic": "ⲗⲁⲥ",
+      "arabic": "لسان",
+      "english": "tongue"
+    },
+    {
+      "coptic": "ⲟⲩⲧⲁϩ",
+      "arabic": "ثمرة",
+      "english": "fruit"
+    },
+    {
+      "coptic": "ⲟⲩⲣⲟ",
+      "arabic": "ملك",
+      "english": "king"
+    },
+    {
+      "coptic": "ⲓ́ϥⲧ",
+      "arabic": "مسمار",
+      "english": "nail"
+    },
+    {
+      "coptic": "ⲛⲉϫⲓ",
+      "arabic": "بطن",
+      "english": "belly"
+    },
+    {
+      "coptic": "ⲣⲟⲙⲡⲓ",
+      "arabic": "عام-سنة",
+      "english": "year"
+    },
+    {
+      "coptic": "ϭⲁⲗⲟϫ",
+      "arabic": "قدم",
+      "english": "foot"
+    },
+    {
+      "coptic": "ⲓⲁⲗ",
+      "arabic": "مِرآة",
+      "english": "mirror"
+    },
+    {
+      "coptic": "ⲟⲩⲛⲟⲩ",
+      "arabic": "ساعة - مده",
+      "english": "hour - period"
+    },
+    {
+      "coptic": "ⲁⲟⲩⲁⲛ",
+      "arabic": "لون",
+      "english": "color"
+    },
+    {
+      "coptic": "ⲡⲉϥϭⲓϯ",
+      "arabic": "بائع - تاجر",
+      "english": "salesman"
+    },
+    {
+      "coptic": "ⲁⲉⲓⲟ",
+      "arabic": "نعم",
+      "english": "yes"
+    },
+    {
+      "coptic": "ⲛⲓϥⲓ",
+      "arabic": "هواء",
+      "english": "air"
+    },
+    {
+      "coptic": "ⲁϧⲱⲙ",
+      "arabic": "نسر",
+      "english": "eagle"
+    },
+    {
+      "coptic": "ⲁⲓⲙⲉⲛ",
+      "arabic": "بحيرة- ترعة",
+      "english": "lake"
+    },
+    {
+      "coptic": "ⲁϧⲱⲣⲓ - ϧⲁⲓⲣⲓ",
+      "arabic": "ثعبان- افعي",
+      "english": "snake"
+    },
+    {
+      "coptic": "ⲁⲗⲁⲥⲱϯ",
+      "arabic": "جيش",
+      "english": "army"
+    },
+    {
+      "coptic": "ⲁⲗⲗⲟⲕⲓ",
+      "arabic": "موز",
+      "english": "banana"
+    },
+    {
+      "coptic": "ⲁⲗⲟⲗⲓ",
+      "arabic": "عنب",
+      "english": "grape"
+    },
+    {
+      "coptic": "ⲁⲗⲟⲙ",
+      "arabic": "جبْن",
+      "english": "chease"
+    },
+    {
+      "coptic": "ⲁⲗϫⲁⲓ",
+      "arabic": "حوت",
+      "english": "whale"
+    },
+    {
+      "coptic": "ⲁⲙϣⲉ",
+      "arabic": "نجار",
+      "english": "carpenter"
+    },
+    {
+      "coptic": "ⲁⲛⲍⲏⲃ",
+      "arabic": "مدرسة",
+      "english": "school"
+    },
+    {
+      "coptic": "ⲁⲛⲟϣⲉⲣ",
+      "arabic": "نِسْر- عُقاب",
+      "english": "eagles"
+    },
+    {
+      "coptic": "ⲁⲛⲁⲥⲁϫⲓ",
+      "arabic": "قاموس",
+      "english": "dictionary"
+    },
+    {
+      "coptic": "ⲁⲛϣⲁϣϥ",
+      "arabic": "اسبوع",
+      "english": "week"
+    },
+    {
+      "coptic": "ⲁⲛϫⲓⲣ",
+      "arabic": "مُطهر- مُنظّف",
+      "english": "cleaner"
+    },
+    {
+      "coptic": "ⲁⲛϫⲱⲕⲱⲧ",
+      "arabic": "مهندس معماري",
+      "english": "architect"
+    },
+    {
+      "coptic": "ⲁⲡⲁⲥ",
+      "arabic": "قديم",
+      "english": "old"
+    },
+    {
+      "coptic": "ⲫⲁⲓϣⲓ",
+      "arabic": "وباء الطاعون",
+      "english": "the plague"
+    },
+    {
+      "coptic": "ⲁⲣⲏⲟⲩ",
+      "arabic": "صديق - رفيق",
+      "english": "friend"
+    },
+    {
+      "coptic": "ⲁⲣⲟⲩϩⲓ",
+      "arabic": "مساء",
+      "english": "night"
+    },
+    {
+      "coptic": "ⲁⲣⲣⲟⲥ",
+      "arabic": "أَرْز",
+      "english": "rice"
+    },
+    {
+      "coptic": "ⲁⲥⲓⲗⲟⲛ",
+      "arabic": "لون ازرق",
+      "english": "blue"
+    },
+    {
+      "coptic": "ⲁⲥⲙⲓ",
+      "arabic": "ياسمين",
+      "english": "jasmine"
+    },
+    {
+      "coptic": "ⲁⲥⲡⲓ",
+      "arabic": "لغة",
+      "english": "language"
+    },
+    {
+      "coptic": "ⲃⲁⲓ",
+      "arabic": "بومة",
+      "english": "owl"
+    },
+    {
+      "coptic": "ⲃⲁⲕⲓⲛⲟⲛ",
+      "arabic": "بامية",
+      "english": "okra"
+    },
+    {
+      "coptic": "ⲃⲁⲗ",
+      "arabic": "عين",
+      "english": "eye"
+    },
+    {
+      "coptic": "ⲃⲁϣⲟⲣ",
+      "arabic": "ثعلب",
+      "english": "fox"
+    },
+    {
+      "coptic": "ⲃⲁϣⲟⲩⲣ",
+      "arabic": "منشار",
+      "english": "saw"
+    },
+    {
+      "coptic": "ⲃⲁϫⲏⲓⲛⲓ",
+      "arabic": "زجاج",
+      "english": "glass"
+    },
+    {
+      "coptic": "ⲃⲉⲗⲑⲱⲛ",
+      "arabic": "أسد - سبع",
+      "english": "lion"
+    },
+    {
+      "coptic": "ⲃⲉⲛⲓ",
+      "arabic": "نخلة",
+      "english": "palm"
+    },
+    {
+      "coptic": "ⲃⲉⲣⲉϭⲉⲣⲁⲧ",
+      "arabic": "عجلة - درَّاجة",
+      "english": "bike"
+    },
+    {
+      "coptic": "ⲃⲉⲣⲧ",
+      "arabic": "وردة - زهرة",
+      "english": "flower"
+    },
+    {
+      "coptic": "ⲃⲉⲧⲃⲉⲧ",
+      "arabic": "بازلاء - بسلة",
+      "english": "peas"
+    },
+    {
+      "coptic": "ⲣⲉϥϣⲓⲛⲓ",
+      "arabic": "ساحر",
+      "english": "magician"
+    },
+    {
+      "coptic": "ⲛⲱⲓⲧ",
+      "arabic": "دقيق",
+      "english": "flour"
+    },
+    {
+      "coptic": "ⲛ́ⲟⲩⲥⲟⲡ",
+      "arabic": "مَرّةً",
+      "english": "once"
+    },
+    {
+      "coptic": "ⲛⲟⲩⲛⲓ",
+      "arabic": "فِجْل - أصل",
+      "english": "radish - root"
+    },
+    {
+      "coptic": "ⲛⲉϣⲡⲑⲏⲟⲩ",
+      "arabic": "مروحة",
+      "english": "fan"
+    },
+    {
+      "coptic": "ⲛⲉϥϣ́ⲃⲱⲃⲓ",
+      "arabic": "كحة - سعال",
+      "english": "cough"
+    },
+    {
+      "coptic": "ⲛⲁϣϯ",
+      "arabic": "حماية",
+      "english": "protection"
+    },
+    {
+      "coptic": "ⲙ́ϫⲱⲗ",
+      "arabic": "بصل",
+      "english": "onion"
+    },
+    {
+      "coptic": "ⲙⲱⲓⲧⲛ́ϩⲱⲗ",
+      "arabic": "رحلة",
+      "english": "journey"
+    },
+    {
+      "coptic": "ⲧⲉⲃⲧ",
+      "arabic": "سمكه",
+      "english": "fish"
+    },
+    {
+      "coptic": "ⲙ́ⲥⲁϩ",
+      "arabic": "تمساح",
+      "english": "crocodile"
+    },
+    {
+      "coptic": "ⲙⲟⲩⲛⲥⲁϫⲓ",
+      "arabic": "محادثة",
+      "english": "conversation"
+    },
+    {
+      "coptic": "ⲙⲟⲩⲛϩⲱⲟⲩ",
+      "arabic": "مطر",
+      "english": "rain"
+    },
+    {
+      "coptic": "ⲙⲟⲩϩⲱϫ",
+      "arabic": "ماء بارد",
+      "english": "cold water"
+    },
+    {
+      "coptic": "ⲙⲟⲕϩⲛ́ϩⲏⲧ",
+      "arabic": "مكتئب",
+      "english": "depressed"
+    },
+    {
+      "coptic": "ⲙ́ⲙⲏⲛⲓ",
+      "arabic": "يوميا",
+      "english": "daily"
+    },
+    {
+      "coptic": "ⲙⲉⲧⲥⲏⲓⲛⲓ",
+      "arabic": "علم الطب",
+      "english": "medicine"
+    },
+    {
+      "coptic": "ⲙⲉⲧⲣⲉϥⲥ́ϧⲁⲓ",
+      "arabic": "خط كتابة",
+      "english": "font"
+    },
+    {
+      "coptic": "ⲙⲉⲗϩ",
+      "arabic": "ملح",
+      "english": "salt"
+    },
+    {
+      "coptic": "ⲙⲁϣⲓ",
+      "arabic": "ميزان",
+      "english": "balance"
+    },
+    {
+      "coptic": "ⲙⲁϧⲟⲩⲗ",
+      "arabic": "مثقاب",
+      "english": "drill"
+    },
+    {
+      "coptic": "ⲙⲁⲧⲟⲓ",
+      "arabic": "جندي",
+      "english": "soldier"
+    },
+    {
+      "coptic": "ⲙⲁⲣⲏⲥ",
+      "arabic": "الصعيد",
+      "english": "upper egypt"
+    },
+    {
+      "coptic": "ⲙⲁⲛ́ϯϩⲁⲡ",
+      "arabic": "محكمة",
+      "english": "court"
+    },
+    {
+      "coptic": "ⲙⲁⲛ́ϯⲥ́ⲃⲱ",
+      "arabic": "كلية",
+      "english": "faculty"
+    },
+    {
+      "coptic": "ⲙⲁⲛ́ϫⲁϥ",
+      "arabic": "ثلاجة",
+      "english": "fridge"
+    },
+    {
+      "coptic": "ⲙⲁⲛ̀ⲭⲁϫⲱⲙ",
+      "arabic": "مكتبة",
+      "english": "library"
+    },
+    {
+      "coptic": "ⲙⲁⲛⲭⲁ",
+      "arabic": "ملعقة",
+      "english": "spoon"
+    },
+    {
+      "coptic": "ⲙⲁⲛⲓ",
+      "arabic": "راعي",
+      "english": "shepherd"
+    },
+    {
+      "coptic": "ⲙⲁⲛⲑⲉⲣⲡ",
+      "arabic": "إبره الخياطة",
+      "english": "needle"
+    },
+    {
+      "coptic": "ⲙⲁⲛⲉϩⲑⲟ",
+      "arabic": "فارس",
+      "english": "knight"
+    },
+    {
+      "coptic": "ⲙⲁⲛ́ⲃⲏⲗⲗⲁ",
+      "arabic": "مكتب بريد",
+      "english": "post office"
+    },
+    {
+      "coptic": "ⲙⲁⲛ̀ⲛⲉⲧϣⲱⲛⲓ",
+      "arabic": "مستشفي",
+      "english": "hospital"
+    },
+    {
+      "coptic": "ⲗⲓⲃⲓ",
+      "arabic": "جنون",
+      "english": "crazy"
+    },
+    {
+      "coptic": "ⲗⲟⲃϣ",
+      "arabic": "اساس",
+      "english": "base"
+    },
+    {
+      "coptic": "ⲗⲉϩⲗⲉⲙ",
+      "arabic": "صرصار",
+      "english": "cockroach"
+    },
+    {
+      "coptic": "ⲗⲉⲃⲧ",
+      "arabic": "لفت",
+      "english": "turnip"
+    },
+    {
+      "coptic": "ⲗⲁⲃⲟⲓ",
+      "arabic": "دُب",
+      "english": "bear"
+    },
+    {
+      "coptic": "ⲕⲱⲃ",
+      "arabic": "خميرة",
+      "english": "yeast"
+    },
+    {
+      "coptic": "ⲕ́ⲣⲟⲩⲣ",
+      "arabic": "ضفضدعة",
+      "english": "frog"
+    },
+    {
+      "coptic": "ⲕ́ⲣⲱⲟⲩ",
+      "arabic": "شواطيء",
+      "english": "beaches"
+    },
+    {
+      "coptic": "ϫⲱⲃⲓ",
+      "arabic": "رسالة",
+      "english": "message"
+    },
+    {
+      "coptic": "ⲕⲟⲩϫⲓ",
+      "arabic": "صغير",
+      "english": "small"
+    },
+    {
+      "coptic": "ⲙⲁⲛⲙⲟⲛ",
+      "arabic": "ليمون",
+      "english": "lemon"
+    },
+    {
+      "coptic": "ⲕⲟⲩⲃⲁⲧ",
+      "arabic": "سجادة",
+      "english": "carpet"
+    },
+    {
+      "coptic": "ⲕⲟⲣⲓ",
+      "arabic": "شلال",
+      "english": "waterfall"
+    },
+    {
+      "coptic": "ⲕⲟⲗⲕⲁⲥⲓ - ⲕⲟⲗⲧⲁϧ",
+      "arabic": "قلقاس",
+      "english": "taro"
+    },
+    {
+      "coptic": "ⲕⲏⲕ",
+      "arabic": "كعكة",
+      "english": "cake"
+    },
+    {
+      "coptic": "ⲕⲉⲙⲧⲟ",
+      "arabic": "زلزال",
+      "english": "earthquake"
+    },
+    {
+      "coptic": "ⲕⲁϣⲛ́ⲧⲁⲧϩ",
+      "arabic": "قلم رصاص",
+      "english": "pencil"
+    },
+    {
+      "coptic": "ⲕⲁⲧⲱ",
+      "arabic": "مركب - قارب",
+      "english": "boat"
+    },
+    {
+      "coptic": "ⲕⲁⲣⲟⲩⲕⲓ",
+      "arabic": "فأر",
+      "english": "rat"
+    },
+    {
+      "coptic": "ⲕⲁⲗⲙ́ⲙⲉⲗϩ",
+      "arabic": "قصب السكر",
+      "english": "cane"
+    },
+    {
+      "coptic": "ⲕⲁⲓⲣⲟⲛ",
+      "arabic": "القاهرة",
+      "english": "cairo"
+    },
+    {
+      "coptic": "ⲕⲁⲑⲏⲟⲩ",
+      "arabic": "شباك",
+      "english": "window"
+    },
+    {
+      "coptic": "ⲓϧ",
+      "arabic": "شيطان",
+      "english": "demon"
+    },
+    {
+      "coptic": "ⲓ́ⲧⲉⲛ",
+      "arabic": "قمامة",
+      "english": "rubbish"
+    },
+    {
+      "coptic": "ⲓⲟⲣⲛ́ϣⲓⲕⲓ",
+      "arabic": "بئر",
+      "english": "well"
+    },
+    {
+      "coptic": "ⲓⲟϩⲓ",
+      "arabic": "حقل",
+      "english": "field"
+    },
+    {
+      "coptic": "ⲓⲁϩϣ̀ϣⲏⲛ",
+      "arabic": "غابة",
+      "english": "jungle"
+    },
+    {
+      "coptic": "ⲓⲁⲃⲓ",
+      "arabic": "مرض",
+      "english": "illness"
+    },
+    {
+      "coptic": "ⲓⲁⲛ",
+      "arabic": "لون بنفسجي",
+      "english": "purple"
+    },
+    {
+      "coptic": "ⲑ́ⲣⲉϣⲣⲱϣ",
+      "arabic": "اللون الاحمر",
+      "english": "red"
+    },
+    {
+      "coptic": "ⲑ́ⲣⲓⲣ",
+      "arabic": "فرن",
+      "english": "oven"
+    },
+    {
+      "coptic": "ⲑⲟⲕⲁⲧⲙⲓⲥ",
+      "arabic": "فراولة",
+      "english": "strawberries"
+    },
+    {
+      "coptic": "ⲑⲟⲙⲁⲛⲙⲟⲛ",
+      "arabic": "برتقال",
+      "english": "orange"
+    },
+    {
+      "coptic": "ⲑⲟ",
+      "arabic": "عالم",
+      "english": "world"
+    },
+    {
+      "coptic": "ⲑⲉϣⲉ",
+      "arabic": "جار",
+      "english": "neighbor"
+    },
+    {
+      "coptic": "ⲑⲉⲣⲡ",
+      "arabic": "إبرة",
+      "english": "a needle"
+    },
+    {
+      "coptic": "ⲑ́ⲃⲁⲓ",
+      "arabic": "مخزن",
+      "english": "store"
+    },
+    {
+      "coptic": "ⲏ́ⲡⲓ",
+      "arabic": "رقم - عدد",
+      "english": "number"
+    },
+    {
+      "coptic": "ⲍⲉⲛⲍⲉⲛ",
+      "arabic": "سحلية- حرباء",
+      "english": "lizard"
+    },
+    {
+      "coptic": "ⲉ̀ϫⲱⲣϩ",
+      "arabic": "ليل",
+      "english": "a night"
+    },
+    {
+      "coptic": "ⲉⲩⲛⲁⲓ",
+      "arabic": "رحمة",
+      "english": "mercy"
+    },
+    {
+      "coptic": "ⲉ́ⲥⲱⲟⲩ",
+      "arabic": "خروف",
+      "english": "lamb"
+    },
+    {
+      "coptic": "ⲉⲣϫⲱ",
+      "arabic": "دجاجة",
+      "english": "chicken"
+    },
+    {
+      "coptic": "ⲉⲣⲙⲁⲛ",
+      "arabic": "رُمّان",
+      "english": "pomegranate"
+    },
+    {
+      "coptic": "ⲉⲛ",
+      "arabic": "قرد",
+      "english": "monkey"
+    },
+    {
+      "coptic": "ⲉⲛⲅ",
+      "arabic": "بنج للتخدير",
+      "english": "anesthetic"
+    },
+    {
+      "coptic": "ⲉ̀ⲙⲟⲩ",
+      "arabic": "قط",
+      "english": "cat"
+    },
+    {
+      "coptic": "ⲉⲙⲣⲁⲓ",
+      "arabic": "قمح",
+      "english": "wheat"
+    },
+    {
+      "coptic": "ⲉⲙⲁ",
+      "arabic": "دم",
+      "english": "blood"
+    },
+    {
+      "coptic": "ⲉⲗⲡⲉⲛⲓⲟⲥ",
+      "arabic": "ذرة",
+      "english": "corn"
+    },
+    {
+      "coptic": "ⲱⲥⲕ",
+      "arabic": "تأخير",
+      "english": "delay"
+    },
+    {
+      "coptic": "ⲱ́ⲟⲩⲛ́ϩⲏⲧ",
+      "arabic": "صبر",
+      "english": "patience"
+    },
+    {
+      "coptic": "ⲱⲃϣ",
+      "arabic": "نسيان",
+      "english": "forgetting"
+    },
+    {
+      "coptic": "ⲭⲟⲛⲥⲣⲱϥ",
+      "arabic": "حشرات",
+      "english": "insects"
+    },
+    {
+      "coptic": "ⲭ́ⲣⲟⲩⲣ",
+      "arabic": "ضفدعة",
+      "english": "a frog"
+    },
+    {
+      "coptic": "ⲭ́ⲣⲟϯ",
+      "arabic": "اطفال",
+      "english": "children"
+    },
+    {
+      "coptic": "ⲭ́ⲣⲉⲙⲉⲥ",
+      "arabic": "ظلام",
+      "english": "darkness"
+    },
+    {
+      "coptic": "ⲭⲏⲙⲓ",
+      "arabic": "مصر",
+      "english": "egypt"
+    },
+    {
+      "coptic": "ⲭⲏⲕ",
+      "arabic": "كعك",
+      "english": "cakes"
+    },
+    {
+      "coptic": "ⲭⲉⲣⲉⲃ",
+      "arabic": "صورة",
+      "english": "photo"
+    },
+    {
+      "coptic": "ⲭⲁⲧⲏⲣ",
+      "arabic": "فرجار",
+      "english": "compass"
+    },
+    {
+      "coptic": "ⲭⲁⲣⲧ",
+      "arabic": "كارت",
+      "english": "card"
+    },
+    {
+      "coptic": "ⲭⲁⲙⲉ",
+      "arabic": "اسود",
+      "english": "black"
+    },
+    {
+      "coptic": "ⲭⲁⲛⲥ̀ⲣⲱϥ",
+      "arabic": "حشرة",
+      "english": "insect"
+    },
+    {
+      "coptic": "ⲫⲓⲛ",
+      "arabic": "فار",
+      "english": "mouse"
+    },
+    {
+      "coptic": "ⲫⲓⲡⲣⲟⲥ",
+      "arabic": "فلفل",
+      "english": "pepper"
+    },
+    {
+      "coptic": "ⲫⲉϧ",
+      "arabic": "بطيخ",
+      "english": "watermelon"
+    },
+    {
+      "coptic": "ⲫⲁϧⲣⲓ",
+      "arabic": "دواء",
+      "english": "a medicine"
+    },
+    {
+      "coptic": "ⲫⲉⲗ",
+      "arabic": "فول",
+      "english": "bean"
+    },
+    {
+      "coptic": "ⲫⲁϣ",
+      "arabic": "فخ",
+      "english": "trap"
+    },
+    {
+      "coptic": "ⲫⲁϣⲓ",
+      "arabic": "نصف",
+      "english": "half"
+    },
+    {
+      "coptic": "ⲧⲱⲟⲩ",
+      "arabic": "جبل",
+      "english": "mountain"
+    },
+    {
+      "coptic": "ⲧ́ⲣⲓⲙ",
+      "arabic": "برسيم",
+      "english": "clover"
+    },
+    {
+      "coptic": "ⲧ́ⲣⲱ",
+      "arabic": "سلم",
+      "english": "stairs"
+    },
+    {
+      "coptic": "ⲧⲟⲩⲛ",
+      "arabic": "تمرين",
+      "english": "exercise"
+    },
+    {
+      "coptic": "ⲧⲟⲩⲗⲕⲉⲗⲟⲛⲏ",
+      "arabic": "سمك القرش",
+      "english": "sharks"
+    },
+    {
+      "coptic": "ⲧⲟⲧⲥ",
+      "arabic": "كرسي",
+      "english": "chair"
+    },
+    {
+      "coptic": "ⲧ́ⲕⲁⲥ",
+      "arabic": "ألم",
+      "english": "pain"
+    },
+    {
+      "coptic": "ⲧⲏⲃ",
+      "arabic": "اصبع",
+      "english": "finger"
+    },
+    {
+      "coptic": "ⲥⲟⲩⲏⲛ",
+      "arabic": "مشهور",
+      "english": "famous"
+    },
+    {
+      "coptic": "ⲥⲟⲃⲧ",
+      "arabic": "سور - سياج",
+      "english": "wall"
+    },
+    {
+      "coptic": "ⲥ́ⲛⲟⲛⲧ",
+      "arabic": "اسمنت",
+      "english": "cement"
+    },
+    {
+      "coptic": "ⲥ́ⲙⲟⲕⲁϩⲓ",
+      "arabic": "جغرافيا",
+      "english": "geography"
+    },
+    {
+      "coptic": "ⲥ̀ⲙⲏ",
+      "arabic": "صوت",
+      "english": "sound"
+    },
+    {
+      "coptic": "ⲥ́ⲕⲗⲏ",
+      "arabic": "تابوت",
+      "english": "coffin"
+    },
+    {
+      "coptic": "ⲥⲓⲱⲟⲩⲧ",
+      "arabic": "اسيوط",
+      "english": "assiut"
+    },
+    {
+      "coptic": "ⲥⲏϫ",
+      "arabic": "حمار",
+      "english": "donkey"
+    },
+    {
+      "coptic": "ⲥⲏⲛⲓ",
+      "arabic": "طبيب",
+      "english": "doctor"
+    },
+    {
+      "coptic": "ⲥⲉⲣⲏⲛⲟⲥ",
+      "arabic": "نعامة",
+      "english": "ostrich"
+    },
+    {
+      "coptic": "ⲥⲉⲛϯ",
+      "arabic": "اساس- قاعدة",
+      "english": "base"
+    },
+    {
+      "coptic": "ⲥⲉⲕ",
+      "arabic": "صوم",
+      "english": "fasting"
+    },
+    {
+      "coptic": "ⲥⲁϫⲓ",
+      "arabic": "كلمة",
+      "english": "word"
+    },
+    {
+      "coptic": "ⲥⲁϯ",
+      "arabic": "نار",
+      "english": "fire"
+    },
+    {
+      "coptic": "ⲥ́ⲃⲉ",
+      "arabic": "باب",
+      "english": "door"
+    },
+    {
+      "coptic": "ⲥ́ⲃⲟ",
+      "arabic": "تعليم",
+      "english": "education"
+    },
+    {
+      "coptic": "ⲥⲁϩⲣⲉ",
+      "arabic": "صحراء",
+      "english": "the desert"
+    },
+    {
+      "coptic": "ⲥⲁϥ",
+      "arabic": "امس",
+      "english": "yesterday"
+    },
+    {
+      "coptic": "ⲥⲁϧ",
+      "arabic": "معلم",
+      "english": "teacher"
+    },
+    {
+      "coptic": "ⲥⲁⲣⲏⲥ",
+      "arabic": "جهة الجنوب",
+      "english": "the south"
+    },
+    {
+      "coptic": "ⲥⲁⲛⲫⲓⲥⲓ",
+      "arabic": "طباخ",
+      "english": "chef"
+    },
+    {
+      "coptic": "ⲥⲁⲛ́ⲱⲓⲕ",
+      "arabic": "خباز",
+      "english": "baker"
+    },
+    {
+      "coptic": "ⲥⲁⲟⲩⲓⲛⲁⲙ",
+      "arabic": "جهة اليمين",
+      "english": "the right"
+    },
+    {
+      "coptic": "ⲥⲁⲛ́ⲟⲩⲟϯ",
+      "arabic": "بائع خضار",
+      "english": "a vegetable seller"
+    },
+    {
+      "coptic": "ⲥⲁⲕ",
+      "arabic": "شجاعة",
+      "english": "bravery"
+    },
+    {
+      "coptic": "ⲥⲁⲗⲉⲥ",
+      "arabic": "احمق",
+      "english": "foolish"
+    },
+    {
+      "coptic": "ⲥⲁⲓ",
+      "arabic": "جمال",
+      "english": "beauty"
+    },
+    {
+      "coptic": "ⲣⲱϣⲓ",
+      "arabic": "وزن",
+      "english": "weight"
+    },
+    {
+      "coptic": "ⲣⲟϯ",
+      "arabic": "نبات",
+      "english": "plant"
+    },
+    {
+      "coptic": "ⲣⲱⲟⲩ",
+      "arabic": "ابواب",
+      "english": "doors"
+    },
+    {
+      "coptic": "ⲣⲉϥϫⲱⲗϧ",
+      "arabic": "غطاس",
+      "english": "diver"
+    },
+    {
+      "coptic": "ⲣⲉϥϥⲓⲱⲡ",
+      "arabic": "محاسب",
+      "english": "accountant"
+    },
+    {
+      "coptic": "ⲣⲉϥⲕⲱⲗⲡ",
+      "arabic": "سارق",
+      "english": "thief"
+    },
+    {
+      "coptic": "ⲣⲉϥⲕⲓϯ",
+      "arabic": "كاتب",
+      "english": "writer"
+    },
+    {
+      "coptic": "ⲣⲉϥⲉⲣⲫⲁϧⲣⲓ",
+      "arabic": "صيدلي",
+      "english": "pharmacist"
+    },
+    {
+      "coptic": "ⲣⲉϥⲉⲣⲛⲁϣϯ",
+      "arabic": "محامي",
+      "english": "lawyer"
+    },
+    {
+      "coptic": "ⲣⲉⲙⲛ́ϫⲱⲓⲗⲓ",
+      "arabic": "ضيف",
+      "english": "guest"
+    },
+    {
+      "coptic": "ⲣⲉⲋⲁⲛⲍⲏⲃ",
+      "arabic": "تلميذ",
+      "english": "student"
+    },
+    {
+      "coptic": "ⲣⲁⲥⲟⲩⲓ́",
+      "arabic": "حلم",
+      "english": "dream"
+    },
+    {
+      "coptic": "ⲣⲁⲥϯ",
+      "arabic": "غدًا",
+      "english": "tomorrow"
+    },
+    {
+      "coptic": "ⲣⲁϣⲓ",
+      "arabic": "فرح",
+      "english": "joy"
+    },
+    {
+      "coptic": "ⲣⲁϧⲓ",
+      "arabic": "نظيف",
+      "english": "clean"
+    },
+    {
+      "coptic": "ⲣⲁⲃⲏ",
+      "arabic": "شارع",
+      "english": "street"
+    },
+    {
+      "coptic": "ⲣⲁⲓϯ",
+      "arabic": "جنسية",
+      "english": "nationality"
+    },
+    {
+      "coptic": "ⲡⲱϣⲛ́ϩⲏⲧ",
+      "arabic": "حزن",
+      "english": "sorrow"
+    },
+    {
+      "coptic": "ⲡⲉⲧϫⲱⲣϫ",
+      "arabic": "صياد",
+      "english": "fisher man"
+    },
+    {
+      "coptic": "ⲡⲉⲧⲱⲥϧ",
+      "arabic": "حصاد",
+      "english": "harvest"
+    },
+    {
+      "coptic": "ⲡⲉⲣⲥⲓ",
+      "arabic": "خوخ",
+      "english": "peache"
+    },
+    {
+      "coptic": "ⲡⲉⲙϩⲓⲧ",
+      "arabic": "جهة الشمال",
+      "english": "the north"
+    },
+    {
+      "coptic": "ⲡⲉⲙⲉⲛⲧ",
+      "arabic": "جهة الغرب",
+      "english": "the west"
+    },
+    {
+      "coptic": "ⲡⲉⲓⲉⲃⲧ",
+      "arabic": "جهة الشرق",
+      "english": "east"
+    },
+    {
+      "coptic": "ⲡⲁⲧϣⲉⲗⲏⲧ",
+      "arabic": "عريس",
+      "english": "groom"
+    },
+    {
+      "coptic": "ⲡⲁⲣⲧⲁⲗⲓⲥ",
+      "arabic": "نمر",
+      "english": "tiger"
+    },
+    {
+      "coptic": "ⲡⲁⲣⲕⲱⲛⲓ",
+      "arabic": "بركان",
+      "english": "volcano"
+    },
+    {
+      "coptic": "ⲡⲁⲛⲧⲟⲕⲓ",
+      "arabic": "بندق",
+      "english": "hazelnut"
+    },
+    {
+      "coptic": "ⲟⲩϩⲟⲣ",
+      "arabic": "كلب",
+      "english": "dog"
+    },
+    {
+      "coptic": "ⲟⲩⲱϩⲉⲙ",
+      "arabic": "رد",
+      "english": "reply"
+    },
+    {
+      "coptic": "ⲟⲩⲱϩ",
+      "arabic": "إقامة",
+      "english": "accommodation"
+    },
+    {
+      "coptic": "ⲟⲩⲱϣ",
+      "arabic": "مسافة - مشيئه",
+      "english": "distance - will"
+    },
+    {
+      "coptic": "ⲟⲩⲱⲙ",
+      "arabic": "طعام",
+      "english": "food"
+    },
+    {
+      "coptic": "ⲟⲩⲱⲧ",
+      "arabic": "وحيد",
+      "english": "single"
+    },
+    {
+      "coptic": "ⲟⲩⲱⲓϣ",
+      "arabic": "وقت",
+      "english": "time"
+    },
+    {
+      "coptic": "ⲃⲟⲧⲃⲉⲧ",
+      "arabic": "خضراوات",
+      "english": "vegetables"
+    },
+    {
+      "coptic": "ⲟⲩⲟⲃϣ",
+      "arabic": "لون ابيض",
+      "english": "white"
+    },
+    {
+      "coptic": "ⲟⲩⲱⲓ",
+      "arabic": "فلاح",
+      "english": "farmer"
+    },
+    {
+      "coptic": "ⲟⲩⲟⲓ",
+      "arabic": "جَرْي",
+      "english": "running"
+    },
+    {
+      "coptic": "ⲟⲩⲁϩⲥⲁϩⲛⲓ",
+      "arabic": "وصية",
+      "english": "will"
+    },
+    {
+      "coptic": "ⲟⲩⲁⲓ",
+      "arabic": "واحد",
+      "english": "one"
+    },
+    {
+      "coptic": "ⲱⲧⲡ",
+      "arabic": "مسجون",
+      "english": "prisoner"
+    },
+    {
+      "coptic": "ⲟ́ⲥⲓ",
+      "arabic": "غرامة",
+      "english": "fine"
+    },
+    {
+      "coptic": "ⲟⲣϥ",
+      "arabic": "هادئ",
+      "english": "quiet"
+    },
+    {
+      "coptic": "ⲟⲃⲓ",
+      "arabic": "عطشان",
+      "english": "thirsty"
+    }
+  ]
+}

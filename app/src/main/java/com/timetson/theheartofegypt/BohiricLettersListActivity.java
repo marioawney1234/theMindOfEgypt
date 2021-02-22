@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.helpers.LettersSqlHelper;
+import com.timetson.theheartofegypt.helpers.LettersHelper;
 import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 import com.timetson.theheartofegypt.modules.LetterModule;
@@ -56,7 +56,7 @@ public class BohiricLettersListActivity extends AppCompatActivity {
 
         textViewTitleCoptic.setText(mContext.getResources().getString(R.string.letter_list_title_bohiric_coptic));
 
-        moduleList = new LettersSqlHelper(mContext).getBohiricLetters();
+        moduleList = new LettersHelper(mContext).getBohiricLetters();
         DataContainer.bohiricLetterModuleList = moduleList;
         ArrayAdapter<LetterModule> letterListAdapter = new ArrayAdapter<>(mContext, android.R.layout.simple_list_item_1, android.R.id.text1, moduleList);
         lettersListView.setAdapter(letterListAdapter);

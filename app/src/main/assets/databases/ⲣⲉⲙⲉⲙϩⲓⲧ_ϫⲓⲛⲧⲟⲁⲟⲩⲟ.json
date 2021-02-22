@@ -1,0 +1,794 @@
+{
+  "ⲁ_g": [
+    {
+      "IPA": "ɑ",
+      "letter_name": "open back unrounded vowel",
+      "Audio": "1/ɑ",
+      "type": "0",
+      "arabic_description": "تنطق 'أ'  مفخمه طويله كما في كلمه \"نهار\" , \"واضح\" , \"صار\" او فتحه مفخمه قصيره كما في كلمه \"صَبر\" و قد تاتي مرققه ايضا كما في \"جاهز\" ولا يوجد قاعده معينه لنطق او لطول الحرف و لكن في طول الحرف يمكن اللجوء لقاعده التشديد الواحد في الكلمه و هي مستخدمه بكثره في العاميه المصريه حيث تنطق طويله ممدوده اذا اتت في نفس الكلمه مع متحرك اخر قصير (ⲟ,ⲉ) و قصيره مثل الفتحه اذا جاءت في نفس الكلمه مع متحرك اخر طويل (ⲏ,ⲱ) اما اذا جاءت مع (ⲁ,ⲓ) اذا جاء احد الحرفين في اول او اخر الكلمه ينطق قصيرا و في حاله جاء منفردا في الكلمه جرت العاده نطقه طويلا لكن يمكن ان يحتكم للفظ المتوارث او اللهجات الاخري  *او ببساطه هو مقابل حرف ال \"أ\" العربي",
+      "english_description": "'a' as in \"father\" , \"car\" and can be short or long 'a' as there is no rule for its length but we can use the \"single stress\" rule which is widly used in current Egyptian local dialict, so we can prounounce it short when the word contains other long vowel 'ⲏ,ⲱ', and pronounce it long when the word contains only short vowels 'ⲉ,ⲟ' and with another 'ⲁ,ⲓ' if one of them comes at start or end of the word it is pronounced short , and if it is the only vowel in the word it used to be pronounced long but can be specified accurately from late coptic or other dialects"
+    }
+  ],
+  "ⲃ_a": [
+    {
+      "IPA": "b",
+      "letter_name": "Voiced bilabial stop",
+      "Audio": "0/b",
+      "type": "0",
+      "arabic_description": "ينطق \"ب\" كما في \"باب\" و هو النطق الاصلي و الاقدم للحرف و يجوز نطق الحرف دائما \"ب\"",
+      "english_description": "'b' as in \"ball\" and it is the oldest prouncation for the letter and can be pronounced always 'b'"
+    },
+    {
+      "IPA": "β",
+      "letter_name": "Voiced bilabial fricative",
+      "Audio": "0/β",
+      "type": "1",
+      "arabic_description": "هذا الصوت ليس موجودا في العربيه او الانجليزيه و هو قريب لنطق \"ڤ\" و \"و\" و \"ب\" و ينطق من بين الشفتين كحرف ال \"ب\" العربيه و لكن دون ان يتلامس الشفتين و في الاغلب ينطق بهذه الطريقه اذا جاء بعده حرف متحرك و قد اختفي هذا الحرف من لسان الاقباط ",
+      "english_description": "this sound not in english or arabic , and it is similar to 'v','b','w', it pronounced as 'b' without lips touching each others and almost when it comes before vowel letter."
+    }
+  ],
+  "ⲃ_l": [
+    {
+      "IPA": "w",
+      "letter_name": "Voiced labio-velar approximant",
+      "Audio": "0/w",
+      "type": "0",
+      "arabic_description": "تنطق \"و\" كما في \"ويصا\" , \"ورد\" ولا توجد قاعده معينه لكن تحدد حسب اللفظ المتوارث و لكن غالبا قبل الحروف المتحركه",
+      "english_description": "'w' as in \"weep\" and no rule for pronuncation , but pronounced as it have been recieved but almost when it comes before vowel"
+    },
+    {
+      "IPA": "b",
+      "letter_name": "Voiced bilabial stop",
+      "Audio": "0/b",
+      "type": "1",
+      "arabic_description": "تنطق \"ب\" كما في \"باب\" ولا توجد قاعده معينه لكن تحدد حسب اللفظ المتوارث و تكتب 'ⲃ̣'",
+      "english_description": "'b' as in \"ball\" and no rule for pronuncation , but pronounced as it have been recieved and written 'ⲃ̣'"
+    }
+  ],
+  "ⲃ_n": [
+    {
+      "IPA": "v",
+      "letter_name": "Voiced labiodental fricative",
+      "Audio": "0/v",
+      "type": "0",
+      "arabic_description": "تنطق \"ڤ\" اذا جاء في اول الكلمه او المقطع و بعده حرف متحرك",
+      "english_description": "'v' as in \"very\" if it comes at the start of word or syllable and before vowel letter"
+    },
+    {
+      "IPA": "b",
+      "letter_name": "Voiced bilabial stop",
+      "Audio": "0/b",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك و في اسماء الاعلام تنطق \"ب\" كما في \"باب\" ",
+      "english_description": "otherwise and in persons and places names, 'b' as in \"ball\""
+    }
+  ],
+  "ⲅ_g": [
+    {
+      "IPA": "g",
+      "letter_name": "Voiced velar stop",
+      "Audio": "0/g",
+      "type": "0",
+      "arabic_description": "ينطق \"ج\" مصري بحراوي كما في \"جرس\" اذا جاء بعده حرف متحرك مكسور (Ⲩ,Ⲓ,Ⲏ,Ⲉ)",
+      "english_description": "'g' like in \"go\", when it comes before (Ⲩ,Ⲓ,Ⲏ,Ⲉ)"
+    },
+    {
+      "IPA": "ŋ",
+      "letter_name": "Voiced velar nasal",
+      "Audio": "0/ŋ",
+      "type": "1",
+      "arabic_description": "ينطق \"ن\" كما في الكلمه الانجليزيه \"song\" اذا جاء بعده حرف حلقي (Ⲝ,Ⲭ,Ⲕ,Ⲅ)",
+      "english_description": "'n' like in \"song\" , when it comes before velar sound (Ⲝ,Ⲭ,Ⲕ,Ⲅ)"
+    },
+    {
+      "IPA": "ɣ",
+      "letter_name": "Voiced velar fricative",
+      "Audio": "0/ɣ",
+      "type": "2",
+      "arabic_description": "ينطق \"غ\" كما في \"غرب\" فيما عدا ذلك",
+      "english_description": "otherwise it pronounced soft g \"gh\" like arabic 'غ' , this sound is not in english"
+    }
+  ],
+  "ⲇ_a": [
+    {
+      "IPA": "d",
+      "letter_name": "Voiced alveolar stop",
+      "Audio": "0/d",
+      "type": "0",
+      "arabic_description": "ينطق \"د\" كما في \"دير\" و يضخم مثل \"ض\" اذا جاء قبل (ⲁ,ⲱ) مثل \"دار\"",
+      "english_description": "'d' as in \"door\""
+    }
+  ],
+  "ⲇ_l": [
+    {
+      "IPA": "d",
+      "letter_name": "Voiced alveolar stop",
+      "Audio": "0/d",
+      "type": "0",
+      "arabic_description": "ينطق \"د\" كما في \"دير\" و يضخم مثل \"ض\" اذا جاء قبل (ⲁ,ⲱ) مثل \"دار\"",
+      "english_description": "'d' as in \"door\""
+    }
+  ],
+  "ⲇ_n": [
+    {
+      "IPA": "d",
+      "letter_name": "Voiced alveolar stop",
+      "Audio": "0/d",
+      "type": "0",
+      "arabic_description": "ينطق \"د\" كما في \"دار\" فقط في اسماء الاعلام مثل الاشخاص و البلاد",
+      "english_description": "'d' as in \"door\" in persons and places names only"
+    },
+    {
+      "IPA": "",
+      "letter_name": "Voiced dental fricative",
+      "Audio": "0/ð",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك ينطق \"ذ\" كما في \"ذكر\"",
+      "english_description": "otherwise, \"th\" as in \"this\""
+    }
+  ],
+  "ⲉ_a": [
+    {
+      "IPA": "ɛ",
+      "letter_name": "Open-mid front unrounded vowel",
+      "Audio": "1/ɛ",
+      "type": "0",
+      "arabic_description": "ينطق ياء مفتوحه او الف مكسوره قصيره مثل الكسره العربيه ولكن اقل كسرا و دائما قصيره ليس بها اطاله",
+      "english_description": "short 'e' as in american \"set\""
+    }
+  ],
+  "ⲉ_l": [
+    {
+      "IPA": "æ",
+      "letter_name": "Short near-open front unrounded vowel",
+      "Audio": "1/æ",
+      "type": "0",
+      "arabic_description": "تنطق كحركه الفتحه العربيه كما في \"بَرد\" , \"شَرط\" ",
+      "english_description": "short 'a' as in \"as\""
+    }
+  ],
+  "ⲉ_n": [
+    {
+      "IPA": "e",
+      "letter_name": "Short close-mid front unrounded vowel",
+      "Audio": "1/e",
+      "type": "0",
+      "arabic_description": "ينطق بين الفتح و الكسر مثل كلمه \"بيت\" في العاميه المصريه",
+      "english_description": "'e' as in \"bed\""
+    }
+  ],
+  "ⲋ_g": [
+    {
+      "IPA": "-",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ليس له نطق و يستخدم للدلاله علي رقم ٦",
+      "english_description": "this is not a letter and only used to represent number 6."
+    }
+  ],
+  "ⲍ_g": [
+    {
+      "IPA": "z",
+      "letter_name": "Voiced alveolar sibilant",
+      "Audio": "0/z",
+      "type": "0",
+      "arabic_description": "ينطق \"ز\" كما في \"زحام\" , \"زرع\" و يضخم مثل \"ظ\" اذا جاء قبل (ⲁ,ⲱ)",
+      "english_description": "'z' as in \"zoo\""
+    }
+  ],
+  "ⲏ_a": [
+    {
+      "IPA": "eː",
+      "letter_name": "Long close-mid front unrounded vowel",
+      "Audio": "1/e",
+      "type": "0",
+      "arabic_description": "ينطق ياء مفتوحه طويله كما في كلمات العاميه المصريه \"بيت\" , \"عيب\"",
+      "english_description": "long 'e' as 'a' in \"hate\", 'ai' in \"air\", 'a' in \"may\", 'a' in \"ate\""
+    }
+  ],
+  "ⲏ_l": [
+    {
+      "IPA": "æ:",
+      "letter_name": "Long near-open front unrounded vowel",
+      "Audio": "1/æ",
+      "type": "0",
+      "arabic_description": "ينطق \"ا\" طويله او ممدوده كما في كلمه \"سامي\" و ليس له قاعده محدده, و لكن يحدد عن اللفظ المتوارث",
+      "english_description": "long 'a' as in \"cat\" and no rule for pronunciation, but pronounced as it have been recieved"
+    },
+    {
+      "IPA": "iː",
+      "letter_name": "long Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "1",
+      "arabic_description": "ينطق \"ي\" طويله كما في كلمه \"عيد\" و ليس له قاعده محدده, و لكن يحدد عن اللفظ المتوارث ,و تكتب 'ⲏ̣'",
+      "english_description": "'ee' as in \"sheet\" and no rule for pronunciation , but pronounced as it has been received and written 'ⲏ̣'"
+    }
+  ],
+  "ⲏ_n": [
+    {
+      "IPA": "iː",
+      "letter_name": "long Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "0",
+      "arabic_description": "ينطق \"ي\" طويله كما في كلمه \"عيد\" , \"زير\" بالعاميه المصريه",
+      "english_description": "'ee' as in \"sheet\" "
+    }
+  ],
+  "ⲑ_a": [
+    {
+      "IPA": "tʰ",
+      "letter_name": "Unvoiced aspirated apical alveolar stop",
+      "Audio": "0/tʰ",
+      "type": "0",
+      "arabic_description": "يشبه حرف \"ت\" مضافا اليه صوت تنفسي قريب من نطق ال \"ت\" في كلمه \"توكه\" العاميه المصريه , و يعتبر تؤام لحرف 'ⲧ' , و لكن تنفسي مثقل",
+      "english_description": "aspirated 't' as in \"victoria\""
+    }
+  ],
+  "ⲑ_l": [
+    {
+      "IPA": "t",
+      "letter_name": "Voiceless alveolar stop",
+      "Audio": "0/t",
+      "type": "0",
+      "arabic_description": "ينطق \"ت\" كما في \"تاج\"",
+      "english_description": "'t' as in \"tall\""
+    }
+  ],
+  "ⲑ_n": [
+    {
+      "IPA": "t",
+      "letter_name": "Voiceless alveolar stop",
+      "Audio": "0/t",
+      "type": "0",
+      "arabic_description": "تنطق \"ت\" اذا جاءت بعد (Ⲥ,Ⲧ,Ϣ,Ⲙ) ",
+      "english_description": "'t' as in \"tall\" when it comes after (Ⲥ,Ⲧ,Ϣ,Ⲙ)"
+    },
+    {
+      "IPA": "θ",
+      "letter_name": "Voiceless dental fricative",
+      "Audio": "0/θ",
+      "type": "1",
+      "arabic_description": "تنطق \"ث\" فيما عدا ذلك",
+      "english_description": "otherwise, 'th' as in \"thin\""
+    }
+  ],
+  "ⲓ_g": [
+    {
+      "IPA": "j",
+      "letter_name": "Voiced palatal approximant",
+      "Audio": "0/j",
+      "type": "0",
+      "arabic_description": "ينطق \"ي\" عله اذا جاء بعده او قبله حرف متحرك كما في \"يوم\"",
+      "english_description": "'y' as in \"yes\" when it comes before or after a vowel letter"
+    },
+    {
+      "IPA": "i",
+      "letter_name": "Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك ينطق همزه مكسوره في اول الكلمه او \"ي\" متحركه مكسوره كما في \"إيهاب\" , \"مين\" في العاميه المصريه و قد تاتي طويله او قصيره و لا يوجد قاعده معينه لطولها و لكن يمكن اللجوء لقاعده \"التشديد الواحد\" التي تم الاشاره اليها في حرف 'ⲁ'",
+      "english_description": "otherwise, 'i' as in \"tin\" ,\"inner\" , can be short or long 'i' and can use the \" single stress\" rule which have been mentioned before with letter 'ⲁ'"
+    }
+  ],
+  "ⲕ_g": [
+    {
+      "IPA": "k",
+      "letter_name": "Voiceless velar stop",
+      "Audio": "0/k",
+      "type": "0",
+      "arabic_description": "ينطق \"ك\" كما في \"كتب\"",
+      "english_description": "'k' without aspiration as in \"kit\""
+    }
+  ],
+  "ⲗ_g": [
+    {
+      "IPA": "l",
+      "letter_name": "Voiced alveolar lateral approximant",
+      "Audio": "0/l",
+      "type": "0",
+      "arabic_description": "ينطق \"ل\" كما في \"لعب\"",
+      "english_description": "'l' as in \"light\""
+    }
+  ],
+  "ⲙ_g": [
+    {
+      "IPA": "m",
+      "letter_name": "Voiced bilabial nasal",
+      "Audio": "0/m",
+      "type": "0",
+      "arabic_description": "ينطق \"م\" كما في \"مصر\"",
+      "english_description": "'m' as in \"morning\""
+    }
+  ],
+  "ⲛ_g": [
+    {
+      "IPA": "n",
+      "letter_name": "Voiced alveolar nasal",
+      "Audio": "0/n",
+      "type": "0",
+      "arabic_description": "ينطق \"ن\" كما في \"نادي\"",
+      "english_description": "'n' as in \"night'"
+    }
+  ],
+  "ⲝ_g": [
+    {
+      "IPA": "ks",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ينطق \"ك\" + \"س\" و هو عباره عن حرف ثنائي من حرفين \"ⲕⲥ\" ",
+      "english_description": "as in english letter 'x' in word \"max\" , simplification of the digraph \"ⲕⲥ\""
+    }
+  ],
+  "ⲟ_g": [
+    {
+      "IPA": "o",
+      "letter_name": "Short close-mid back rounded vowel",
+      "Audio": "1/o",
+      "type": "0",
+      "arabic_description": "ينطق ضمه قصيره مثل كلمه \"فُل\" , \"أُم\" , \"كُل\" بالعاميه المصريه و ليس بها مد",
+      "english_description": "short 'o' as in \"dog\""
+    }
+  ],
+  "ⲡ_a": [
+    {
+      "IPA": "p",
+      "letter_name": "Voiceless bilabial stop",
+      "Audio": "0/p",
+      "type": "0",
+      "arabic_description": "ينطق \"پ\" كحرف \"p\" في اللغه الانجليزيه",
+      "english_description": "'p' without aspiration as in \"poor\""
+    }
+  ],
+  "ⲡ_l": [
+    {
+      "IPA": "b",
+      "letter_name": "Voiced bilabial stop",
+      "Audio": "0/b",
+      "type": "0",
+      "arabic_description": "ينطق \"ب\" كما في \"باب\"",
+      "english_description": "'b' as in \"back\""
+    }
+  ],
+  "ⲡ_n": [
+    {
+      "IPA": "p",
+      "letter_name": "Voiceless bilabial stop",
+      "Audio": "0/p",
+      "type": "0",
+      "arabic_description": "ينطق \"پ\" كحرف \"p\" في اللغه الانجليزيه",
+      "english_description": "'p' without aspiration as in \"poor\""
+    }
+  ],
+  "ⲣ_g": [
+    {
+      "IPA": "r",
+      "letter_name": "Voiced alveolar trill",
+      "Audio": "0/r",
+      "type": "0",
+      "arabic_description": "ينطق \"ر\" كما في \"رحمه\"",
+      "english_description": "'r' as in \"race\""
+    }
+  ],
+  "ⲥ_a": [
+    {
+      "IPA": "s",
+      "letter_name": "Voiceless alveolar sibilant",
+      "Audio": "0/s",
+      "type": "0",
+      "arabic_description": "ينطق \"س\" كما في \"سماء\"و يضخم \"ص\" كما في \"صفاء\" اذا جاء بعده \"ⲁ,ⲱ\"",
+      "english_description": "'s' as in \"small\""
+    }
+  ],
+  "ⲥ_l": [
+    {
+      "IPA": "s",
+      "letter_name": "Voiceless alveolar sibilant",
+      "Audio": "0/s",
+      "type": "0",
+      "arabic_description": "ينطق \"س\" كما في \"سماء\"و يضخم \"ص\" كما في \"صفاء\" اذا جاء بعده \"ⲁ,ⲱ\"",
+      "english_description": "'s' as in \"small\""
+    }
+  ],
+  "ⲥ_n": [
+    {
+      "IPA": "z",
+      "letter_name": "Voiced alveolar sibilant",
+      "Audio": "0/z",
+      "type": "0",
+      "arabic_description": "تنطق \"ز\" كما في \"زرع\" , اذا جاء بعدها حرف ال \"ⲙ\" في الكلمات من اصل يوناني فقط",
+      "english_description": "'z' as in \"zoo\" if it comes before 'ⲙ' in greek words only"
+    },
+    {
+      "IPA": "s",
+      "letter_name": "Voiceless alveolar sibilant",
+      "Audio": "0/s",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك ينطق \"س\" كما في \"سماء\"و يضخم \"ص\" كما في \"صفاء\" اذا جاء بعده \"ⲁ,ⲱ\"",
+      "english_description": "otherwise, 's' as in \"small\""
+    }
+  ],
+  "ⲧ_a": [
+    {
+      "IPA": "t",
+      "letter_name": "Voiceless alveolar stop",
+      "Audio": "0/t",
+      "type": "0",
+      "arabic_description": "ينطق \"ت\" كما في \"تامر\"و يضخم \"ط\" كما في \"طارق\" اذا جاء بعده \"ⲁ,ⲱ\"",
+      "english_description": "'t' without aspiration as in \"tall\""
+    }
+  ],
+  "ⲧ_l": [
+    {
+      "IPA": "t",
+      "letter_name": "Voiceless alveolar stop",
+      "Audio": "0/t",
+      "type": "0",
+      "arabic_description": "ينطق \"ت\" كما في \"ساعات\" و يضخم \"ط\" اذا جاء قبل (ⲁ,ⲱ) و ليس لها قاعده و لكن دائما ينطق \"ت\" في اخر الكلمه",
+      "english_description": "'t' as in \"tall\" and there is no rule but alwas 't' at the end of the word"
+    },
+    {
+      "IPA": "d",
+      "letter_name": "Voiced alveolar stop",
+      "Audio": "0/d",
+      "type": "1",
+      "arabic_description": "ينطق \"د\" كما في \"دير\" و يضخم مثل \"ض\" اذا جاء قبل (ⲁ,ⲱ) مثل \"دار\" ولا توجد قاعده معينه",
+      "english_description": "'d' as in \"door\" and there is no rule"
+    }
+  ],
+  "ⲧ_n": [
+    {
+      "IPA": "d",
+      "letter_name": "Voiced alveolar stop",
+      "Audio": "0/d",
+      "type": "0",
+      "arabic_description": "تنطق \"د\" اذا جاء قبلها حرف ال \"ⲛ\" في الكلمات من اصل يوناني فقط",
+      "english_description": "'d' as in \"door\" if it comes after 'ⲛ' in greek words only"
+    },
+    {
+      "IPA": "t",
+      "letter_name": "Voiceless alveolar stop",
+      "Audio": "0/t",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك ينطق \"ت\" كما في \"تامر\"و يضخم \"ط\" كما في \"طارق\" اذا جاء بعده \"ⲁ,ⲱ\"",
+      "english_description": "otherwise, 't' as in \"tall\""
+    }
+  ],
+  "ⲩ_a": [
+    {
+      "IPA": "w",
+      "letter_name": "Voiced labio-velar approximant",
+      "Audio": "0/w",
+      "type": "0",
+      "arabic_description": "ينطق الحرفين 'ⲟⲩ' معاً كحرف \"و \" عله كما فى \"واحد\", \"نونو\" اذا تبعه او سبقه حرف متحرك و اذا جاء قبله (ⲁ,ⲉ) تعتبر (ⲁⲩ,ⲉⲩ) كاختصار ل (ⲁⲟⲩ,ⲉⲟⲩ) ",
+      "english_description": "when it comes after 'ⲟ' both letters 'ⲟⲩ' pronounced 'w' as in \"window\" if they come before or after a vowel and if it comes after (ⲁ,ⲉ) that (ⲁⲩ,ⲉⲩ) considerd as shortcut for (ⲁⲟⲩ,ⲉⲟⲩ)"
+    },
+    {
+      "IPA": "u",
+      "letter_name": "Long close back rounded vowel",
+      "Audio": "1/u",
+      "type": "1",
+      "arabic_description": "اذا جاء 'ⲟⲩ' اول الكلمه او المقطع و بعده حرف ساكن ينطق \"أو\" كما في كلمه \"أوضه\" , \"أوطه\" في العاميه المصريه و اذا جاء بين ساكنين ينطق \"و\" متحركه مضمومه كما في كلمه \"حوت\" , \"نونو\"",
+      "english_description": "if 'ⲟⲩ' comes at the start of the word followed by constant pronounced as 'ow' in \"ownerships\" and if between two constants prounced as \"oo\" like in \"shoot\""
+    },
+    {
+      "IPA": "i",
+      "letter_name": "Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "2",
+      "arabic_description": "فيما عدا ذلك اذا جاء منفصلا ينطق \"ي\" قصيره او همزه مكسوره في بدايه الكلمه و غالبا يأتي منفصلا في الكلمات اليونانيه",
+      "english_description": "otherwise 'i' like in \"tin\" ,\"inner\" and usually it comes separatly without 'ⲟ' in greek words only"
+    }
+  ],
+  "ⲩ_l": [
+    {
+      "IPA": "w",
+      "letter_name": "Voiced labio-velar approximant",
+      "Audio": "0/w",
+      "type": "0",
+      "arabic_description": "ينطق الحرفين 'ⲟⲩ' معاً كحرف \"و \" عله كما فى \"واحد\", \"نونو\" اذا تبعه او سبقه حرف متحرك و اذا جاء قبله (ⲁ,ⲉ) تعتبر (ⲁⲩ,ⲉⲩ) كاختصار ل (ⲁⲟⲩ,ⲉⲟⲩ) ",
+      "english_description": "when it comes after 'ⲟ' both letters 'ⲟⲩ' pronounced 'w' as in \"window\" if they come before or after a vowel and if it comes after (ⲁ,ⲉ) that (ⲁⲩ,ⲉⲩ) considerd as shortcut for (ⲁⲟⲩ,ⲉⲟⲩ)"
+    },
+    {
+      "IPA": "u",
+      "letter_name": "Long Close back rounded vowel",
+      "Audio": "1/u",
+      "type": "1",
+      "arabic_description": "اذا جاء 'ⲟⲩ' اول الكلمه او المقطع و بعده حرف ساكن ينطق \"أو\" كما في كلمه \"أوضه\" , \"أوطه\" في العاميه المصريه و اذا جاء بين ساكنين ينطق \"و\" متحركه مضمومه كما في كلمه \"حوت\" , \"نونو\"",
+      "english_description": "if 'ⲟⲩ' comes at the start of the word followed by constant pronounced as 'ow' in \"ownerships\" and if between two constants prounced as \"oo\" like in \"shoot\""
+    },
+    {
+      "IPA": "i",
+      "letter_name": "Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "2",
+      "arabic_description": "فيما عدا ذلك اذا جاء منفصلا ينطق \"ي\" قصيره او همزه مكسوره في بدايه الكلمه و غالبا يأتي منفصلا في الكلمات اليونانيه",
+      "english_description": "otherwise 'i' like in \"tin\" ,\"inner\" and usually it comes separatly without 'ⲟ' in greek words only"
+    }
+  ],
+  "ⲩ_n": [
+    {
+      "IPA": "ʔu",
+      "letter_name": "Long close back rounded vowel",
+      "Audio": "1/u",
+      "type": "0",
+      "arabic_description": "ينطق الحرفين 'ⲟⲩ'  معاً  \"أو\"  في اول الكلمه او المقطع مثل \"أوضه\" , \"أوطه\" في العاميه المصريه و ينطق \"او\"+\"و\" اذا جاء في اول الكلمه و بعده حرف متحرك ماعدا 'ⲱ' ",
+      "english_description": "when it comes after (Ⲟ) both letters 'ⲟⲩ' pronounced separate 'ow' as in \"ownerships\" "
+    },
+    {
+      "IPA": "u",
+      "letter_name": "Long Close back rounded vowel",
+      "Audio": "1/u",
+      "type": "1",
+      "arabic_description": "ينطق الحرفين 'ⲟⲩ' معاً \"و\" كما في كلمه \"حوت\" , \"نونو\" في وسط و اخر الكلمه",
+      "english_description": "when it comes after (Ⲟ) both letters 'ⲟⲩ' pronounced 'oo' as in \"shoot\" when it comes at the middle or the end of the word"
+    },
+    {
+      "IPA": "v",
+      "letter_name": "Voiced labiodental fricative",
+      "Audio": "0/v",
+      "type": "2",
+      "arabic_description": "ينطق\"ڤ\" اذا جاء قبله (Ⲁ,Ⲉ)",
+      "english_description": "'v' as in \"very\" when it comes after (Ⲁ,Ⲉ)"
+    },
+    {
+      "IPA": "i",
+      "letter_name": "Close front unrounded vowel",
+      "Audio": "1/i",
+      "type": "3",
+      "arabic_description": "فيما عدا ذلك اذا جاء منفصلا ينطق \"ي\" قصيره او همزه مكسوره في بدايه الكلمه و غالبا يأتي منفصلا في الكلمات اليونانيه",
+      "english_description": "otherwise 'i' like in \"tin\" ,\"inner\" and usually it comes separatly without 'ⲟ' in greek words only"
+    }
+  ],
+  "ⲫ_a": [
+    {
+      "IPA": "pʰ",
+      "letter_name": "Unvoiced aspirated bilabial stop",
+      "Audio": "0/pʰ",
+      "type": "0",
+      "arabic_description": "يشبه حرف \"پ\" مضافا اليه صوت تنفسي وهو يعتبر تؤام لحرف 'ⲡ' , و لكن تنفسي مثقل",
+      "english_description": "aspirated 'p' as in \"appearance\""
+    }
+  ],
+  "ⲫ_l": [
+    {
+      "IPA": "b",
+      "letter_name": "Voiced bilabial stop",
+      "Audio": "0/b",
+      "type": "0",
+      "arabic_description": "ينطق \"ب\" كما في \"باب\" و ليس لها قاعده معينه تحدد حسب اللفظ المتوارث و تكتب 'ⲫ̣'",
+      "english_description": "'b' as in \"back\" and no rule for pronuncation , but pronounced as it have been recieved and written 'ⲫ̣'"
+    },
+    {
+      "IPA": "f",
+      "letter_name": "Voiceless labiodental fricative",
+      "Audio": "0/f",
+      "type": "1",
+      "arabic_description": "ينطق \"ف\" كما في \"فرح\" و ليس لها قاعده معينه تحدد حسب اللفظ المتوارث ",
+      "english_description": "'f' as in \"fat\" and no rule for pronunciation , but pronounced as it have been recieved"
+    }
+  ],
+  "ⲫ_n": [
+    {
+      "IPA": "f",
+      "letter_name": "Voiceless labiodental fricative",
+      "Audio": "0/f",
+      "type": "0",
+      "arabic_description": "ينطق \"ف\" كما في \"فرح\"",
+      "english_description": "'f' as in \"fat\""
+    }
+  ],
+  "ⲭ_g": [
+    {
+      "IPA": "kʰ",
+      "letter_name": "Unvoiced aspirated back dorsal velar stop",
+      "Audio": "0/kʰ",
+      "type": "0",
+      "arabic_description": "يشبه حرف \"ك\" مضافا اليه صوت تنفسي في جميع الكلمات القبطيه, وهو يعتبر تؤام لحرف 'ⲕ' و لكن تنفسي مثقل وتحول نطقه في اللفظ المتأخر و الكنسي ليماثل حرف ال 'ⲕ'",
+      "english_description": "aspirated 'k' as 'c' in \"actually\" , in all original coptic words"
+    },
+    {
+      "IPA": "ʃ",
+      "letter_name": "Voiceless palato-alveolar fricative",
+      "Audio": "0/ʃ",
+      "type": "1",
+      "arabic_description": "ينطق \"ش\" كما في \"شر\" في الكلمات من اصل يوناني اذا جاء بعده حرف متحرك مكسور (Ⲩ,Ⲓ,Ⲏ,Ⲉ)",
+      "english_description": "'sh' as in \"shirt\" in greek words only when it comes before (Ⲩ,Ⲓ,Ⲏ,Ⲉ)"
+    },
+    {
+      "IPA": "x",
+      "letter_name": "Voiceless velar fricative",
+      "Audio": "0/x",
+      "type": "2",
+      "arabic_description": "ينطق \"خ\" كما في \"خير\" في باقي الكلمات من اصل يوناني",
+      "english_description": "'kh', this sound is not in english, pronounced like arabic letter 'خ' in other greek words"
+    }
+  ],
+  "ⲯ_g": [
+    {
+      "IPA": "ps",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ينطق \"پ\" + \"س\" و هو عباره عن حرف ثنائي من حرفين \"ⲡⲥ\" ",
+      "english_description": "'ps' as in \"psalm\" , simplification of the digraph \"ⲡⲥ\""
+    }
+  ],
+  "ⲱ_g": [
+    {
+      "IPA": "ɔː",
+      "letter_name": "Long open-mid back rounded vowel",
+      "Audio": "1/ɔ",
+      "type": "0",
+      "arabic_description": "ينطق \"و\" طويله مفتوحه كما في كلمه \"صوم\" , \"كوره\" ,\"بالطو\" في العاميه المصريه",
+      "english_description": "long 'o' as in \"goat\""
+    }
+  ],
+  "ϣ_g": [
+    {
+      "IPA": "ʃ",
+      "letter_name": "Voiceless palato-alveolar fricative",
+      "Audio": "0/ʃ",
+      "type": "0",
+      "arabic_description": "ينطق \"ش\" كما في \"شرق\"",
+      "english_description": "'sh' as in \"shirt\""
+    }
+  ],
+  "ϥ_g": [
+    {
+      "IPA": "f",
+      "letter_name": "Voiceless labiodental fricative",
+      "Audio": "0/f",
+      "type": "0",
+      "arabic_description": "ينطق \"ف\" كما في \"فرح\"",
+      "english_description": "'f' as in \"fat\""
+    }
+  ],
+  "ϧ_g": [
+    {
+      "IPA": "x",
+      "letter_name": "Voiceless velar fricative",
+      "Audio": "0/x",
+      "type": "0",
+      "arabic_description": "ينطق \"خ\" كما في \"خير\"",
+      "english_description": "'kh', this sound is not in english, it is like arabic letter 'خ'"
+    }
+  ],
+  "ϩ_g": [
+    {
+      "IPA": "h",
+      "letter_name": "Voiceless glottal fricative",
+      "Audio": "0/h",
+      "type": "0",
+      "arabic_description": "ينطق \"هـ \" كما في \"هرب\"",
+      "english_description": "'h' as in \"hot\""
+    },
+    {
+      "IPA": "ħ",
+      "letter_name": "Voiceless pharyngeal fricative",
+      "Audio": "0/ħ",
+      "type": "1",
+      "arabic_description": "ينطق احيانا \"ح\" كما في \"حركه\" و هذا النطق غير مستخدم كثيرا ولا يستخدم في النطق الكنسي نهائيا",
+      "english_description": "this sound is not in english, it is hard 'h' as arabic letter 'ح', and it is rarely used and never used in reformed pronunciation."
+    }
+  ],
+  "ϫ_a": [
+    {
+      "IPA": "tʲ( old IPA 'c' )",
+      "letter_name": "unvoiced unaspirated palatalized apical alveolar stop",
+      "Audio": "0/tʲ",
+      "type": "0",
+      "arabic_description": "لا يوجد هذا الصوت في العربيه او الانجليزيه و قد اختفي هذا النطق من لسان الاقباط و لصعوبه نطقه سيتم استخدام النطق المتأخر للحرف في التطبيق و هو \"چ\" الصعيديه",
+      "english_description": "this sound not in english or arabic,it is near to 'tj' sound in english"
+    }
+  ],
+  "ϫ_l": [
+    {
+      "IPA": "d͡ʒ",
+      "letter_name": "Voiced postalveolar affricate",
+      "Audio": "0/ʒ",
+      "type": "0",
+      "arabic_description": "تنطق \"چ\" صعيدي كما في \"چون\"",
+      "english_description": "'j' as in \"john\""
+    }
+  ],
+  "ϫ_n": [
+    {
+      "IPA": "d͡ʒ",
+      "letter_name": "Voiced postalveolar affricate",
+      "Audio": "0/ʒ",
+      "type": "0",
+      "arabic_description": "تنطق \"چ\" معطشه صعيدي كما في \"چون\" اذا جاء بعدها حرف متحرك مكسور (Ⲩ,Ⲓ,Ⲏ,Ⲉ)",
+      "english_description": "'j' as in \"jump\" if it comes before (Ⲩ,Ⲓ,Ⲏ,Ⲉ)"
+    },
+    {
+      "IPA": "g",
+      "letter_name": "Voiced velar stop",
+      "Audio": "0/g",
+      "type": "1",
+      "arabic_description": "فيما عدا ذلك ينطق \"ج\" مصري بحراوي كما في \"جرس\"",
+      "english_description": "otherwise, 'g' as in \"game\""
+    }
+  ],
+  "ϭ_a": [
+    {
+      "IPA": "tʰʲ ( old IPA 'cʰ' )",
+      "letter_name": "unvoiced aspirated palatalized apical alveolar stop",
+      "Audio": "0/tʰʲ",
+      "type": "0",
+      "arabic_description": "قريب من صوت حرف ال \"ϫ\" , و لكن تنفسي يشبه صوت \"ch\" في الانجليزيه كما في \"chair\" و لكن ليس نفسه ",
+      "english_description": "near to 'ϫ' sound with breathy voice similar to english sound 'ch' as in \"chair\" but not the same."
+    }
+  ],
+  "ϭ_l": [
+    {
+      "IPA": "ʃ",
+      "letter_name": "Voiceless palato-alveolar fricative",
+      "Audio": "0/ʃ",
+      "type": "0",
+      "arabic_description": "ينطق \"ش\" مشدده",
+      "english_description": "'sh' as in \"shoot\""
+    }
+  ],
+  "ϭ_n": [
+    {
+      "IPA": "t͡ʃ",
+      "letter_name": "Voiceless postalveolar affricate",
+      "Audio": "0/tʃ",
+      "type": "0",
+      "arabic_description": "تنطق \"ت \" خفيفه + \"ش \"",
+      "english_description": "'ch' as in \"church\""
+    }
+  ],
+  "ϯ_a": [
+    {
+      "IPA": "tiː",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ينطق \"تي\" و هو صوت ثنائي للحرفين \"ⲧⲓ\"",
+      "english_description": "same as the word \"tea\" , simplification of the digraph \"ⲧⲓ\""
+    }
+  ],
+  "ϯ_l": [
+    {
+      "IPA": "diː",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ينطق \"دي\" و هو صوت ثنائي للحرفين \"ⲧⲓ\"",
+      "english_description": "'di' as in \"different\" , simplification of the digraph \"ⲧⲓ\""
+    }
+  ],
+  "ϯ_n": [
+    {
+      "IPA": "tiː",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "0",
+      "arabic_description": "ينطق \"تي\" و هو صوت ثنائي للحرفين \"ⲧⲓ\"",
+      "english_description": "same as the word \"tea\" , simplification of the digraph \"ⲧⲓ\""
+    }
+  ],
+  " ̀_g": [
+    {
+      "IPA": "'ə",
+      "letter_name": "short Mid central vowel",
+      "Audio": "1/ə",
+      "type": "2",
+      "arabic_description": "حركه توضع فوق الحرف لتبين استقلاليه نطقه فى الكلمه كما في بدايه كلمه \"انت\" العاميه المصريه و اذا جاء فوق حرف متحرك ينطق الحرف منفصلا وهي مستحدثه و الافراط في استخدامها ادى الي وجود همزات و توقفات لم تكن موجوده في اللغه من قبل حيث تعرف اللغه القبطيه بالسلاسه و التناغم في الحديث لذلك يجب الانتباه اثناء استخدامه بانه ليس همزه عربيه و لكن مجرد استهلال قبل الحرف و يمكن تجاهل نطقها",
+      "english_description": "a symbol that can be written above the letter to inform reader to pronouce the letter as a start of a syllable like in first letter \"a\" in the american word \"analysis\" and when it comes on a vowel, that vowel is bronounced separately."
+    }
+  ],
+  " ̄_g": [
+    {
+      "IPA": "-",
+      "letter_name": "-",
+      "Audio": "-",
+      "type": "2",
+      "arabic_description": "شرطه افقيه توضع فوق الحرف لتبين انه رقم مثل ⲁ̅ تمثل رقم ١ او لتبين ان الحروف اختصار لكلمه مشهوره مثل \"Ⲡⲟ̅ⲥ̅\" كأختصار لكلمه \"Ⲡϭⲟⲓⲥ\" بمعني الرب او السيد",
+      "english_description": "a dash that can be written above the letter to make it represents number like ⲁ̅ , ⲃ̅ as numbers 1, 2, etc..., and also can be used with some letters as a short words like \"Ⲡⲟ̅ⲥ̅\" instead of \"Ⲡϭⲟⲓⲥ\" ."
+    }
+  ]
+}

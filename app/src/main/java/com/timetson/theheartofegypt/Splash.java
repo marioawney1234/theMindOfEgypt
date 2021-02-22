@@ -7,17 +7,10 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import com.timetson.theheartofegypt.helpers.LettersSqlHelper;
-import com.timetson.theheartofegypt.helpers.WordsSqlHelper;
-
-import java.io.IOException;
-
 
 public class Splash extends AppCompatActivity {
 
     public final Context context = this;
-    private LettersSqlHelper lettersDbHelper;
-    private WordsSqlHelper wordsDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +24,6 @@ public class Splash extends AppCompatActivity {
         Thread background = new Thread() {
             public void run() {
                 Intent i = null;
-                // databases
-                lettersDbHelper = new LettersSqlHelper(context);
-                wordsDbHelper = new WordsSqlHelper(context);
-
-                try {
-                    lettersDbHelper.createDataBase();
-                    wordsDbHelper.createDataBase();
-                } catch (IOException mIOException) {
-                    throw new Error("UnableToCreateDatabase");
-                }
-
-
                 try {
                     // Thread will sleep for 3 seconds
                     sleep(2 * 1000);

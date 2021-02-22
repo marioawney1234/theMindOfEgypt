@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.timetson.theheartofegypt.helpers.LettersSqlHelper;
+import com.timetson.theheartofegypt.helpers.LettersHelper;
 import com.timetson.theheartofegypt.helpers.localeHelper;
 import com.timetson.theheartofegypt.modules.DataContainer;
 import com.timetson.theheartofegypt.modules.PronounceModule;
@@ -70,7 +70,7 @@ public class SahidicLetterDisplayActivity extends AppCompatActivity {
         letter_type.setText(types[DataContainer.sahidicLetterModuleList.get(position).getType()]);
         letter_name.setText(DataContainer.sahidicLetterModuleList.get(position).getName());
 
-        DataContainer.SahidicPronounciation = new LettersSqlHelper(mContext).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter(), "g");
+        DataContainer.SahidicPronounciation = new LettersHelper(mContext).getSahidicPronouncation(DataContainer.sahidicLetterModuleList.get(position).getLetter());
         setLayoutContents(mContext, findViewById(R.id.general), mContext.getResources().getString(R.string.letter_display_sahidic_title_coptic), title, DataContainer.SahidicPronounciation);
         scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override

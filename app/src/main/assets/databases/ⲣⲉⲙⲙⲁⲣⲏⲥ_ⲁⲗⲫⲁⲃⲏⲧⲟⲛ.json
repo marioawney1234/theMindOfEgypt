@@ -1,0 +1,190 @@
+{
+  "letters": [
+    {
+      "letter": "ⲁ",
+      "capital": "Ⲁ",
+      "name": "ⲁⲗⲫⲁ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲃ",
+      "capital": "Ⲃ",
+      "name": "ⲃⲏⲧⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲅ",
+      "capital": "Ⲅ",
+      "name": "ⲅⲁⲙⲙⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲇ",
+      "capital": "Ⲇ",
+      "name": "ⲇⲁⲗⲇⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲉ",
+      "capital": "Ⲉ",
+      "name": "ⲉⲓ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲍ",
+      "capital": "Ⲍ",
+      "name": "ⲍⲏⲧⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲏ",
+      "capital": "Ⲏ",
+      "name": "ϩⲏⲧⲁ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲑ",
+      "capital": "Ⲑ",
+      "name": "ⲑⲉⲧⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲓ",
+      "capital": "Ⲓ",
+      "name": "ⲓⲟⲧⲁ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲕ",
+      "capital": "Ⲕ",
+      "name": "ⲕⲁⲡⲡⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲗ",
+      "capital": "Ⲗ",
+      "name": "ⲗⲁⲩⲗⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲙ",
+      "capital": "Ⲙ",
+      "name": "ⲙⲏ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲛ",
+      "capital": "Ⲛ",
+      "name": "ⲛⲉ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲝ",
+      "capital": "Ⲝ",
+      "name": "Ⲝⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲟ",
+      "capital": "Ⲟ",
+      "name": "ⲟⲩ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲡ",
+      "capital": "Ⲡ",
+      "name": "ⲡⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲣ",
+      "capital": "Ⲣ",
+      "name": "ⲣⲱ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲥ",
+      "capital": "Ⲥ",
+      "name": "ⲥⲏⲙⲙⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲧ",
+      "capital": "Ⲧ",
+      "name": "ⲧⲁⲩ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲩ",
+      "capital": "Ⲩ",
+      "name": "ϩⲉ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ⲫ",
+      "capital": "Ⲫ",
+      "name": "ⲫⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲭ",
+      "capital": "Ⲭ",
+      "name": "ⲭⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲯ",
+      "capital": "Ⲯ",
+      "name": "ⲯⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ⲱ",
+      "capital": "Ⲱ",
+      "name": "Ⲱ",
+      "type": "vowel"
+    },
+    {
+      "letter": "ϣ",
+      "capital": "Ϣ",
+      "name": "ϣⲁⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ϥ",
+      "capital": "Ϥ",
+      "name": "ϥⲁⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ϩ",
+      "capital": "Ϩ",
+      "name": "ϩⲟⲣⲓ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ϫ",
+      "capital": "Ϫ",
+      "name": "ϫⲁⲛϫⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ϭ",
+      "capital": "Ϭ",
+      "name": "ϭⲓⲙⲁ",
+      "type": "Constant"
+    },
+    {
+      "letter": "ϯ",
+      "capital": "Ϯ",
+      "name": "ϯ",
+      "type": "Constant"
+    },
+    {
+      "letter": " ̅ ",
+      "capital": " ̅ ",
+      "name": "no name recorded",
+      "type": "Sign"
+    }
+  ]
+}
